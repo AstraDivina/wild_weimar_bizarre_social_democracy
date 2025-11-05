@@ -16,17 +16,6 @@
     // Add your custom code here.
   };
 
-window.updateSidebarRight = function () {
-      $('#qualities_right').empty();
-      var statusScene = dendryUI.game.scenes["status_right"];
-      var scene = dendryUI.game.scenes[window.statusTabRight];
-        dendryUI.dendryEngine._runActions(statusScene.onArrival);
-        dendryUI.dendryEngine._runActions(scene.onArrival);
-      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-      $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
-        dendryUI.dendryEngine._runActions(scene.onDisplay);
-  };
-  
   var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
 
   // the url is a link to game.json
@@ -42,7 +31,7 @@ window.updateSidebarRight = function () {
         window.dendryUI.dendryEngine.goToScene('library');
     }
   };
-
+  
   window.showMods = function() {
     window.hideOptions();
     if (window.dendryUI.dendryEngine.state.sceneId.startsWith('mod_loader')) {
@@ -51,7 +40,7 @@ window.updateSidebarRight = function () {
         window.dendryUI.dendryEngine.goToScene('mod_loader');
     }
   };
-
+  
   window.showOptions = function() {
       var save_element = document.getElementById('options');
       window.populateOptions();
@@ -184,7 +173,7 @@ window.disableGrayMode = function() {
     }
   };
 
-
+  
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
   window.displayText = function(text) {
@@ -194,7 +183,7 @@ window.disableGrayMode = function() {
   // This function allows you to do something in response to signals.
   window.handleSignal = function(signal, event, scene_id) {
   };
-
+  
   // This function runs on a new page. Right now, this auto-saves.
   window.onNewPage = function() {
     var scene = window.dendryUI.dendryEngine.state.sceneId;
@@ -206,16 +195,16 @@ window.disableGrayMode = function() {
     }
   };
 
-window.updateSidebar = function () {
-    $('#qualities').empty();
-    var statusScene = dendryUI.game.scenes["status"];
-    var scene = dendryUI.game.scenes[window.statusTab];
-    dendryUI.dendryEngine._runActions(statusScene.onArrival);
-    dendryUI.dendryEngine._runActions(scene.onArrival);
-    var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
-    $('#qualities').append(dendryUI.contentToHTML.convert(displayContent));
-    dendryUI.dendryEngine._runActions(scene.onDisplay);
-};
+window.updateSidebarRight = function () {
+      $('#qualities_right').empty();
+      var statusScene = dendryUI.game.scenes["status_right"];
+      var scene = dendryUI.game.scenes[window.statusTabRight];
+        dendryUI.dendryEngine._runActions(statusScene.onArrival);
+        dendryUI.dendryEngine._runActions(scene.onArrival);
+      var displayContent = dendryUI.dendryEngine._makeDisplayContent(scene.content, true);
+      $('#qualities_right').append(dendryUI.contentToHTML.convert(displayContent));
+        dendryUI.dendryEngine._runActions(scene.onDisplay);
+  };
 
   window.updateSidebarRight = function() {
     $('#qualities_right').empty();
