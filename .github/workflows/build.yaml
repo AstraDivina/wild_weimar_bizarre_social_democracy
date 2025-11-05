@@ -33,17 +33,18 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 24
       - name: Install
         run: npm install
       - name: Build game
-        run: npm run dendrynexus make-html -- --pretty
-      - name: Copy game.json to output
-        run: cp out/game.json out/html/
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'out/html'
+          name: github-pages-${{ github.run_id }}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_id }}
