@@ -1,6 +1,10 @@
-
 /node_modules
-out/game.json
-out/html/core.js
-package-lock.json
 out/html/jquery-1.11.1.min.js
+out/html/core.js
+out/html/d3-linegraph.js
+out/html/d3-parliament.js
+out/html/d3.v7.min.js
+out/html/favicon.ico
+/out/html/img
+/out/html/music
+out/html/game.json
