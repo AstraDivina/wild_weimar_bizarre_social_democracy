@@ -70,9 +70,7 @@ Prussian Minister-President: [? if prussia_leader = "Braun" and (chancellor != n
 
 # 1928: 30, 1930: 25, 1932: 22
 
-<div>{!<svg id="reichstag_status" style="width: 500px; height: 250px;"> </svg>!}</div>
-
-
+{!<svg id="reichstag_status" style="width: 500px; height: 250px;"> </svg>!}
 
 <span style="color: #c00000;">**SPD**</span> position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and not in_social_catholic_coalition and not in_social_liberal_coalition and spd_in_government: [? if lvp_formed: <span> New </span> ?]<span style="color: #000000;">We</span><span style="color: #c00000;">im</span>[? if not lvp_formed: <span style="color: #D3C24D;">ar</span>?][? if lvp_formed: <span style="color: #FFCC00;">ar</span>?] Coalition ?][? if in_social_catholic_coalition and spd_in_government: <span style="color: #c00000;">Social</span>-[? if not stegerwald_path: <span style="color: #000000;">Catholic</span>?][? if stegerwald_path: <span style="color: #000000;">Christian</span>?] Coalition ?][? if in_social_liberal_coalition and spd_in_government: <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition ?][? if in_grand_coalition and spd_in_government: [? if not in_wholesome_coalition: Grand Coalition?][? if in_wholesome_coalition: Wholesome Coalition?] ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: <span style="color: #c00000;">**SPD**</span> majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
