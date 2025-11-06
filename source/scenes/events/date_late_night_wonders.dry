@@ -1,7 +1,8 @@
 title: The night before the election.
+audio: music/communist/A_las_barricadas.ogg
 subtitle: 
 new-page: true
-view-if: year = 1928 and next_election_month = 5 or next_election_month = 6
+view-if: year = 1928 and month >= 5
 tags: event
 max-visits: 1
 set-bg: img/date_bathroom.jpg
