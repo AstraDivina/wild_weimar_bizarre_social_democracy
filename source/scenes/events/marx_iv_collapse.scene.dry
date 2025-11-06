@@ -37,7 +37,6 @@ New elections have been set for May 1928.
 @bad
 title: Reach out to Marx, offering to form a governing majority.
 subtitle: I'm sorry, what?
-new-page: true
 go-to: confirmation
 
 We *could* reach out to the <span style="color: #000000ff;">Center</span> to negotiate a coalition without the <span style="color: #3E88B3;">**DNVP**</span>, offering to mediate their disputes with the <span style="color: #C0A054;">**DVP**</span> over the regulation of school law, but should we, really?
@@ -55,7 +54,6 @@ Are we really going through with this?
 title: The stability of the <span style="color: #000000;">We</span><span style="color: #c00000;">im</span><span style="color: #D3C24D;">ar</span> system is more important; reach out to the <span style="color: #000000;">Center</span>.
 subtitle: We will attempt to form a 'Grand Coalition' with the <span style="color: #A2D8E0;">**BVP**</span> and <span style="color: #C0A054;">**DVP**</span>. The <span style="color: #A61610;">**Left**</span> will be greatly displeased.
 on-arrival: z_relation += 2; ddp_relation += 1; dvp_relation += 1; ddp_left += 0.5; dbp_left += 0.5; pro_republic += 1;
-new-page: true
 go-to: confirmation2
 
 Fine. We reached out to the outgoing Marx Cabinet as well as President Hindenburg, offering to mediate the dispute that had brought down the government in exchange for the <span style="color: #c00000;">**SPD**</span>'s entry into the cabinet.
@@ -79,7 +77,6 @@ New elections have been set for May 1928.
 @negotiate
 title: Negotiations begin.
 subtitle: Is Marx V a possibility?
-new-page: true
 go-to: confirmation3
 
 The negotiations were, quite predictably, short-lived. Any sort of compromise proved impossible as neither side was willing to budge on the issue.
@@ -98,6 +95,7 @@ subtitle: Due to our shenanigans, the election will now be held in June.
 face-image: img/poster_3.jpg
 on-arrival: marx_election_delay = 1; next_election_month = 6; next_election_time = 6; workers_kpd += 10; unemployed_kpd += 10; left_dissent += 4
 new-page: true
+go-to: main
 
 
 Quite expectedly, our attempt to form a government destined to collapse within ten months failed, wasting precious political capital that could have been spent on campaigning. The <span style="color: #A61610;">**Left**</span> is understandably upset over the entire ordeal and has begun to question the leadership’s ability to advance <span style="color: #c00000;">Social Democracy</span>. A few of our core supporters have even drifted toward the <span style="color: #700000;">**Communists**</span> as a result of our failed negotiations.
@@ -107,10 +105,3 @@ Marx’s eagerness to secure <span style="color: #c00000;">**SPD**</span> suppor
 In any case, our task now is to salvage whatever we can in the hopes of maintaining our lead. For what it’s worth, the <span style="color: #C0A054;">**DVP**</span> appears more willing to enter government with us.
 
 New elections have been set for June 1928.
-
-- @continue_after_fallout
-
-@continue_after_fallout
-title: Continue
-new-page: true
-go-to: main
