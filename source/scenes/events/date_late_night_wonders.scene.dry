@@ -5,7 +5,6 @@ view-if: year = 1928 and month >= 5 or month >= 6 and marx_election_delay
 tags: event
 max-visits: 1
 priority: 3
-audio: clear shuffle music/1928_1933/ZurSonne_zurFreiheit.mp3 music/1928_1933/arbeiter_marseille.mp3 music/1928_1933/DERLINDENBAUM_normalized.mp3 music/1928_1933/Wann_wir_schreiten_Seit_an_Seit.mp3 music/1930_1933/Internationale-de_normalized.ogg music/1930_1933/ironfront_normalized.mp3 music/1930_1933/KommSusserTod.mp3 music/1930_1933/Warszawianka.mp3 music/1928_1933/Liebesleid_normalized.mp3 music/1928_1933/SozialistenMarsch.mp3
 audio: music/date/donedeal.ogg
 set-bg: img/date_bathroom.jpg
 on-arrival: {!
