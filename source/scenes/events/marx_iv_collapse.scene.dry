@@ -94,9 +94,7 @@ title: At least we tried.
 subtitle: Due to our shenanigans, the election will now be held in June.
 face-image: img/poster_3.jpg
 on-arrival: marx_election_delay = 1; next_election_month = 6; next_election_time = 6; workers_kpd += 10; unemployed_kpd += 10; left_dissent += 4
-new-page: true
 go-to: main
-
 
 Quite expectedly, our attempt to form a government destined to collapse within ten months failed, wasting precious political capital that could have been spent on campaigning. The <span style="color: #A61610;">**Left**</span> is understandably upset over the entire ordeal and has begun to question the leadership’s ability to advance <span style="color: #c00000;">Social Democracy</span>. A few of our core supporters have even drifted toward the <span style="color: #700000;">**Communists**</span> as a result of our failed negotiations.
 
