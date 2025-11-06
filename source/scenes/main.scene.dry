@@ -608,7 +608,10 @@ max-cards: 3
 
 {!<p class="both">!}[? if year = 1928 and month = 1: It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the <span style="color: #750e0e;">Soviet Union</span> that might make genuine peace a reality. <br><br> Now, the task of <span style="color: #c00000;">Social Democracy</span> is to prepare for the next election. The <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a <span style="color: #c00000;">socialist</span> majority. ?]{!</p>!}
 
-{!<p class="other">!}[? if year = 1928 and month = 2 and marx_election_delay: The current <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> government has fallen. Due to our attempts at negotiating a coalition with the <span style="color: #000000;">Center</span> the next elections are slated for June of this year. ?]{!</p>!}
+{!<p class="other">!}[? if year = 1928 and month = 2 and marx_election_delay:
+<h1 style="text-align: center;">February 1928</h1>
+The current <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> government has fallen. Due to our attempts at negotiating a coalition with the <span style="color: #000000;">Center</span> the next elections are slated for June of this year.
+?]{!</p>!}
 
 {!<p class="other">!}[? if year = 1928 and month = 2 and not marx_election_delay: The current <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> government has fallen. The next elections are slated for May of this year. ?]{!</p>!}
 
