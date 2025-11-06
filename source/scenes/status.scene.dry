@@ -240,25 +240,25 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of the <span style="color: #c00000;">**SPD**</span>
 
-{!<span style="color: #A61610;">**Left Wing**</span></span>!}: Paul Levi
+{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD."><strong style="color: #A61610;">Left Wing</strong></span>!}: Paul Levi
 
 Strength: [+ left_strength : strength +]
 
 Dissent: [+ left_dissent : dissent +]
 
-{!<span style="color: #E41010;">**Center Wing**</span></span>!}: Rudolf Hilferding
+{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution."><strong style="color: #E41010;">Center Wing</strong></span>!}: Rudolf Hilferding
 
 Strength: [+ center_strength : strength +]
 
 Dissent: [+ center_dissent : dissent +]
 
-{!<span style="color: #E75D1B;">**Labor Wing**</span></span>!}: Theodor Leipart
+{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers."><strong style="color: #E75D1B;">Labor Wing</strong></span>!}: Theodor Leipart
 
 Strength: [+ labor_strength : strength +]
 
 Dissent: [+ labor_dissent : dissent +]
 
-{!<span style="color: #FF6BA9;">**Reformist Wing**</span></span>!}: Otto Braun
+{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy."><strong style="color: #FF6BA9;">Reformist Wing</strong></span>!}: Otto Braun
 
 Strength: [+ reformist_strength : strength +]
 
