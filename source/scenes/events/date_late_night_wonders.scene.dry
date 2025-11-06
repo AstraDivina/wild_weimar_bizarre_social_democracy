@@ -1,7 +1,7 @@
 title: The night before the election.
 subtitle: war
 new-page: true
-view-if: year = 1928 and month >= 2
+view-if: year = 1928 and next_election_month = 5 or year = 1928 and next_election_month = 6
 tags: event
 max-visits: 1
 priority: 3
@@ -19,6 +19,16 @@ if (toolsWrapper) {
 const header = document.querySelector('header');
 header.style.color = '#ffffff';
 !}
+
+const tabContainer = document.querySelector('.tab_container');
+if (tabContainer) {
+    tabContainer.style.backgroundColor = '#c3b8a0';
+}
+
+const qualitiesH1 = document.querySelector('#qualities h1');
+if (qualitiesH1) {
+    qualitiesH1.style.color = '#fff5e2';
+}
 
 = Right-wing Coalition Dissolved
 
