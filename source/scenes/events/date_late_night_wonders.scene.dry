@@ -1,11 +1,11 @@
 title: The night before the election.
 subtitle: war
 new-page: true
-view-if: year = 1928 and next_election_month = 5 or year = 1928 and next_election_month = 6
+view-if: year = 1928 and month >= 5 and not marx_election_delay or year = 1928 and month >= 6 and marx_election_delay
 tags: event
 max-visits: 1
 priority: 3
-audio: music/communist/A_las_barricadas.ogg
+audio: music/date/donedeal.ogg
 set-bg: img/date_bathroom.jpg
 on-arrival: {!
 const contentElement = document.getElementById('content');
@@ -18,7 +18,6 @@ if (toolsWrapper) {
 
 const header = document.querySelector('header');
 header.style.color = '#ffffff';
-!}
 
 const tabContainer = document.querySelector('.tab_container');
 if (tabContainer) {
@@ -29,6 +28,7 @@ const qualitiesH1 = document.querySelector('#qualities h1');
 if (qualitiesH1) {
     qualitiesH1.style.color = '#fff5e2';
 }
+!}
 
 = Right-wing Coalition Dissolved
 
