@@ -1,32 +1,20 @@
 title: The night before the election.
 subtitle: war
 new-page: true
-view-if: year = 1928 and month >= 5 and not marx_election_delay or year = 1928 and month >= 6 and marx_election_delay
+view-if: year = 1928 and month >= 5 and not marx_election_delay or month >= 6 and marx_election_delay
 tags: event
 max-visits: 1
 priority: 3
-audio: music/date/donedeal.ogg
+audio: clear shuffle music/date/donedeal.ogg
 set-bg: img/date_bathroom.jpg
 on-arrival: {!
 const contentElement = document.getElementById('content');
-contentElement.style.backgroundColor = '#c9b6a3';
+contentElement.style.backgroundColor = '#8f7e6e';
+contentElement.style.textColor = '#fff4de';
 
 const toolsWrapper = document.getElementById('tools_wrapper');
 if (toolsWrapper) {
   toolsWrapper.style.display = 'none';
-}
-
-const header = document.querySelector('header');
-header.style.color = '#ffffff';
-
-const tabContainer = document.querySelector('.tab_container');
-if (tabContainer) {
-    tabContainer.style.backgroundColor = '#c3b8a0';
-}
-
-const qualitiesH1 = document.querySelector('#qualities h1');
-if (qualitiesH1) {
-    qualitiesH1.style.color = '#fff5e2';
 }
 !}
 
