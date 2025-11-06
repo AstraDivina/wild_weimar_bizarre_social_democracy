@@ -1,7 +1,7 @@
 title: The night before the election.
 subtitle: war
 new-page: true
-view-if: year = 1928 and month >= 5 or month >= 6 and marx_election_delay
+view-if: year = 1977 and month >= 5 or month >= 6 and marx_election_delay
 tags: event
 max-visits: 1
 priority: 3
