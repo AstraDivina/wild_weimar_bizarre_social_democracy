@@ -31,7 +31,7 @@
         window.dendryUI.dendryEngine.goToScene('library');
     }
   };
-  
+
   window.showMods = function() {
     window.hideOptions();
     if (window.dendryUI.dendryEngine.state.sceneId.startsWith('mod_loader')) {
@@ -40,7 +40,7 @@
         window.dendryUI.dendryEngine.goToScene('mod_loader');
     }
   };
-  
+
   window.showOptions = function() {
       var save_element = document.getElementById('options');
       window.populateOptions();
@@ -173,7 +173,7 @@ window.disableGrayMode = function() {
     }
   };
 
-  
+
   // This function allows you to modify the text before it's displayed.
   // E.g. wrapping chat-like messages in spans.
   window.displayText = function(text) {
@@ -183,7 +183,7 @@ window.disableGrayMode = function() {
   // This function allows you to do something in response to signals.
   window.handleSignal = function(signal, event, scene_id) {
   };
-  
+
   // This function runs on a new page. Right now, this auto-saves.
   window.onNewPage = function() {
     var scene = window.dendryUI.dendryEngine.state.sceneId;
@@ -242,6 +242,27 @@ window.updateSidebarRight = function () {
       window.updateSidebar();
       window.updateSidebarRight();
   };
+
+
+  window.updateMarxText = function () {
+    const config = { attributes: true, childList: true, subtree: true };
+    window.trackMarx = 0;
+    new MutationObserver( (mutations, observer) => {
+        if (window.trackMarx === 2) {
+            observer.disconnect();
+        }
+        for (const mutation of mutations) {
+          if (document.querySelector('[data-marx-affect]')) {
+            const june = document.querySelector('[data-marx-affect="true"]');
+            const may = document.querySelector('[data-marx-affect="false"]');
+            
+            may.style.display = "none";
+            june.style.display = ""
+          }
+        }
+    }).observe(document.body, config);
+  }
+
 
   window.toggleDem = function toggleDemographicTable() {
       const resultsDiv = document.getElementById('results');
