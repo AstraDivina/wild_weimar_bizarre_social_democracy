@@ -242,19 +242,15 @@ window.updateSidebar = function () {
 
   window.updateMarxText = function () {
     const config = { attributes: true, childList: true, subtree: true };
-    window.trackMarx = 0;
+    
     new MutationObserver( (mutations, observer) => {
-        if (window.trackMarx === 2) {
-            observer.disconnect();
-        }
-        for (const mutation of mutations) {
-          if (document.querySelector('[data-marx-affect]')) {
-            const june = document.querySelector('[data-marx-affect="true"]');
-            const may = document.querySelector('[data-marx-affect="false"]');
-            
-            may.style.display = "none";
-            june.style.display = ""
-          }
+        if (document.querySelector('[data-marx-affect]')) {
+          const june = document.querySelector('[data-marx-affect="true"]');
+          const may = document.querySelector('[data-marx-affect="false"]');
+          
+          may.style.display = "none";
+          june.style.display = "";
+          observer.disconnect();
         }
     }).observe(document.body, config);
   }
