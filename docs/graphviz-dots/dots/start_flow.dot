@@ -1,0 +1,18 @@
+digraph G {
+  rankdir=TB; node [shape=box, fontsize=10];
+
+  root_scene_dry   [label="root.scene.dry"];
+  start_menu       [label="root.start_menu"];
+  start_menu_2     [label="root.start_menu_2"];
+  start_1          [label="root.start_1"];
+  pls_player       [label="root.pls_player"];
+  modinfo_info     [label="modinfo.infotext"];
+  root_start       [label="root.start"];
+
+  root_scene_dry -> start_menu;
+  start_menu      -> start_menu_2;
+  start_menu_2    -> start_1;
+  start_1         -> pls_player;
+  pls_player      -> modinfo_info;
+  modinfo_info    -> root_start;
+}

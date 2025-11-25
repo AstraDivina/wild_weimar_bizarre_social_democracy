@@ -2,9 +2,12 @@
 Wild.
 
 
+# Diagrams
+1. Control Flow Graph for start
+![start scene flow graph](./docs/graphviz-dots/graphs/start_flow.png)
+
 # Development
 
 To build the game locally, do:
 
 `npm run build`
-
