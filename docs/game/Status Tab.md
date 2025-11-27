@@ -15,8 +15,8 @@ A correct element example is this:
 ```
 
 Then, you need to create a (sub)scene with the proper elements in status.scene.dry.
-The scene should have the same name with the one you inputted at window.changeTab. In our case,
-it's "example":
+The scene must have the same name as the first argument you passed to window.changeTab. In our case,
+it's "example" (status.example syntax is "main scene"."sub scene". We are editing the sub scene that is used to fill the tab contents):
 
 ```html
 @example
