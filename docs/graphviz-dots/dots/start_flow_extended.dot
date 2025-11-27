@@ -1,0 +1,203 @@
+digraph G {
+  // === LAYOUT SETTINGS ===
+  rankdir=TB;
+  
+  // "splines=line" forces strictly straight arrows (no curves, no jaggies).
+  splines=line;
+  
+  // "concentrate=true" merges parallel lines to reduce spaghetti.
+  concentrate=true;
+
+  // High spacing is required for straight lines to look good
+  nodesep=1.2;     
+  ranksep=2.0;
+
+  // Default Styles
+  node [shape=box, style="filled,rounded", fillcolor="white", fontname="Helvetica", fontsize=10, margin="0.2,0.1"];
+  edge [fontname="Helvetica", fontsize=8, color="#444444", arrowsize=0.7];
+
+  // --- External Nodes ---
+  node [fillcolor="#eeeeee", shape=ellipse];
+  post_event;
+  game_over_achievements;
+  main_scene [label="main"];
+  main_easy [label="main.main_easy"];
+
+  // === CLUSTER 1: ROOT SCENE ===
+  subgraph cluster_root {
+    label = "File: root.scene.dry";
+    style = filled;
+    color = "#E3F2FD";
+    node [fillcolor="white"];
+
+    root_init [label="root (Init)"];
+    start_menu;
+    start_menu_2;
+    start_1;
+    pls_player;
+    root_start [label="start (Logic)"];
+    
+    // Sub-group for modes
+    subgraph cluster_modes {
+        label = "Difficulty / Modes";
+        style = dashed;
+        color = "#CE93D8"; // CHANGED: Blue -> Purple for contrast
+        
+        mode_easy [label="1928_easy"];
+        mode_hard [label="1928_hard"];
+        mode_historical [label="1928_historical"];
+        mode_mod [label="1928_mod_mode"];
+        mode_lite [label="1928_mod_mode_lite"];
+        mode_main [label="1928_main"];
+        mode_challenge [label="1928_challenge"];
+        
+        joever_mode;
+        hitler_mode;
+        unemployed_mode;
+        wacky_weimar;
+    }
+  }
+
+  // === CLUSTER 2: MOD INFO ===
+  subgraph cluster_modinfo {
+    label = "File: modinfo.scene.dry";
+    style = filled;
+    color = "#E8F5E9";
+    node [fillcolor="white"];
+
+    modinfo_flavors [label="@flavors"];
+    modinfo_infotext [label="@infotext"];
+    modinfo_faq [label="@faq"];
+    modinfo_paths [label="@paths"];
+    modinfo_changelog [label="@changelog"];
+    modinfo_discord [label="@discord"];
+    modinfo_source [label="@source"];
+
+    // Path Details
+    ddp_paths;
+    dvp_paths;
+    lvp_paths;
+    zentrum_paths;
+    dnvp_paths;
+    full_paths;
+    
+    // Navigation internals
+    modinfo_back [label="back"];
+    modinfo_back2 [label="back2"];
+    modinfo_back3 [label="back3"];
+  }
+
+  // === CLUSTER 3: CREDITS ===
+  subgraph cluster_credits {
+    label = "File: credits.scene.dry";
+    style = filled;
+    color = "#FFF3E0";
+    node [fillcolor="white"];
+
+    credits_menu [label="@credits"];
+    credits_books;
+    credits_articles;
+    credits_images;
+    credits_music;
+  }
+
+  // ================= CONNECTIONS =================
+
+  // 1. Root Initialization
+  root_init -> post_event [label="started=1"];
+  root_init -> start_menu [label="started=0"];
+
+  // 2. Start Menu Flow
+  start_menu -> start_menu_2;
+  start_menu_2 -> start_1 [label="Start"];
+  start_menu_2 -> modinfo_flavors [label="Mod Info"];
+  start_menu_2 -> credits_menu [label="Credits"];
+  start_menu_2 -> game_over_achievements;
+
+  // 3. Start Check
+  start_1 -> root_start [label="if completed"];
+  start_1 -> pls_player [label="if new"];
+  pls_player -> modinfo_infotext [label="Read Info"];
+
+  // 4. Modinfo Internal Flow
+  modinfo_flavors -> modinfo_infotext;
+  modinfo_flavors -> modinfo_faq;
+  modinfo_flavors -> modinfo_paths;
+  modinfo_flavors -> modinfo_changelog;
+  modinfo_flavors -> modinfo_discord;
+  modinfo_flavors -> modinfo_source;
+  modinfo_flavors -> root_start [label="Start"];
+  modinfo_flavors -> start_menu_2 [label="Back"];
+
+  // Sub-menu returns (Infotext/FAQ)
+  modinfo_infotext -> modinfo_flavors;
+  modinfo_faq -> modinfo_flavors;
+  modinfo_source -> modinfo_flavors;
+  modinfo_discord -> modinfo_flavors;
+
+  // Paths Menu
+  modinfo_paths -> ddp_paths;
+  modinfo_paths -> dvp_paths;
+  modinfo_paths -> lvp_paths;
+  modinfo_paths -> zentrum_paths;
+  modinfo_paths -> dnvp_paths;
+  modinfo_paths -> full_paths;
+  modinfo_paths -> modinfo_back;
+  modinfo_paths -> modinfo_back2;
+
+  // Paths Return
+  ddp_paths -> modinfo_paths;
+  dvp_paths -> modinfo_paths;
+  lvp_paths -> modinfo_paths;
+  zentrum_paths -> modinfo_paths;
+  dnvp_paths -> modinfo_paths;
+  full_paths -> modinfo_paths;
+
+  modinfo_back -> modinfo_flavors;
+  
+  // Changelog
+  modinfo_changelog -> modinfo_back3;
+  modinfo_back3 -> modinfo_flavors;
+
+  // 5. Credits Flow
+  credits_menu -> credits_books;
+  credits_menu -> credits_articles;
+  credits_menu -> credits_images;
+  credits_menu -> credits_music;
+  credits_menu -> start_menu_2 [label="Back"];
+
+  credits_books -> credits_menu;
+  credits_articles -> credits_menu;
+  credits_images -> credits_menu;
+  credits_music -> credits_menu;
+
+  // 6. Game Start Logic
+  root_start -> mode_mod [label="Dynamic"];
+  root_start -> mode_easy [label="Easy"];
+  root_start -> mode_main [label="Normal"];
+  root_start -> mode_hard [label="Hard"];
+  root_start -> mode_historical [label="Hist."];
+  root_start -> mode_challenge [label="Custom"];
+
+  mode_easy -> mode_main;
+  mode_hard -> mode_main;
+  mode_historical -> mode_main;
+  mode_mod -> mode_main;
+  mode_lite -> mode_main;
+
+  // Challenge Modes
+  mode_challenge -> joever_mode;
+  mode_challenge -> hitler_mode;
+  mode_challenge -> unemployed_mode;
+  mode_challenge -> wacky_weimar;
+  mode_challenge -> root_start [label="Back"];
+
+  joever_mode -> mode_lite;
+  hitler_mode -> mode_lite;
+  unemployed_mode -> mode_lite;
+  wacky_weimar -> mode_lite;
+
+  // Final Scene Handoff
+  mode_main -> main_scene [label="diff >= 0"];
+  mode_main -> main_easy [label="diff < 0"];
+}
