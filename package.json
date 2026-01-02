@@ -13,12 +13,12 @@
     "url": "git+https://github.com/originn0/dynamic_social_democracy.git"
   },
   "keywords": [],
-  "author": "Autumn Chen",
+  "author": "Astra",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/originn0/dynamic_social_democracy/issues"
+    "url": "https://github.com/AstraDivina/wild_weimar_bizarre_social_democracy"
   },
-  "homepage": "https://github.com/originn0/dynamic_social_democracy",
+  "homepage": "https://github.com/AstraDivina/wild_weimar_bizarre_social_democracy",
   "dependencies": {
     "dendrynexus": "github:originn0/dendrynexus",
     "parliament-svg": "^3.0.0"
