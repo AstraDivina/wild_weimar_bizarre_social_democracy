@@ -46,16 +46,16 @@ new-page: true
 
 = Collapse of the Saxon Cabinet
 
-The [+ saxony_leader +] Cabinet's days are numbered following a dispute over the Saxon Reichsrat delegation's support for the Young Plan, which has led to a loss of confidence from the <span style="color: #3E88B3;">**DNVP**</span>, <span style="color: #11DD11;">**SLV**</span>, and <span style="color: #7A3C00;">**NSDAP**</span>.
+The [+ saxony_leader +] Cabinet's days are numbered following a dispute over the Saxon Reichsrat delegation's support for the Young Plan, which has led to a loss of confidence from the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, <span style="color: #11DD11;">**SLV**</span>, and <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>.
 
-We can either exit the opposition and prop up the cabinet to avoid new elections, or maintain our role in opposition-supporting all votes of no confidences. [? if spd_coalition_possible_saxony >= 50: While a [? if lvp_formed and stegerwald_path: <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span>?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with the liberals could be an option, the strong leftist leanings of the Saxon <span style="color: #c00000;">**SPD**</span> make such an alliance unlikely. ?]
+We can either exit the opposition and prop up the cabinet to avoid new elections, or maintain our role in opposition-supporting all votes of no confidences. [? if spd_coalition_possible_saxony >= 50: While a [? if lvp_formed and stegerwald_path: <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span>?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with the liberals could be an option, the strong leftist leanings of the Saxon <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> make such an alliance unlikely. ?]
 
 - @united_left_saxony
 - @grand_coalition_saxony: We will form a [? if lvp_formed and stegerwald_path: <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span>?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition!
 - @no_majority_saxony
 
 @united_left_saxony
-title: We will form a United Left coalition with the <span style="color: #700000;">**KPD**</span>.
+title: We will form a United Left coalition with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 subtitle: History will repeat itself.
 view-if: left_coalition_saxony >= 50
 choose-if: (kpd_relation >= 35 and kpd_leader == "Conciliators") or (kpd_relation >= 55 and kpd_leader != "Conciliators")
@@ -80,14 +80,14 @@ As one of the most left-wing and industrial states in Germany, we will use our l
 
 @grand_coalition_saxony
 subtitle: We have somehow reconciled with the bourgeois parties, that they're willing to govern with us again.
-unavailable-subtitle: [? if z_relation < 45 and stegerwald_path: We need higher relations with the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. ?][? if dvp_toleration_threshold_fail_saxony: We need higher relations with the [? if not lvp_formed: <span style="color: #C0A054;">DVP</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]. ?][? if left_strength >= 30: Our Saxon organization is too left-wing to even consider this as an option—after all, their stubborn refusal in the past led to the expulsion of the majority of the parliamentary faction and the subsequent formation of the <span style="color: #fe9e00;">ASPD</span>. ?]
+unavailable-subtitle: [? if z_relation < 45 and stegerwald_path: We need higher relations with the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. ?][? if dvp_toleration_threshold_fail_saxony: We need higher relations with the [? if not lvp_formed: <span class="Party PartyDVP" style="color: #C0A054;">DVP</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]. ?][? if left_strength >= 30: Our Saxon organization is too left-wing to even consider this as an option—after all, their stubborn refusal in the past led to the expulsion of the majority of the parliamentary faction and the subsequent formation of the <span style="color: #fe9e00;">ASPD</span>. ?]
 view-if: spd_coalition_saxony >= 50
 choose-if: spd_coalition_possible_saxony and left_strength < 30
 on-arrival: saxony_spd = 1; workers_nsdap -= 3; unemployed_nsdap -= 3; workers_spd += 3; unemployed_spd += 3; z_relation += 3; ddp_relation += 3; lvp_relation += 3; dvp_relation += 5; pro_republic += 3; reformist_dissent -= 15; reformist_strength += 10; aspd_dead = 1
 
 Somehow, the bourgeois parties are willing to form a [? if lvp_formed and stegerwald_path: <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span>?][? if not lvp_formed or not stegerwald_path: Grand?] Coalition with us, replacing the [+ saxony_leader +] Cabinet and preventing the need for new elections.
 
-With the <span style="color: #fe9e00;">**ASPD**</span> (whose Saxon chapter is notably more sane) now convinced of our reformist path, they have rejoined the Saxon <span style="color: #c00000;">**SPD**</span>!
+With the <span style="color: #fe9e00;">**ASPD**</span> (whose Saxon chapter is notably more sane) now convinced of our reformist path, they have rejoined the Saxon <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>!
 
 @no_majority_saxony
 title: A majority can't be found!
@@ -96,4 +96,4 @@ on-arrival: saxony_1930_trigger = 1
 
 As expected, the bourgeois government in Saxony isn't able to survive the vote of no confidence. New elections are called for June, but the [+ saxony_leader +] Cabinet continues to operate as a caretaker government.
 
-This grants an opportunity for the <span style="color: #7A3C00;">**NSDAP**</span> to exploit and capitalize on political instability and the perceived failure of parliamentary democracy.
+This grants an opportunity for the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> to exploit and capitalize on political instability and the perceived failure of parliamentary democracy.

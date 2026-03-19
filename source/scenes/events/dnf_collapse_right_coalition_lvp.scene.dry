@@ -7,9 +7,9 @@ max-visits: 1
 
 = Hugenberg's exit from the coalition
 
-When Hugenberg established his own party, he successfully attracted a significant number of former <span style="color: #3E88B3;">**DNVP**</span> Reichstag members to join his party and to oppose the current right-wing coalition. The current government lacks a majority within the Reichstag and may be taken down with a no-confidence vote.
+When Hugenberg established his own party, he successfully attracted a significant number of former <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Reichstag members to join his party and to oppose the current right-wing coalition. The current government lacks a majority within the Reichstag and may be taken down with a no-confidence vote.
 
-We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties. It would be extremely unpopular within our party to support a government that has the participation of the <span style="color: #3E88B3;">**DNVP**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party.
+We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties. It would be extremely unpopular within our party to support a government that has the participation of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party.
 
 - @bourgeois
 - @vonc_yes
@@ -59,7 +59,7 @@ The right-wing coalition has fallen. New elections have been set for [+ next_ele
 @new_prussia_election
 on-arrival: prussia_coalition_trigger = 1 if right_coalition_prussia < 50
 
-Hugenberg has also attracted some members of the <span style="color: #3E88B3;">**DNVP**</span> to split into the <span style="color: #003755;">**DNF**</span> in the Prussian Landtag too.
+Hugenberg has also attracted some members of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> to split into the <span style="color: #003755;">**DNF**</span> in the Prussian Landtag too.
 
 We have an opportunity to change the composition of the Prussian coalition.
 

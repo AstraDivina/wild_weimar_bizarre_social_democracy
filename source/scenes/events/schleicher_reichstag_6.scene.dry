@@ -86,4 +86,4 @@ Schleicher immediately issues his decree to unconstitutionally adjourn the Reich
 
 In the following days, civil demonstrations are violently suppressed. Police disperse crowds with tear gas, street clashes erupt, and several civilians are killed. The strengthened Reichswehr and the divided stance of <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> make any serious rebellion futile. At least half of the <span style="color: #700000;">**Communist**</span> deputies in the Reichstag are arrested and sent to special courts for inciting violence.
 
-The <span style="color: #c00000;">**SPD**</span> remains largely untouched[? if rb_militancy > 0.1:, though suspicious activity has been reported to be planned against the Reichsbanner?].
+The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> remains largely untouched[? if rb_militancy > 0.1:, though suspicious activity has been reported to be planned against the Reichsbanner?].

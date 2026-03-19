@@ -1,5 +1,5 @@
-title: The <span style="color: #700000;">**KPD**</span> calls a vote of no confidence against the current government!
-subtitle: We have angered the <span style="color: #700000;">**KPD**</span> too much...
+title: The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> calls a vote of no confidence against the current government!
+subtitle: We have angered the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> too much...
 new-page: true
 view-if: spd_in_government = 1 and ((in_popular_front = 1 and kpd_coalition_dissent >= 3) or (in_left_front = 1 and kpd_coalition_dissent >= 4)) and spd_r < 50 and not constructive_vonc
 tags: event
@@ -7,21 +7,21 @@ go-to: menu
 
 = Vote of No Confidence
 
-The <span style="color: #700000;">**KPD**</span> has called a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will be an election in a few months.
+The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> has called a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will be an election in a few months.
 
 @menu
 
 - @try_assuage: Try to assuage them somehow.
-- @support_center: Could we form a new government based on the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if dvp_exist: (and possibly <span style="color: #C0A054;">**DVP**</span>)?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]?
+- @support_center: Could we form a new government based on the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if dvp_exist: (and possibly <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>)?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]?
 - @let_it_happen: Let the vote happen.
 
 @try_assuage
 
-How do we assuage the <span style="color: #700000;">**KPD**</span>?
+How do we assuage the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>?
 
 - @resources: Use our resources to reduce dissent within the coalition.
 - @thalmann: Appoint Thälmann as chancellor instead of [+ chancellor +].
-- @support_center: Could we form a new government based on the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if dvp_exist: (and possibly <span style="color: #C0A054;">**DVP**</span>)?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]?
+- @support_center: Could we form a new government based on the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>[? if dvp_exist: (and possibly <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>)?]?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?]?
 - @let_it_happen: Never mind. Let the vote happen.
 
 @thalmann
@@ -32,9 +32,9 @@ on-arrival: chancellor = "Thälmann"; chancellor_party = "KPD"
 
 With great reluctance, President [+ president +] appoints [+ chancellor +] as chancellor.
 
-Immediately, [+ chancellor +] goes to work building a "<span style="color: #750e0e;">Soviet Germany</span>": consolidating as much power as possible in the <span style="color: #700000;">**KPD**</span>, purging state institutions of anti-<span style="color: #700000;">communists</span>, and sending street fighters against the "enemies of the people".
+Immediately, [+ chancellor +] goes to work building a "<span style="color: #750e0e;">Soviet Germany</span>": consolidating as much power as possible in the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, purging state institutions of anti-<span style="color: #700000;">communists</span>, and sending street fighters against the "enemies of the people".
 
-In response to [+ chancellor +] being appointed Chancellor, the right-wing forces launches almost immediately launch an attempted coup. Troops of the <span style="color: #3E88B3;">**Stahlhelm**</span> and <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> enter Berlin and immediately begin clashing with our supporters! <span style="color: #808080;">Reactionary</span> officers within the Reichswehr have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Stahlhelm**</span> to stop the <span style="color: #700000;">**KPD**</span> from taking power. We are forced to be on the same side as the <span style="color: #700000;">**KPD**</span>, whether we want to or not.
+In response to [+ chancellor +] being appointed Chancellor, the right-wing forces launches almost immediately launch an attempted coup. Troops of the <span style="color: #3E88B3;">**Stahlhelm**</span> and <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> enter Berlin and immediately begin clashing with our supporters! <span style="color: #808080;">Reactionary</span> officers within the Reichswehr have taken their troops out of the barracks and joined them with the <span style="color: #3E88B3;">**Stahlhelm**</span> to stop the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> from taking power. We are forced to be on the same side as the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, whether we want to or not.
 
 - @civil_war
 
@@ -50,9 +50,9 @@ By transferring resources to our coalition partners, we can reduce their dissent
 
 @support_center
 choose-if: (weimar_coalition >= 50 and z_relation >= 40 and (ddp_relation >= 35 or lvp_relation >= 35)) or (grand_coalition >= 50 and z_relation >= 45 and ((dvp_relation >= 30 and ddp_relation >= 40) or lvp_relation >= 40))
-unavailable-subtitle: [? if grand_coalition < 50 : This would not give us a majority. ?] [? if z_relation < 45 : After working with the <span style="color: #700000;">Communists</span>, the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] does not wish to form a coalition with us. ?] [? if dvp_relation < 30 and not lvp_formed and dvp_exist : The <span style="color: #C0A054;">**DVP**</span> would rather see the government fall than rescue us from the <span style="color: #700000;">Communists</span>. ?] [? if ddp_relation < 40 and not lvp_formed : The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is no longer our ally. ?] [? if lvp_relation < 40 and lvp_formed : The <span style="color: #FFCC00;">**LVP**</span> is no longer our ally. ?]
+unavailable-subtitle: [? if grand_coalition < 50 : This would not give us a majority. ?] [? if z_relation < 45 : After working with the <span style="color: #700000;">Communists</span>, the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] does not wish to form a coalition with us. ?] [? if dvp_relation < 30 and not lvp_formed and dvp_exist : The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> would rather see the government fall than rescue us from the <span style="color: #700000;">Communists</span>. ?] [? if ddp_relation < 40 and not lvp_formed : The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is no longer our ally. ?] [? if lvp_relation < 40 and lvp_formed : The <span style="color: #FFCC00;">**LVP**</span> is no longer our ally. ?]
 
-We could try to boot the <span style="color: #700000;">**KPD**</span> from our governing coalition, and form a new government with the bourgeois parties.
+We could try to boot the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> from our governing coalition, and form a new government with the bourgeois parties.
 
 - @election_1928.weimar_coalition: Form a <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition?
 - @election_1928.weimar_coalition_liberal_parliament: Form a <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition?

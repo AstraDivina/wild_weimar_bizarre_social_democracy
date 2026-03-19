@@ -23,7 +23,7 @@ on-arrival: spd_in_government = 0; grand_coalition_collapsed = 1 if in_grand_coa
 
 Fine. If the bourgeoisie wish to blow up the government, let them do so. <span style="color: #c00000;">Socialists</span> will not be complicit in the destruction of the working class.
 
-[? if chancellor_party = "SPD" : Heinrich Brüning of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has been appointed Chancellor. ?] Brüning now leads an all-bourgeois cabinet. Using the emergency powers of Article 48, Brüning and President Hindenburg have passed cuts over the objections of the Reichstag. The <span style="color: #3E88B3;">**DNVP**</span> won't enter a government that is ratifying the Young Plan therefore no majority can be found.
+[? if chancellor_party = "SPD" : Heinrich Brüning of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has been appointed Chancellor. ?] Brüning now leads an all-bourgeois cabinet. Using the emergency powers of Article 48, Brüning and President Hindenburg have passed cuts over the objections of the Reichstag. The <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> won't enter a government that is ratifying the Young Plan therefore no majority can be found.
 
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
@@ -34,13 +34,13 @@ on-arrival: workers_spd -= 0.1*workers_spd; unemployed_spd -= 0.2*unemployed_spd
 
 Unfortunately, we must accept this if we are to maintain this coalition. The <span style="color: #7A3C00;">Nazis</span> and <span style="color: #700000;">**Communists**</span> are waiting in the wings for us to fail, ready to pounce upon the instability that would result from a breakup of the governing coalition.
 
-The workers are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000;">**KPD**</span>'s gain, and even the <span style="color: #7A3C00;">**NSDAP**</span>, those lapdogs of the bourgeoisie, have joined in criticizing us for our austerity.
+The workers are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>'s gain, and even the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, those lapdogs of the bourgeoisie, have joined in criticizing us for our austerity.
 
 @compromise
 unavailable-subtitle: [? if lvp_relation < 25: We do not have good enough relations with the right-wing parties.?] [? if lvp_right - lvp_left > 8: The <span style="color: #FFCC00;">**LVP**</span> industrialists have great control over their party. ?]
 choose-if: lvp_relation >= 25 and (lvp_right - lvp_left < 8)
 
-[? if not stresemann_dead: Stresemann?][? if stresemann_dead: The Stresemannites?] and other friendly figures of the former <span style="color: #C0A054;">**DVP**</span> has managed to rally [? if lvp_ideology == "Right" or lvp_ideology == "Moderate": an extremely slim majority of the party?][? if lvp_ideology == "Left": a majority of the party?] to vote in favor of a compromise that contains cuts to the program without increasing contributions. While this is not an ideal solution, what other choice do we have?
+[? if not stresemann_dead: Stresemann?][? if stresemann_dead: The Stresemannites?] and other friendly figures of the former <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> has managed to rally [? if lvp_ideology == "Right" or lvp_ideology == "Moderate": an extremely slim majority of the party?][? if lvp_ideology == "Left": a majority of the party?] to vote in favor of a compromise that contains cuts to the program without increasing contributions. While this is not an ideal solution, what other choice do we have?
 
 - @accept_compromise_worse: Accept the compromise.
 - @accept_compromise_good: Is it possible to increase contribution rates?

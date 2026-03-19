@@ -1,4 +1,4 @@
-title: The <span style="color: #700000;">**KPD**</span> Is Banned!
+title: The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> Is Banned!
 subtitle: The Interior Ministry discovers "alarming evidence" of a planned revolution.
 view-if: chancellor == "Schleicher" and dsu_in_gov and not dsu_was_gov and dsu_policy and reichstag_joever_time >= 1 and not kpd_explode
 on-arrival: kpd_relation = 40 if kpd_relation < 40
@@ -19,9 +19,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #700000;">**KPD**</span> Is Banned!
+= The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> Is Banned!
 
-Wilhelm Frick of the Interior Ministry has announced an emergency measure, effectively banning the <span style="color: #700000;">**KPD**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**RFB**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Communist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Soviet Germany</span>" in the aftermath of the revolt.
+Wilhelm Frick of the Interior Ministry has announced an emergency measure, effectively banning the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> after conveniently "uncovering" evidence of a planned revolution involving the <span style="color: #700000;">**RFB**</span>—including several warehouses allegedly stocked with weapons. A raid on a <span style="color: #700000;">**Communist**</span> party office has also produced a so-called plan to establish a new "<span style="color: #750e0e;">Soviet Germany</span>" in the aftermath of the revolt.
 
 According to the government, these plans were to be set in motion in protest against Schleicher's unconstitutional adjournment and the mass arrests of <span style="color: #700000;">**Communist**</span> deputies that followed. Only the state's last-minute intervention, they claim, has saved Germany from violent revolt.
 
@@ -92,11 +92,11 @@ audio: music/1930_1933/Einheitsfrontlied.mp3
 
 All <span style="color: #700000;">**Communist**</span> Reichstag members who haven't fled to Moscow are arrested and thrown in forced labor camps, working over 14 hours a day to further public works projects, and more problematic <span style="color: #700000;">**RFB**</span> fighters are given the death penalty en masse, being prosecuted by special local courts. 
 
-<span style="color: #700000;">**Communist**</span> party offices are officially closed down, with the Reichswehr's militia quickly suppressing any public demonstration or attempted armed uprising against the ban. Local mayors belonging to the <span style="color: #700000;">**KPD**</span> are removed by force, and replaced with [? if dnef_formed: <span style="color: #BFC8CC;">**DNEF**</span>?][? if not dnef_formed: Schleicher?] loyalists.
+<span style="color: #700000;">**Communist**</span> party offices are officially closed down, with the Reichswehr's militia quickly suppressing any public demonstration or attempted armed uprising against the ban. Local mayors belonging to the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> are removed by force, and replaced with [? if dnef_formed: <span style="color: #BFC8CC;">**DNEF**</span>?][? if not dnef_formed: Schleicher?] loyalists.
 
 [? if prussia_leader == "Strasser": Furthermore, Strasser has authorized an extensive crackdown on suspected <span style="color: #700000;">Communist</span> members using his authority as Minister-President of Prussia, even if said members don't pose a significant threat. ?]
 
-[? if sapd_formed: Along with the <span style="color: #700000;">**KPD**</span>, the <span style="color: #9B0000;">**SAPD**</span> is seen as complicit and has its members persecuted in the same fashion as the former. Are we really going to allow the government to throw our former party members and comrades into prisons? ?][? if not sapd_formed: Are we really going to allow the government to throw our comrades into prisons? ?]
+[? if sapd_formed: Along with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, the <span style="color: #9B0000;">**SAPD**</span> is seen as complicit and has its members persecuted in the same fashion as the former. Are we really going to allow the government to throw our former party members and comrades into prisons? ?][? if not sapd_formed: Are we really going to allow the government to throw our comrades into prisons? ?]
 
 - @do_nothing
 - @fight_mild
@@ -355,7 +355,7 @@ It must suck for those <span style="color: #700000;">**Communists**</span>, but 
 title: How will the <span style="color: #750e0e;">Soviet Union</span> respond?
 subtitle: The country ironically funding the Reichswehr's secret rearmament.
 
-Despite the <span style="color: #750e0e;">Soviet Union</span> perhaps being indirectly responsible by training the officers battling their <span style="color: #700000;">**Communist**</span> brethren on the streets, many <span style="color: #750e0e;">Soviet</span> politicians are privately outraged as fleeing <span style="color: #700000;">**KPD**</span> politicians spread the news of their party's dissolution.
+Despite the <span style="color: #750e0e;">Soviet Union</span> perhaps being indirectly responsible by training the officers battling their <span style="color: #700000;">**Communist**</span> brethren on the streets, many <span style="color: #750e0e;">Soviet</span> politicians are privately outraged as fleeing <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> politicians spread the news of their party's dissolution.
 
 However, despite this, Stalin has adhered to his policy of secretly aiding Germany in its rearmament through officer training and supplying armament technology. Schleicher's fears have thus subsided for now, with Stalin having near complete control over his party.
 
@@ -367,7 +367,7 @@ choose-if: schleicher_spd_influence < 6
 
 We are in no position to fight a civil war against the full force of the state, but we cannot let Schleicher live without consequences. We have an array of options at our disposal, the [? if not unions_independent: ADGB?][? if unions_independent: workers?] can launch a general strike, and use the Reichsbanner as leverage, if we had maintained its strength. Cracking down on the universally hated <span style="color: #700000;">**RFB**</span> is one thing, but a mass <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> movement?
 
-We don't know if Schleicher will budge. Our former coalition partners and members are skeptical to potentially risk the survival of the <span style="color: #c00000;">**SPD**</span> to protest in solidarity with the <span style="color: #700000;">**Communists**</span>. 
+We don't know if Schleicher will budge. Our former coalition partners and members are skeptical to potentially risk the survival of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> to protest in solidarity with the <span style="color: #700000;">**Communists**</span>. 
 
 Do we continue to bide our time?
 
@@ -565,7 +565,7 @@ on-arrival: hammerstein_win = 1
 
 The general strike proves short-lived. An endless supply of unemployed strikebreakers and Schleicher's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The Reichsbanner is no match for the Reichswehr.
 
-Seizing the moment, Schleicher expands his crackdown, accusing the <span style="color: #c00000;">**SPD**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
+Seizing the moment, Schleicher expands his crackdown, accusing the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
 
 Germany is lost.
 
@@ -622,6 +622,6 @@ This, combined with his blatant constitutional breach just a week ago, has final
 
 Perhaps its our time to strike?
 
-- @civil_war: The <span style="color: #c00000;">**SPD**</span> stands with the <span style="color: #700000;">**Communists**</span>.
+- @civil_war: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> stands with the <span style="color: #700000;">**Communists**</span>.
 - @fight_mild
 - @do_nothing: This isn't our fight.

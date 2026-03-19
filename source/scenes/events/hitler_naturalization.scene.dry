@@ -23,11 +23,11 @@ tags: event
 
 The leader of the <span style="color: #7A3C00;">Nazis</span>, Adolf Hitler, remains a stateless person after renouncing his Austrian citizenship in 1925. Numerous attempts have been made by him and his supporters to secure a civil service appointment, as this would automatically grant him German citizenship under existing law—making it the easiest path to naturalization. Citizenship is a prerequisite for Hitler to become President or Chancellor and would bolster his image as the "Führer of the Germans."
 
-[? if thuringia_nsdap: Wilhelm Frick, former <span style="color: #7A3C00;">**NSDAP**</span> minister in Thuringia, has managed to appoint Hitler as Gendarmerie Commissioner in a small Thuringian town. However, for reasons unknown, Hitler tore up his own certificate of appointment. ?][? if brunswick_hitler: In the small Free State of Brunswick, a <span style="color: #7A3C00;">**NSDAP**</span>-<span style="color: #3E88B3;">**DNVP**</span> coalition has been governing with the support of the bourgeois parties. In an attempt to secure Hitler's citizenship, they sought to appoint him as a professor in secret. However, the scheme was exposed and halted due to his lack of academic qualifications. A parliamentary inquiry is now in progress, but further legal prosecution is blocked by the bourgeois parties. This revelation has tarnished his reputation across Germany. ?]
+[? if thuringia_nsdap: Wilhelm Frick, former <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> minister in Thuringia, has managed to appoint Hitler as Gendarmerie Commissioner in a small Thuringian town. However, for reasons unknown, Hitler tore up his own certificate of appointment. ?][? if brunswick_hitler: In the small Free State of Brunswick, a <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>-<span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> coalition has been governing with the support of the bourgeois parties. In an attempt to secure Hitler's citizenship, they sought to appoint him as a professor in secret. However, the scheme was exposed and halted due to his lack of academic qualifications. A parliamentary inquiry is now in progress, but further legal prosecution is blocked by the bourgeois parties. This revelation has tarnished his reputation across Germany. ?]
 
 With the presidential elections approaching, it is likely that Hitler will make one final attempt to obtain citizenship.
 
-- @brunswick: The [? if dvp_exist: <span style="color: #C0A054;">**DVP**</span>?][? if not dvp_exist:[? if not cvp_formed:<span style="color: #3E88B3;">**DNVP**</span>?][? if cvp_formed:<span style="color: #000000;">**[+ z_party_name +]**</span>?]?], in collaboration with the <span style="color: #7A3C00;">**NSDAP**</span> in Brunswick, appoints Hitler to the civil service.
+- @brunswick: The [? if dvp_exist: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if not dvp_exist:[? if not cvp_formed:<span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if cvp_formed:<span style="color: #000000;">**[+ z_party_name +]**</span>?]?], in collaboration with the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> in Brunswick, appoints Hitler to the civil service.
 - @brunswick_fail: The government of Brunswick attempts once more to appoint Hitler to the civil service.
 - @nothing: With the <span style="color: #7A3C00;">Nazis</span> being excluded from every state government, Hitler remains unable to be naturalized.
 
@@ -35,7 +35,7 @@ With the presidential elections approaching, it is likely that Hitler will make 
 view-if: brunswick_hitler and dvp_ideology == "Right" and dvp_leader == "Dingeldey" and not lvp_formed and not cvp_formed
 on-arrival: hitler_citizen = 1; workers_nsdap += 3; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; unemployed_nsdap += 3; catholics_nsdap += 2; pro_republic -= 3
 
-In order for the <span style="color: #7A3C00;">**NSDAP**</span> to quickly and discreetly grant Hitler citizenship, they had to collaborate with the [? if dvp_exist: <span style="color: #C0A054;">**DVP**</span>?][? if not dvp_exist: <span style="color: #3E88B3;">**DNVP**</span>?], who, while supportive of these efforts, insisted on maintaining an appearance of legality. During a meeting between the two parties, they agreed to give Hitler a position in the Brunswick embassy to the Reichsrat.
+In order for the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> to quickly and discreetly grant Hitler citizenship, they had to collaborate with the [? if dvp_exist: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if not dvp_exist: <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?], who, while supportive of these efforts, insisted on maintaining an appearance of legality. During a meeting between the two parties, they agreed to give Hitler a position in the Brunswick embassy to the Reichsrat.
 
 Following this agreement, a heated debate erupted about whether Hitler would actually fulfill his obligations once he became a civil servant. However, after further reassurances, Hitler was sworn in and officially granted citizenship.
 
@@ -43,13 +43,13 @@ Following this agreement, a heated debate erupted about whether Hitler would act
 view-if: brunswick_hitler and (((dvp_ideology != "Right" or dvp_leader != "Dingeldey") or lvp_formed) or cvp_formed)
 on-arrival: hitler_citizen = 0; pro_republic += 3
 
-In order for the <span style="color: #7A3C00;">**NSDAP**</span> to quickly and discreetly grant Hitler citizenship, they had to collaborate with the [? if not lvp_formed and dvp_exist:<span style="color: #C0A054;">**DVP**</span>?][? if not lvp_formed and not dvp_exist:[? if not cvp_formed:<span style="color: #3E88B3;">**DNVP**</span>?][? if cvp_formed:<span style="color: #000000;">**[+ z_party_name +]**</span>?]?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?], whose radical right-wing elements are in support, but the party as a whole opposes this move. During a meeting between the two parties, no agreement is reached.
+In order for the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> to quickly and discreetly grant Hitler citizenship, they had to collaborate with the [? if not lvp_formed and dvp_exist:<span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if not lvp_formed and not dvp_exist:[? if not cvp_formed:<span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if cvp_formed:<span style="color: #000000;">**[+ z_party_name +]**</span>?]?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?], whose radical right-wing elements are in support, but the party as a whole opposes this move. During a meeting between the two parties, no agreement is reached.
 
 As a result, Hitler will remain a stateless person, and this will damage his reputation as the Führer of the Germans.
 
 @nothing
 choose-if: not brunswick_hitler
-unavailable-subtitle: The <span style="color: #7A3C00;">NSDAP</span> is in control of Brunswick.
+unavailable-subtitle: The <span class="Party PartyNSDAP" style="color: #7A3C00;">NSDAP</span> is in control of Brunswick.
 on-arrival: hitler_citizen = 0; pro_republic += 3; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2
 
 With the <span style="color: #7A3C00;">Nazis</span> being excluded from all *Länders* and *Freistaats*, they are unable to convince their governments to appoint Hitler to civil service.

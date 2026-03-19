@@ -8,7 +8,7 @@ max-visits: 1
 
 = <span style="color: #000000;">Bourgeois</span>-<span style="color: #3E88B3;">Right</span> Government Collapses!
 
-The disagreements between Chancellor [+ chancellor +] and his supporting parties have fallen beyond repair, and the [? if dvp_exist: <span style="color: #C0A054;">**DVP**</span>?][? if not dvp_exist: <span style="color: #3E88B3;">**DNVP**</span> ?] have issued a vote of no confidence against his government, which is expected to be supported by [? if dvp_exist: the <span style="color: #3E88B3;">**DNVP**</span> and ?]the array of special interest parties as well. 
+The disagreements between Chancellor [+ chancellor +] and his supporting parties have fallen beyond repair, and the [? if dvp_exist: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if not dvp_exist: <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> ?] have issued a vote of no confidence against his government, which is expected to be supported by [? if dvp_exist: the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> and ?]the array of special interest parties as well. 
 
 - @great
 

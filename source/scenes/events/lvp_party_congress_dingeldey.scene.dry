@@ -158,7 +158,7 @@ view-if: dingeldey_lead
 on-arrival: lvp_relation -= 6; lvp_right += 5; workers_lvp -= 2; new_middle_lvp -= 2; rural_lvp -= 2; catholics_lvp -= 2; pro_republic -= 5
 face-image: img/portraits/dingeldey.jpg
 
-Unexpectedly—and unfortunately for us—Dingeldey has survived the vote of no confidence. This victory grants him a renewed mandate to further entrench industrial and business interests within the party while adopting an increasingly antagonistic stance toward the <span style="color: #c00000;">**SPD**</span>.
+Unexpectedly—and unfortunately for us—Dingeldey has survived the vote of no confidence. This victory grants him a renewed mandate to further entrench industrial and business interests within the party while adopting an increasingly antagonistic stance toward the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>.
 
 @dingeldey_fail
 title: Dingeldey is ousted!
@@ -225,16 +225,16 @@ Despite this, Dietrich is a huge step up from Dingeldey's leadership, and is ope
 
 @curtius
 title: Julius Curtius is elected!
-subtitle: Curtius was a member of the former <span style="color: #C0A054;">**DVP**</span>, and is a committed Stresemannite and member of their left wing. He has since succeeded Stresemann on foreign policy matters.
+subtitle: Curtius was a member of the former <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and is a committed Stresemannite and member of their left wing. He has since succeeded Stresemann on foreign policy matters.
 unavailable-subtitle: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Dingeldey.
 choose-if: curtius_lead
 view-if: not curtius_resign_lvp and not (curtius_banking_crisis and banking_crisis_seen)
 on-arrival: lvp_relation += 15; lvp_left += 5; lvp_leader = "Curtius"; pro_republic += 5; new_middle_lvp += 6; old_middle_lvp += 2; catholics_lvp += 2
 face-image: img/portraits/curtius.jpg
 
-Julius Curtius, Stresemann's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**DVP**</span>, has won the vote to succeed Luther for the chairmanship. Curtius is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
+Julius Curtius, Stresemann's successor in foreign affairs and a former member of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, has won the vote to succeed Luther for the chairmanship. Curtius is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
 
-As a former member of the <span style="color: #C0A054;">**DVP**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
+As a former member of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
 
 @deadlock
 title: The vote has been deadlocked!

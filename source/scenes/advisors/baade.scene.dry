@@ -7,7 +7,7 @@ new-page: true
 
 = Fritz Baade
 
-Baade is one of the few agricultural experts in the <span style="color: #c00000;">**SPD**</span>, and an unorthodox economist. [? if land_reform > 0: He currently has considerable support among party factions due to the <span style="color: #c00000;">SPD</span> successfully enacting land reform. ?]
+Baade is one of the few agricultural experts in the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, and an unorthodox economist. [? if land_reform > 0: He currently has considerable support among party factions due to the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> successfully enacting land reform. ?]
 
 - @agriculture
 - @rural_campaign
@@ -18,7 +18,7 @@ Baade is one of the few agricultural experts in the <span style="color: #c00000;
 title: Agricultural Policy
 subtitle: Baade is the Minister of Agriculture.
 choose-if: advisor_action_timer <= 0 and spd_in_government and agriculture_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not in government. ?][? if agriculture_minister_party != "SPD": The <span style="color: #c00000;">SPD</span> does not have the Agriculture Ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not in government. ?][? if agriculture_minister_party != "SPD": The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> does not have the Agriculture Ministry. ?]
 on-arrival: advisor_action_timer = 6; agricultural_policy_timer -= 6; last_advisor_action = 1
 go-to: agricultural_policy
 

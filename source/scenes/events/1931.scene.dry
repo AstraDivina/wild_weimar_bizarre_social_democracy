@@ -18,4 +18,4 @@ view-if: year = 1931 and month = 1
 priority: 2
 max-visits: 1
 
-A new year begins. [? if works_program = 0 : Unemployment continues to spiral upwards. The strength of the <span style="color: #7A3C00;">**NSDAP**</span> continues to rise. ?][? if works_program > 0 : A works program has been enacted in order to reduce unemployment. ?] [? if works_program > 0 and unemployed > 15 : However, unemployment remains too high for comfort. ?]
+A new year begins. [? if works_program = 0 : Unemployment continues to spiral upwards. The strength of the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> continues to rise. ?][? if works_program > 0 : A works program has been enacted in order to reduce unemployment. ?] [? if works_program > 0 and unemployed > 15 : However, unemployment remains too high for comfort. ?]

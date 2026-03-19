@@ -13,6 +13,6 @@ Theodor Leipart and the ADGB's vice chairmen have requested a meeting with Chanc
 
 However, Schleicher has used this meeting to discuss the possibility of the ADGB endorsing his planned postponement of new elections, which the organization denounced any potential breach of the constitution. [? if prussia_leader == "Schleicher": "Anti-Schleicher sentiment has grown so much in the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties, that Otto Braun reversed his earlier willingness to join with the chancellor in asking the president to postpone elections unconstitutionally. ?]
 
-However, the obsession of the <span style="color: #c00000;">**SPD**</span> and <span style="color: #000000;">Center Party</span> to prevent a breach of the constitution by Schleicher or Papen at all costs has caused many leaders, with the possible exception of Braun, to lose sight of the real peril: [+ nsdap_chancellor +]'s appointment to the chancellorship.
+However, the obsession of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and <span style="color: #000000;">Center Party</span> to prevent a breach of the constitution by Schleicher or Papen at all costs has caused many leaders, with the possible exception of Braun, to lose sight of the real peril: [+ nsdap_chancellor +]'s appointment to the chancellorship.
 
 - @root: Need not to worry, after all, Hindenburg will never appoint [+ nsdap_chancellor +]!

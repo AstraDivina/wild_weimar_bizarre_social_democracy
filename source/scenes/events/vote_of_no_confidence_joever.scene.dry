@@ -13,14 +13,14 @@ Due to the formation of the <span style="color: #000000;">**[+ z_party_name +]**
 @vonc_menu
 
 - @social_liberal_coalition: Can we form a <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition?
-- @support_kpd: Could we get the <span style="color: #700000;">**KPD**</span> to abstain?
+- @support_kpd: Could we get the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> to abstain?
 - @let_it_happen: Let the vote happen.
 
 @social_liberal_coalition
 title: We can form a <span style="color: #c00000;">Social</span>-[? if not lvp_formed: <span style="color: #D3C24D;">Liberal</span>?][? if lvp_formed: <span style="color: #FFCC00;">Liberal</span>?] Coalition.
-subtitle: <span style="color: #c00000;">**SPD**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] ([+ social_liberal_coalition +]%)
+subtitle: <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed:<span style="color: #FFCC00;">**LVP**</span>?] ([+ social_liberal_coalition +]%)
 view-if: social_liberal_coalition >= 50 and liberal_parliament == 0 and bourgeois_parliament_ddp == 0 and cvp_formed
-unavailable-subtitle: <span style="color: #c00000;">SPD</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed:<span style="color: #FFCC00;">LVP</span>?] ([+ social_liberal_coalition +]%) [? if not ((ddp_relation >= 65 and ddp_ideology == "Right") or (ddp_relation >= 55 and ddp_ideology == "Moderate") or (ddp_relation >= 45 and ddp_ideology == "Left")) and not lvp_formed: - We do not have the adequate relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. ?] [? if not ((lvp_relation >= 75 and lvp_ideology == "Right") or (lvp_relation >= 65 and lvp_ideology == "Moderate") or (lvp_relation >= 55 and lvp_ideology == "Left")) and lvp_formed: - We do not have adequate relations with the <span style="color: #FFCC00;">**LVP**</span> ?]
+unavailable-subtitle: <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed:<span style="color: #FFCC00;">LVP</span>?] ([+ social_liberal_coalition +]%) [? if not ((ddp_relation >= 65 and ddp_ideology == "Right") or (ddp_relation >= 55 and ddp_ideology == "Moderate") or (ddp_relation >= 45 and ddp_ideology == "Left")) and not lvp_formed: - We do not have the adequate relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. ?] [? if not ((lvp_relation >= 75 and lvp_ideology == "Right") or (lvp_relation >= 65 and lvp_ideology == "Moderate") or (lvp_relation >= 55 and lvp_ideology == "Left")) and lvp_formed: - We do not have adequate relations with the <span style="color: #FFCC00;">**LVP**</span> ?]
 choose-if: ((((ddp_relation >= 65 and ddp_ideology == "Right") or (ddp_relation >= 55 and ddp_ideology == "Moderate") or (ddp_relation >= 45 and ddp_ideology == "Left")) and not lvp_formed) or (((lvp_relation >= 75 and lvp_ideology == "Right") or (lvp_relation >= 65 and lvp_ideology == "Moderate") or (lvp_relation >= 55 and lvp_ideology == "Left")) and lvp_formed))
 on-arrival: leverage = spd_r
 go-to: election_1928.social_liberal_coalition_cvp
@@ -29,11 +29,11 @@ go-to: election_1928.social_liberal_coalition_cvp
 choose-if: (in_grand_coalition and communist_coalition >= 3 and kpd_relation >= 50 and popular_front_coalition >= 50) or (in_weimar_coalition and kpd_relation >= 50 and left_coalition >= 50 and communist_coalition >= 3)
 view-if: tried_supporting_kpd = 0
 on-arrival: tried_supporting_kpd = 1
-unavailable-subtitle: [? if communist_coalition < 3 : The <span style="color: #700000;">KPD</span> won't take part in parliamentary government. ?] [? if kpd_relation < 50 : The <span style="color: #700000;">KPD</span> is not friendly enough with us. ?] [? if (left_coalition < 50 and in_weimar_coalition) or (popular_front_coalition < 50 and in_grand_coalition): The <span style="color: #700000;">KPD</span> does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the <span style="color: #700000;">KPD</span>. ?]
+unavailable-subtitle: [? if communist_coalition < 3 : The <span class="Party PartyKPD" style="color: #700000;">KPD</span> won't take part in parliamentary government. ?] [? if kpd_relation < 50 : The <span class="Party PartyKPD" style="color: #700000;">KPD</span> is not friendly enough with us. ?] [? if (left_coalition < 50 and in_weimar_coalition) or (popular_front_coalition < 50 and in_grand_coalition): The <span class="Party PartyKPD" style="color: #700000;">KPD</span> does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the <span class="Party PartyKPD" style="color: #700000;">KPD</span>. ?]
 
-If the <span style="color: #700000;">**Communists**</span> abstain, then we essentially can maintain a minority government[? if president=="Hindenburg":, although it would be very difficult to make policy without the support of President Hindenburg, which we do not have ?]. If this happens, then we will own a massive debt to the <span style="color: #700000;">**KPD**</span>. This could lead to broader cooperation in the future, for better or for worse.
+If the <span style="color: #700000;">**Communists**</span> abstain, then we essentially can maintain a minority government[? if president=="Hindenburg":, although it would be very difficult to make policy without the support of President Hindenburg, which we do not have ?]. If this happens, then we will own a massive debt to the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>. This could lead to broader cooperation in the future, for better or for worse.
 
-- @support_kpd_2: Persuade the <span style="color: #700000;">**KPD**</span> to "tolerate" us?
+- @support_kpd_2: Persuade the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> to "tolerate" us?
 - @let_it_happen: Never mind. Let the vote happen.
 
 @support_kpd_2
@@ -41,7 +41,7 @@ on-arrival: communist_coalition += 1; workers_kpd += 3; kpd_relation += 5
 go-to: support_kpd_weimar if in_weimar_coalition; support_kpd_grand if in_grand_coalition
 
 
-The <span style="color: #700000;">**KPD**</span> is not interested in a "toleration" arrangement; they will only support us if they can participate in the government as part of a coalition. And, if this toleration agreement happens, the right-wing parties will not be inclined to support us. 
+The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is not interested in a "toleration" arrangement; they will only support us if they can participate in the government as part of a coalition. And, if this toleration agreement happens, the right-wing parties will not be inclined to support us. 
 
 @support_kpd_grand
 on-arrival: support_kpd_grand = 1

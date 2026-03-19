@@ -21,7 +21,7 @@ title: Chancellor Brüning is sacked!
 subtitle: President Hindenburg dismisses the government.
 go-to: successor_menu
 
-Former Chancellor Brüning has been dismissed—despite commanding a parliamentary majority. It appears Schleicher has struck an unwritten deal with the <span style="color: #7A3C00;">**NSDAP**</span>, promising “fruitful cooperation” with a new right-wing cabinet that[? if sa_nationwide_ban:&nbsp;lifted the ban on the <span style="color: #7A3C00;">**SA**</span> and?] called for new Reichstag elections.
+Former Chancellor Brüning has been dismissed—despite commanding a parliamentary majority. It appears Schleicher has struck an unwritten deal with the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, promising “fruitful cooperation” with a new right-wing cabinet that[? if sa_nationwide_ban:&nbsp;lifted the ban on the <span style="color: #7A3C00;">**SA**</span> and?] called for new Reichstag elections.
 
 It’s a shame that Schleicher would fall for [+ nsdap_leader +]’s lies. But the real question now is: who will succeed Brüning?
 
@@ -33,25 +33,25 @@ It’s a shame that Schleicher would fall for [+ nsdap_leader +]’s lies. But t
 
 @goerdeler
 title: Carl Friedrich Goerdeler?
-subtitle: The Reich Price Commissioner and the Mayor of Leipzig. [? if dnvp_ideology == "Radical": Former?] <span style="color: #3E88B3;">**DNVP**</span> member.
+subtitle: The Reich Price Commissioner and the Mayor of Leipzig. [? if dnvp_ideology == "Radical": Former?] <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> member.
 max-visits: 1
 on-arrival: goerdeler_seen = 1
 face-image: img/portraits/goerdeler.jpg
 go-to: successor_menu
 
-To most political observers, Carl Goerdeler, Mayor of Leipzig and the Reich Prize Commissioner, and being a fiscal conservative arguing for a wide reaching reforms of the German welfare state and finances, was the expected successor to Brüning, with his name even being floated around as the Minister-President of Prussia of a <span style="color: #000000;">Center</span>-<span style="color: #7A3C00;">**NSDAP**</span> coalition.
+To most political observers, Carl Goerdeler, Mayor of Leipzig and the Reich Prize Commissioner, and being a fiscal conservative arguing for a wide reaching reforms of the German welfare state and finances, was the expected successor to Brüning, with his name even being floated around as the Minister-President of Prussia of a <span style="color: #000000;">Center</span>-<span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> coalition.
 
 However, his demands for authorization of sweeping fiscal reforms is too similar to that of Brüning in Schleicher's eyes, who supports a public works solution to Germany's economic woes. Goerdeler will not be the new chancellor.
 
 @westarp
 title: Kuno von Westarp?
-subtitle: Hindenburg's preferred choice, and [? if dnvp_leader != "Westarp":former?] <span style="color: #3E88B3;">**DNVP**</span> party leader.
+subtitle: Hindenburg's preferred choice, and [? if dnvp_leader != "Westarp":former?] <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> party leader.
 max-visits: 1
 on-arrival: westarp_seen = 1
 face-image: img/portraits/Kuno_von_Westarp.jpg
 go-to: successor_menu
 
-Hindenburg's personal preference is the [? if dnvp_leader != "Westarp":former?] <span style="color: #3E88B3;">**DNVP**</span> leader that played a critical role in securing Hindenburg's reelection. The two has maintained contact over the past years, and share a hatred of Hugenberg. Despite this, in a meeting with Hindenburg, Westarp has declined the chancellorship and argued against dismissing Brüning, and against new elections that would destroy the German middle parties.
+Hindenburg's personal preference is the [? if dnvp_leader != "Westarp":former?] <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> leader that played a critical role in securing Hindenburg's reelection. The two has maintained contact over the past years, and share a hatred of Hugenberg. Despite this, in a meeting with Hindenburg, Westarp has declined the chancellorship and argued against dismissing Brüning, and against new elections that would destroy the German middle parties.
 
 Even when Hindenburg was reduced to tears, a strategy that had worked on Brüning before, Westarp remains firm in his refusal. Westarp will not be the new chancellor.
 
@@ -68,4 +68,4 @@ Papen's decision to take the chancellorship, despite [+ z_leader +]'s urging and
 
 It's unknown of the exact reasons why Schleicher would choose a man like Papen as Brüning's successor, but we can assume he was trying to secure the support of the <span style="color: #000000;">Center Party</span> and <span style="color: #7A3C00;">Nazis</span>, as he's a far-right member of the former, and that Papen would be an easy person to control.
 
-Time will tell if the <span style="color: #7A3C00;">**NSDAP**</span> will honor its promises to Schleicher, which they'd purposefully refused to write on paper.
+Time will tell if the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> will honor its promises to Schleicher, which they'd purposefully refused to write on paper.

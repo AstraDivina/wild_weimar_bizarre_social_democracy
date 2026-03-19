@@ -9,7 +9,7 @@ tags: govt_affairs
 
 = Dealing with Toleration
 
-We are currently providing external support to the government of Chancellor [+ chancellor +], but our influence has been severely weakened due to the formation of the <span style="color: #000000;">**[+ z_party_name +]**</span> by former <span style="color: #3E88B3;">**DNVP**</span> members. Furthermore, the <span style="color: #000000;">**[+ z_party_name +]**</span> is actively trying to distance itself from our support. How should we use our position?
+We are currently providing external support to the government of Chancellor [+ chancellor +], but our influence has been severely weakened due to the formation of the <span style="color: #000000;">**[+ z_party_name +]**</span> by former <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> members. Furthermore, the <span style="color: #000000;">**[+ z_party_name +]**</span> is actively trying to distance itself from our support. How should we use our position?
 
 - @break_toleration
 - @urge_against_austerity_limited
@@ -47,7 +47,7 @@ A double dissolution has shaken the people's faith in democracy, with the <span 
 @center_right_coalition_prussia
 on-arrival: in_center_right_coalition_prussia = 1; in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 0; in_minority_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_far_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; spd_prussia = 0; right_prussia = 0; ddp_in_popular_front_prussia = 0; kpd_goals_seen_prussia = 0; spd_toleration_prussia = 0; prussia_coalition_trigger = 0; prussia_leader = "Stegerwald"; prussia_leader = "Brüning" if z_leader == "Stegerwald"; new_middle_spd -= 3; z_relation -= 4; ddp_relation -= 4; lvp_relation -= 4; dvp_right += 3; ddp_right += 2; pro_republic -= 3; prussian_police_loyalty -= 0.06; prussian_police_strength -= 8; 
 
-The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has called a retaliatory no confidence vote in Prussia, replacing our government with a center-right coalition composed of all parties to our right, except for the <span style="color: #003755;">**DNF**</span> and <span style="color: #7A3C00;">**NSDAP**</span>. While this is a setback, it is not the worst possible outcome, as new elections could have led to significant gains for extremist parties.
+The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has called a retaliatory no confidence vote in Prussia, replacing our government with a center-right coalition composed of all parties to our right, except for the <span style="color: #003755;">**DNF**</span> and <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>. While this is a setback, it is not the worst possible outcome, as new elections could have led to significant gains for extremist parties.
 
 [? if z_leader != "Stegerwald": Adam Stegerwald?][? if z_leader == "Stegerwald": Heinrich Brüning?] of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is selected to be the Minister-President of Prussia.
 
@@ -72,7 +72,7 @@ The motion passes! Despite the historically strict party discipline within the f
 title: Improve relations with the parties of the coalition.
 on-arrival: z_relation += 4*(1-dissent); dvp_relation += 3*(1-dissent); ddp_relation += 3*(1-dissent); lvp_relation += 3*(1-dissent); left_dissent += 5; dvp_left += 1; ddp_left += 0.5; ddp_cohesion -= 0.5; lvp_left += 1; dnvp_angry += 1 if spd_toleration_right
 
-We have increased our level of contact and discussions with the parties of the coalition, primarily the [? if not lvp_formed and dvp_exist:and <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed:and <span style="color: #FFCC00;">**LVP**</span>?] and, to some extent, the <span style="color: #000000;">**CVP**</span>. However, the <span style="color: #3E88B3;">nationalist</span> elements of the <span style="color: #000000;">**CVP**</span> continue to obstruct our efforts to foster constructive cooperation with Brüning.
+We have increased our level of contact and discussions with the parties of the coalition, primarily the [? if not lvp_formed and dvp_exist:and <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if lvp_formed:and <span style="color: #FFCC00;">**LVP**</span>?] and, to some extent, the <span style="color: #000000;">**CVP**</span>. However, the <span style="color: #3E88B3;">nationalist</span> elements of the <span style="color: #000000;">**CVP**</span> continue to obstruct our efforts to foster constructive cooperation with Brüning.
 
 Our attempts to reach out to the center-right are met with disdain from the leftists within our party.
 

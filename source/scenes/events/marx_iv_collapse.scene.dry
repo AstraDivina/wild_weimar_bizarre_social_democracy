@@ -19,7 +19,7 @@ on-display: {!
 
 = Right-wing Coalition Dissolved
 
-The right-wing coalition comprising the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], <span style="color: #A2D8E0;">**BVP**</span>, <span style="color: #C0A054;">**DVP**</span>, and <span style="color: #3E88B3;">**DNVP**</span>, led by Chancellor Wilhelm Marx, has been declared dissolved by the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] due to conflicts over school law regulations. While most coalition members supported the law, the <span style="color: #C0A054;">**DVP**</span> expressed concerns, advocating for the primacy of interdenominational schools and seeking to limit the church's influence.
+The right-wing coalition comprising the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], <span style="color: #A2D8E0;">**BVP**</span>, <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, led by Chancellor Wilhelm Marx, has been declared dissolved by the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] due to conflicts over school law regulations. While most coalition members supported the law, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> expressed concerns, advocating for the primacy of interdenominational schools and seeking to limit the church's influence.
 
 With talks having collapsed, new elections are scheduled for May, and the government will continue in a caretaker capacity.
 
@@ -39,9 +39,9 @@ title: Reach out to Marx, offering to form a governing majority.
 subtitle: I'm sorry, what?
 go-to: confirmation
 
-We *could* reach out to the <span style="color: #000000ff;">Center</span> to negotiate a coalition without the <span style="color: #3E88B3;">**DNVP**</span>, offering to mediate their disputes with the <span style="color: #C0A054;">**DVP**</span> over the regulation of school law, but should we, really?
+We *could* reach out to the <span style="color: #000000ff;">Center</span> to negotiate a coalition without the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, offering to mediate their disputes with the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> over the regulation of school law, but should we, really?
 
-The collapse of the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> cabinet would benefit the <span style="color: #c00000;">**SPD**</span>, and any attempt to stabilize the government would only harm our electoral prospects.
+The collapse of the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> cabinet would benefit the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, and any attempt to stabilize the government would only harm our electoral prospects.
 
 Are we really going through with this?
 
@@ -52,11 +52,11 @@ Are we really going through with this?
 
 @yeah
 title: The stability of the <span style="color: #000000;">We</span><span style="color: #c00000;">im</span><span style="color: #D3C24D;">ar</span> system is more important; reach out to the <span style="color: #000000;">Center</span>.
-subtitle: We will attempt to form a 'Grand Coalition' with the <span style="color: #A2D8E0;">**BVP**</span> and <span style="color: #C0A054;">**DVP**</span>. The <span style="color: #A61610;">**Left**</span> will be greatly displeased.
+subtitle: We will attempt to form a 'Grand Coalition' with the <span style="color: #A2D8E0;">**BVP**</span> and <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>. The <span style="color: #A61610;">**Left**</span> will be greatly displeased.
 on-arrival: z_relation += 2; ddp_relation += 1; dvp_relation += 1; ddp_left += 0.5; dbp_left += 0.5; pro_republic += 1;
 go-to: confirmation2
 
-Fine. We reached out to the outgoing Marx Cabinet as well as President Hindenburg, offering to mediate the dispute that had brought down the government in exchange for the <span style="color: #c00000;">**SPD**</span>'s entry into the cabinet.
+Fine. We reached out to the outgoing Marx Cabinet as well as President Hindenburg, offering to mediate the dispute that had brought down the government in exchange for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s entry into the cabinet.
 
 While we expected to be laughed out of the room and told to get lost, Marx actually appeared quite supportive of our initiative to salvage his chancellorship and pushed the <span style="color: #000000ff;">Center</span> to the negotiating table, bringing Stresemann and Koch-Weser along for the ride.
 
@@ -81,7 +81,7 @@ go-to: confirmation3
 
 The negotiations were, quite predictably, short-lived. Any sort of compromise proved impossible as neither side was willing to budge on the issue.
 
-Still, our attempt at mediation earned us some goodwill among the <span style="color: #C0A054;">**DVP**</span> delegates.
+Still, our attempt at mediation earned us some goodwill among the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> delegates.
 
 In the end, it was all a waste of time as President Hindenburg made it clear he would not tolerate a glorified caretaker government including the <span style="color: #c00000;">Social Democrats</span>, a sentiment hardly surprising given the President’s track record.
 
@@ -97,8 +97,8 @@ on-arrival: marx_election_delay = 1; next_election_month = 6; next_election_time
 
 Quite expectedly, our attempt to form a government destined to collapse within ten months failed, wasting precious political capital that could have been spent on campaigning. The <span style="color: #A61610;">**Left**</span> is understandably upset over the entire ordeal and has begun to question the leadership’s ability to advance <span style="color: #c00000;">Social Democracy</span>. A few of our core supporters have even drifted toward the <span style="color: #700000;">**Communists**</span> as a result of our failed negotiations.
 
-Marx’s eagerness to secure <span style="color: #c00000;">**SPD**</span> support for his rump cabinet has completely shattered whatever influence he still held within the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] with many now calling for his resignation. In an effort to regain the confidence of his colleagues, a party congress has been scheduled for July, following the election.
+Marx’s eagerness to secure <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> support for his rump cabinet has completely shattered whatever influence he still held within the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] with many now calling for his resignation. In an effort to regain the confidence of his colleagues, a party congress has been scheduled for July, following the election.
 
-In any case, our task now is to salvage whatever we can in the hopes of maintaining our lead. For what it’s worth, the <span style="color: #C0A054;">**DVP**</span> appears more willing to enter government with us.
+In any case, our task now is to salvage whatever we can in the hopes of maintaining our lead. For what it’s worth, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> appears more willing to enter government with us.
 
 New elections have been set for June 1928.

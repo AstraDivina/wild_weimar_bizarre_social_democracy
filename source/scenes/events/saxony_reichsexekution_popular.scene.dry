@@ -22,4 +22,4 @@ on-arrival: red_saxony = 0; workers_spd -= 5; workers_kpd -= 5; unemployed_kpd -
 
 The <span style="color: #700000;">communists</span> protesting in the streets are brutally suppressed, with the Reichswehr patrolling the streets, restricting political gatherings, and turning a blind eye to the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> as they harass local party officials.
 
-Hindenburg appoints [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] member Erwin Baum as <i>Reichskommissar</i> to govern Saxony, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**RFB**</span>.
+Hindenburg appoints [? if not lvp_formed: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] member Erwin Baum as <i>Reichskommissar</i> to govern Saxony, tasked with dismantling our reforms and violently suppressing the <span style="color: #700000;">**RFB**</span>.

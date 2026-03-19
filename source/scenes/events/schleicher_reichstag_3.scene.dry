@@ -27,7 +27,7 @@ go-to: schleicher_reichstag_menu
 
 = Reichstag Reconvocation Decision
 
-The Reichstag, which Schleicher had urged to reconvene as soon as possible, is set to revisit its earlier decision to reconvene next week. The outcome will determine when the inevitable confrontation between the Schleicher cabinet and a hostile parliament will occur. The <span style="color: #700000;">**KPD**</span> and <span style="color: #c00000;">**SPD**</span> spokesmen support reconvening the chamber as planned, while the <span style="color: #7A3C00;">**NSDAP**</span>'s spokesman, Wilhelm Frick, has adopted a noticeably less confrontational tone.
+The Reichstag, which Schleicher had urged to reconvene as soon as possible, is set to revisit its earlier decision to reconvene next week. The outcome will determine when the inevitable confrontation between the Schleicher cabinet and a hostile parliament will occur. The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> and <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> spokesmen support reconvening the chamber as planned, while the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>'s spokesman, Wilhelm Frick, has adopted a noticeably less confrontational tone.
 
 Frick shares many of Strasser’s concerns about [+ nsdap_leader +]’s all-or-nothing stance and fears that a new election would bring disastrous <span style="color: #7A3C00;">Nazi</span> losses. Yet even figures like Goebbels believe they need more time, and the top <span style="color: #7A3C00;">Nazi</span> leaders have pushed Frick to propose delaying the reconvening until the cabinet can present its budget in a few months.
 

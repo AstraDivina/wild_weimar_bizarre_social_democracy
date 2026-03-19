@@ -8,27 +8,27 @@ tags: event
 go-to: vonc_menu
 
 # Options: spend relations to reduce coalition_dissent, ask for kpd to abstain
-# (lmao <span style="color: #700000;">**KPD**</span> toleration arc...)
+# (lmao <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> toleration arc...)
 
 = Vote of No Confidence
 
-[? if in_grand_coalition and not lvp_formed: The <span style="color: #C0A054;">**DVP**</span> ?][? if (in_grand_coalition or in_social_liberal_coalition) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> ?][? if in_weimar_coalition or in_popular_front or in_minority_government and not in_social_liberal_coalition: The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?][? if lvp_formed and not in_social_catholic_coalition:&nbsp;and <span style="color: #FFCC00;">**LVP**</span>?]?][? if in_social_liberal_coalition and not lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?] has called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will likely be an election in a few months.
+[? if in_grand_coalition and not lvp_formed: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> ?][? if (in_grand_coalition or in_social_liberal_coalition) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> ?][? if in_weimar_coalition or in_popular_front or in_minority_government and not in_social_liberal_coalition: The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?][? if lvp_formed and not in_social_catholic_coalition:&nbsp;and <span style="color: #FFCC00;">**LVP**</span>?]?][? if in_social_liberal_coalition and not lvp_formed: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> ?] has called for a vote of no confidence against us, due to our various policies and disagreements. If this succeeds, there will likely be an election in a few months.
 
 @vonc_menu
 
 - @try_assuage: Try to assuage our partners.
-- @support_kpd: Could we get the <span style="color: #700000;">**KPD**</span> to abstain?
+- @support_kpd: Could we get the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> to abstain?
 - @let_it_happen: Let the vote happen.
 
 @try_assuage
 
 How do we assuage our partners?
 
-- @dvp_prussia_2: Let the <span style="color: #C0A054;">**DVP**</span> into Prussia.
+- @dvp_prussia_2: Let the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> into Prussia.
 - @give_up_prussia: Give up on leadership of Prussia.
 - @austerity: Enact a massive austerity plan.
 - @resources: Use our resources to reduce dissent within the coalition.
-- @support_kpd: Could we get the <span style="color: #700000;">**KPD**</span> to abstain?
+- @support_kpd: Could we get the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> to abstain?
 - @let_it_happen: Never mind. Let the vote happen.
 
 @dvp_prussia_2
@@ -37,7 +37,7 @@ choose-if: z_leader != "Kaas"
 unavailable-subtitle: [? if z_leader = "Kaas": Kaas and the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] strongly dissents against. ?]
 on-arrival: in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 1; in_minority_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_center_right_coalition_prussia = 0; in_far_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; ddp_in_popular_front_prussia = 0; kpd_goals_seen_prussia = 0; spd_toleration_prussia = 0; dvp_relation += 10; z_relation -= 5; ddp_relation += 3; coalition_dissent -= 1; left_dissent += 5; in_grand_coalition_prussia = 1; dvp_left += 3; new_middle_dvp += 3
 
-Letting the <span style="color: #C0A054;">**DVP**</span> into the Prussian government is an offer too good for them to refuse, no matter their leadership. 
+Letting the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> into the Prussian government is an offer too good for them to refuse, no matter their leadership. 
 
 However, this has negatively impacted our freedom of action we previously had in the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> coalition.
 
@@ -59,7 +59,7 @@ Fine. We enacted a massive austerity program to cut welfare, in order to maintai
 @resources
 view-if: secularized = 0
 choose-if: (resources >= 3 and in_weimar_coalition or in_popular_front or in_minority_government) or ((resources >= 3 and in_grand_coalition and not (dvp_ideology == "Right" and year >= 1930) and not lvp_formed) or (resources >= 3 and (in_grand_coalition or in_weimar_coalition) and not (lvp_ideology == "Right" and year >= 1930) and lvp_formed))
-unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (dvp_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**DVP**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> doesn't want our resources anymore. ?]
+unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (dvp_ideology == "Right" and year >= 1930) and not lvp_formed: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> doesn't want our resources anymore. ?]
 subtitle: -3 resources
 on-arrival: resources -= 3; coalition_dissent -= 1;
 
@@ -69,11 +69,11 @@ By transferring resources to our coalition partners, we can reduce their dissent
 choose-if: ((in_grand_coalition and communist_coalition >= 3 and kpd_relation >= 50 and kpd_r >= dvp_r and not lvp_formed) or (in_grand_coalition and communist_coalition >= 3 and kpd_relation >= 50 and kpd_r >= (lvp_r / 2) and lvp_formed)) or (in_weimar_coalition and kpd_relation >= 50 and kpd_r >= z_r and communist_coalition >= 3)
 view-if: tried_supporting_kpd = 0
 on-arrival: tried_supporting_kpd = 1
-unavailable-subtitle: [? if communist_coalition < 3 : The <span style="color: #700000;">KPD</span> won't take part in parliamentary government. ?] [? if kpd_relation < 50 : The <span style="color: #700000;">KPD</span> is not friendly enough with us. ?] [? if ((in_grand_coalition and kpd_r < dvp_r and not lvp_formed) or (in_grand_coalition and kpd_r < (lvp_r / 2) and lvp_formed)) or (in_weimar_coalition and kpd_r < z_r): The <span style="color: #700000;">KPD</span> does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the <span style="color: #700000;">KPD</span>. ?]
+unavailable-subtitle: [? if communist_coalition < 3 : The <span class="Party PartyKPD" style="color: #700000;">KPD</span> won't take part in parliamentary government. ?] [? if kpd_relation < 50 : The <span class="Party PartyKPD" style="color: #700000;">KPD</span> is not friendly enough with us. ?] [? if ((in_grand_coalition and kpd_r < dvp_r and not lvp_formed) or (in_grand_coalition and kpd_r < (lvp_r / 2) and lvp_formed)) or (in_weimar_coalition and kpd_r < z_r): The <span class="Party PartyKPD" style="color: #700000;">KPD</span> does not have enough votes. ?] [? if in_popular_front : We are already in a Popular Front with the <span class="Party PartyKPD" style="color: #700000;">KPD</span>. ?]
 
-If the <span style="color: #700000;">**Communists**</span> abstain, then we essentially can maintain a minority government[? if president=="Hindenburg":, although it would be very difficult to make policy without the support of President Hindenburg, which we do not have ?]. If this happens, then we will own a massive debt to the <span style="color: #700000;">**KPD**</span>. This could lead to broader cooperation in the future, for better or for worse.
+If the <span style="color: #700000;">**Communists**</span> abstain, then we essentially can maintain a minority government[? if president=="Hindenburg":, although it would be very difficult to make policy without the support of President Hindenburg, which we do not have ?]. If this happens, then we will own a massive debt to the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>. This could lead to broader cooperation in the future, for better or for worse.
 
-- @support_kpd_2: Persuade the <span style="color: #700000;">**KPD**</span> to "tolerate" us?
+- @support_kpd_2: Persuade the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> to "tolerate" us?
 - @let_it_happen: Never mind. Let the vote happen.
 
 @support_kpd_2
@@ -81,7 +81,7 @@ on-arrival: communist_coalition += 1; workers_kpd += 3; kpd_relation += 5
 go-to: support_kpd_weimar if in_weimar_coalition; support_kpd_grand if in_grand_coalition
 
 
-The <span style="color: #700000;">**KPD**</span> is not interested in a "toleration" arrangement; they will only support us if they can participate in the government as part of a coalition. And, if this toleration agreement happens, the right-wing parties will not be inclined to support us. 
+The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is not interested in a "toleration" arrangement; they will only support us if they can participate in the government as part of a coalition. And, if this toleration agreement happens, the right-wing parties will not be inclined to support us. 
 
 @support_kpd_grand
 on-arrival: support_kpd_grand = 1

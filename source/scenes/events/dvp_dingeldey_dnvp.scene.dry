@@ -1,5 +1,5 @@
-title: The <span style="color: #C0A054;">**DVP**</span> and <span style="color: #3E88B3;">**DNVP**</span> Conclude an Alliance!
-subtitle: Is there anything "liberal" left in the <span style="color: #C0A054;">**DVP**</span>?
+title: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> and <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Conclude an Alliance!
+subtitle: Is there anything "liberal" left in the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?
 view-if: papen_time == 5 and not lvp_formed and not bourgeois_parliament and not bourgeois_list and dvp_exist and dvp_leader == "Dingeldey" and dnvp_ideology == "Radical"
 on-arrival: dvp_left += 2 if dvp_relation >= 35; dvp_left += 2 if in_grand_coalition
 max-visits: 1
@@ -7,19 +7,19 @@ tags: event
 face-image: img/dvpposter.jpg
 new-page: true
 
-= <span style="color: #C0A054;">**DVP**</span> and <span style="color: #3E88B3;">**DNVP**</span> Alliance
+= <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> and <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Alliance
 
-With new elections approaching, the <span style="color: #C0A054;">**DVP**</span> is likely to be pushed into irrelevance by the surging <span style="color: #7A3C00;">**NSDAP**</span>. In an effort to ensure his party's survival, Dingeldey has concluded an alliance with Hugenberg and the <span style="color: #3E88B3;">**DNVP**</span>.
+With new elections approaching, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> is likely to be pushed into irrelevance by the surging <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>. In an effort to ensure his party's survival, Dingeldey has concluded an alliance with Hugenberg and the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>.
 
-While Dingeldey insists that the pact is purely technical and does not compromise the party’s political integrity, it proves to be the final straw for the <span style="color: #C0A054;">**DVP**</span>'s left wing. An accommodation with the anti-democratic and "socially reactionary" Hugenberg is widely seen as a betrayal of the <span style="color: #98C22C;">National Liberal</span> legacy that Stresemann and the founders of the <span style="color: #C0A054;">**DVP**</span> once championed.
+While Dingeldey insists that the pact is purely technical and does not compromise the party’s political integrity, it proves to be the final straw for the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing. An accommodation with the anti-democratic and "socially reactionary" Hugenberg is widely seen as a betrayal of the <span style="color: #98C22C;">National Liberal</span> legacy that Stresemann and the founders of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> once championed.
 
 - @dvp_left_split
 
 @dvp_left_split
-title: The <span style="color: #C0A054;">**DVP**</span>'s left wing splits!
+title: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing splits!
 on-arrival: hugenberg_dvp = 1; old_middle_dvp *= 0.8; new_middle_dvp *= 0.5; catholics_dvp *= 0.8; pro_republic -= 3; liberal_cooperation -= 10; bourgeois_cooperation -= 10; dvp_right += 25; dvp_relation -= 50
 face-image: img/dvp_poster_2.jpg
 
-Those on the <span style="color: #C0A054;">**DVP**</span>'s left wing who had quietly opposed Dingeldey's turn to the right have now resigned en masse. Hans Bechly, Frank Glatzel, and Otto Thiel—prominent figures within the white-collar DHV union—have also stepped down, with Bechly being the longtime chairman of the association.
+Those on the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing who had quietly opposed Dingeldey's turn to the right have now resigned en masse. Hans Bechly, Frank Glatzel, and Otto Thiel—prominent figures within the white-collar DHV union—have also stepped down, with Bechly being the longtime chairman of the association.
 
-With their exodus, the party’s last remaining link to the German white-collar movement has been severed, along with a significant portion of its electoral base. The only consolation Dingeldey can claim is that the party’s loss in seats will be somewhat mitigated by its electoral connection to the <span style="color: #3E88B3;">**DNVP**</span>.
+With their exodus, the party’s last remaining link to the German white-collar movement has been severed, along with a significant portion of its electoral base. The only consolation Dingeldey can claim is that the party’s loss in seats will be somewhat mitigated by its electoral connection to the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>.

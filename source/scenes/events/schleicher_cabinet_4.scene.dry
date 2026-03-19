@@ -29,7 +29,7 @@ Following the Camarilla’s meeting with Papen and [+ nsdap_leader +], Schleiche
 
 The course Schleicher pursues is one of three options developed by his colleagues in the Defense Ministry. The first two involve unconstitutional maneuvers: either postponing elections or forcing the Reichstag into indefinite adjournment.
 
-The third option, however, is more intriguing—a constructive vote of no confidence. Legal advisors have identified a loophole in the Republic’s constitution: while a hostile Reichstag majority can pass a no-confidence vote, it cannot unite to support a new cabinet. In the event of <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #700000;">**KPD**</span> “cooperation,” this mechanism could paralyze governance.
+The third option, however, is more intriguing—a constructive vote of no confidence. Legal advisors have identified a loophole in the Republic’s constitution: while a hostile Reichstag majority can pass a no-confidence vote, it cannot unite to support a new cabinet. In the event of <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> and <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> “cooperation,” this mechanism could paralyze governance.
 
 To remedy this, the Defense Ministry proposes a constitutional amendment requiring the Reichstag to propose a viable replacement cabinet alongside any no-confidence motion—thereby curbing purely negative obstruction.
 
@@ -64,6 +64,6 @@ In the end, Hindenburg is only willing to provide a dissolution decree, but then
 view-if: schleicher_cabinet_smart
 on-arrival: schleicher_explode = 0; constructive_vonc = 1; constructive_schleicher = 1
 
-With Schleicher himself unsure of Hindenburg's support, and the <span style="color: #c00000;">**SPD**</span> likely to support the third option—and potentially convince other <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties to do the same—he now sees a new avenue out of the political deadlock.
+With Schleicher himself unsure of Hindenburg's support, and the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> likely to support the third option—and potentially convince other <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties to do the same—he now sees a new avenue out of the political deadlock.
 
 The chancellor has therefore cancelled his planned test of loyalty with Hindenburg, along with his intended resignation in the event of rejection or a no-confidence vote from the Reichstag. All that remains is Hindenburg's acquiescence.

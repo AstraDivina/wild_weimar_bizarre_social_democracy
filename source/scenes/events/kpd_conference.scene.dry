@@ -1,23 +1,23 @@
-title: <span style="color: #700000;">**KPD**</span> Party Conference
-subtitle: The <span style="color: #700000;">**KPD**</span> chooses their new central committee - will the Wittorf Affair have an influence on their choice?
+title: <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> Party Conference
+subtitle: The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> chooses their new central committee - will the Wittorf Affair have an influence on their choice?
 new-page: true
 view-if: kpd_relation >= 50 and wittorf_soviet_union = 1 and year = 1929 and month >= 6 and month <= 8
 max-visits: 1
 on-arrival: kpd_party_conference_seen = 1
 tags: event
 
-= <span style="color: #700000;">**KPD**</span> Party Conference
+= <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> Party Conference
 
-Now is the <span style="color: #700000;">**KPD**</span>'s national party conference, where they will choose their new leadership. The shadow of the Wittorf Affair hangs over it. On one hand are the hardline supporters of Thälmann, who support a "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>" policy that places the <span style="color: #c00000;">**SPD**</span> as equivalent to the <span style="color: #7A3C00;">Nazis</span>. On the other hand is the "Conciliator" faction, who support a more cooperative policy towards the <span style="color: #c00000;">**SPD**</span>.
+Now is the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>'s national party conference, where they will choose their new leadership. The shadow of the Wittorf Affair hangs over it. On one hand are the hardline supporters of Thälmann, who support a "<span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>" policy that places the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> as equivalent to the <span style="color: #7A3C00;">Nazis</span>. On the other hand is the "Conciliator" faction, who support a more cooperative policy towards the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>.
 
-After our discussion with the <span style="color: #940000;">Soviets</span>, we are inclined to believe that <span style="color: #8B0000;">Stalin</span> is at least open to the Conciliators. In order to affect the <span style="color: #700000;">**KPD**</span>'s leadership elections, we have to influence both the <span style="color: #D50000;">Comintern</span> leaders as as well as the <span style="color: #700000;">**KPD**</span> membership.
+After our discussion with the <span style="color: #940000;">Soviets</span>, we are inclined to believe that <span style="color: #8B0000;">Stalin</span> is at least open to the Conciliators. In order to affect the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>'s leadership elections, we have to influence both the <span style="color: #D50000;">Comintern</span> leaders as as well as the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> membership.
 
 - @conciliator_success
 - @conciliator_fail
 
 
 @conciliator_success
-title: The Conciliators are the new leadership of the <span style="color: #700000;">**KPD**</span>.
+title: The Conciliators are the new leadership of the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 choose-if: (levi_advisor or rosenfeld_advisor) and (left_strength >= reformist_strength) and (kpd_relation >= 50) 
 unavailable-subtitle: [?  if not levi_advisor and not rosenfeld_advisor: Our party leadership is not left-wing enough. ?] [? if left_strength < reformist_strength: The <span style="color: #D50000;">Comintern</span> doubts our commitment to <span style="color: #c00000;">socialism</span>. ?]
 on-arrival: kpd_leader = "Conciliators"; communist_coalition += 3; kpd_relation += 10*(1-dissent); left_strength += 5; left_dissent -= 8; pro_republic += (kpd_votes / 2)
@@ -29,4 +29,4 @@ With our support, the Conciliators have won the leadership contest! The new lead
 @conciliator_fail
 title: Thälmann retains his leadership position.
 
-Unfortunately, we could not influence the <span style="color: #700000;">**KPD**</span> leadership election against the hardliners. Thälmann quickly moves to consolidate absolute leadership, expelling or exiling his opponents.
+Unfortunately, we could not influence the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> leadership election against the hardliners. Thälmann quickly moves to consolidate absolute leadership, expelling or exiling his opponents.

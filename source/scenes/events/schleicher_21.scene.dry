@@ -1,4 +1,4 @@
-title: The <span style="color: #c00000;">**SPD**</span> Slips Away
+title: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> Slips Away
 subtitle: We handed Schleicher too much influence over us.
 view-if: chancellor = "Schleicher" and dnef_formed and schleicher_spd_influence >= 10
 new-page: true
@@ -33,7 +33,7 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #c00000;">**SPD**</span> Slips Away
+= The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> Slips Away
 
 Low-ranking party members loyal to Schleicher have steadily climbed the ranks, until a new executive committee finally replaces the old guard that had served the party since the founding of the republic.
 

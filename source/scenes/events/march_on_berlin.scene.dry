@@ -66,14 +66,14 @@ achievement: drei_pfeile
 
 Our forces confront the <span style="color: #7A3C00;">fascists</span>, and somehow, the <span style="color: #7A3C00;">fascists</span> retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now.
 
-The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**SPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
+The show of force has reinvigorated support for the republic and for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
 
 @fight_2_win_2
 on-arrival: coup_progress = 0; pro_republic += 5; workers_nsdap -= 2*(1-dissent); unemployed_nsdap -= 2*(1-dissent); new_middle_nsdap -= 2*(1-dissent); rb_strength *= 0.9; sa_strength *= 0.9; sh_strength *= 0.9
 
 Our forces confront the <span style="color: #7A3C00;">fascists</span>, and somehow, the <span style="color: #7A3C00;">fascists</span> retreat! They were overwhelmed by our display of strength, and have chosen to slink away. The attempted coup is over, at least for now.
 
-The show of force has reinvigorated support for the republic and for the <span style="color: #c00000;">**SPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
+The show of force has reinvigorated support for the republic and for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
 
 
 @fight_2_pre_civil_war
@@ -177,7 +177,7 @@ choose-if: (nsdap_normalized >= 0.5 or largest_party == "NSDAP") and president !
 unavailable-subtitle: There is no way President [+ president +] could do such a blatantly undemocratic act. [? if president == "Rosenfeld": Rosenfeld would never do this, no matter the circumstances. ?]
 on-arrival: chancellor = "Hitler"; chancellor_party = "NSDAP"; spd_in_government = 0
 
-Threatened with a civil war, and unwilling to fight anymore, President [+ president +] dismisses the current government and appoints Hitler of the <span style="color: #7A3C00;">**NSDAP**</span> as chancellor.
+Threatened with a civil war, and unwilling to fight anymore, President [+ president +] dismisses the current government and appoints Hitler of the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> as chancellor.
 
 @rosenfeld_appoints_strasser
 title: We cannot do anything but appoint Strasser chancellor.
@@ -186,7 +186,7 @@ choose-if: time >= hitler_explode and hitler_explode
 unavailable-subtitle: There is no way President [+ president +] could do such a blatantly undemocratic act.
 on-arrival: chancellor = "Strasser"; chancellor_party = "NSDAP"; spd_in_government = 0
 
-Threatened with a civil war, and unwilling to fight anymore, President [+ president +] dismisses the current government and appoints Strasser of the <span style="color: #7A3C00;">**NSDAP**</span> as chancellor.
+Threatened with a civil war, and unwilling to fight anymore, President [+ president +] dismisses the current government and appoints Strasser of the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> as chancellor.
 
 - @hitler_takes_power
 

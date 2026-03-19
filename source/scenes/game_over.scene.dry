@@ -94,7 +94,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
       this.achieve('sohn_seiner_klasse');
   }
   // Die Rote Fahne - join the KPD in the May Day march.
-  // Mehrheitspartei - form an <span style="color: #c00000;">**SPD**</span> majority government in the Reichstag.
+  // Mehrheitspartei - form an <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> majority government in the Reichstag.
   // Panik im Mittelstand - have over 50% of New Middle Class support.
   if (Q.new_middle_spd_normalized && Q.new_middle_spd_normalized >= 50) {
       this.achieve('panik_im_mittelstand');
@@ -356,7 +356,7 @@ title: Adolf Hitler is in undisputed control over Germany.
 tags: endings
 go-to: eg_menu
 
-Adolf Hitler is in undisputed control over Germany. The <span style="color: #c00000;">**SPD**</span>, along with all of the democratic forces, have failed.
+Adolf Hitler is in undisputed control over Germany. The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, along with all of the democratic forces, have failed.
 
 [? if civil_war_seen == 1 : At the very least, we fought back. Perhaps our resistance will be celebrated in an impossible-to-forsee future. ?]
 
@@ -385,7 +385,7 @@ title: Despite the deportation of Hitler, the <span style="color: #7A3C00;">Nazi
 tags: endings
 go-to: eg_menu
 
-<p>Despite the deportation of Hitler, the <span style="color: #7A3C00;">**NSDAP**</span> has somehow still wormed its way into power.</p> [? if long_war == 1 : We are fighting them for control of Germany. ?]
+<p>Despite the deportation of Hitler, the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> has somehow still wormed its way into power.</p> [? if long_war == 1 : We are fighting them for control of Germany. ?]
 
 
 @civil_war_won
@@ -429,7 +429,7 @@ view-if: president == "Rosenfeld"
 tags: endings
 go-to: eg_menu
 
-Kurt Rosenfeld has been elected as President of Germany. He had never desired to be the most powerful man in Germany, but together with the <span style="color: #700000;">**KPD**</span>, we are in for a <span style="color: #9B0000;">socialist</span> future.
+Kurt Rosenfeld has been elected as President of Germany. He had never desired to be the most powerful man in Germany, but together with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, we are in for a <span style="color: #9B0000;">socialist</span> future.
 
 @president_schumacher
 title: Kurt Schumacher victorious
@@ -437,7 +437,7 @@ view-if: president == "Schumacher"
 tags: endings
 go-to: eg_menu
 
-Kurt Schumacher has been elected as President of Germany. As a young and ambitious <span style="color: #c00000;">**SPD**</span> member, he will be shaping Germany for years to come.
+Kurt Schumacher has been elected as President of Germany. As a young and ambitious <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> member, he will be shaping Germany for years to come.
 
 @president_grzesinski
 title: Albert Grzesinski victorious
@@ -445,7 +445,7 @@ view-if: president == "Grzesinski"
 tags: endings
 go-to: eg_menu
 
-Albert Grzesinski has been elected President of Germany. As a young and ambitious <span style="color: #c00000;">**SPD**</span> member, he will be shaping Germany for years to come.
+Albert Grzesinski has been elected President of Germany. As a young and ambitious <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> member, he will be shaping Germany for years to come.
 
 @president_wels
 title: Otto Wels victorious
@@ -453,7 +453,7 @@ view-if: president == "Wels"
 tags: endings
 go-to: eg_menu
 
-Otto Wels has been elected President of Germany. What a long journey it has been for the <span style="color: #c00000;">**SPD**</span>'s chairman through the Republic. He will be shaping Germany for years to come.
+Otto Wels has been elected President of Germany. What a long journey it has been for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s chairman through the Republic. He will be shaping Germany for years to come.
 
 @president_juchacz
 title: Marie Juchacz is President
@@ -474,15 +474,15 @@ Albert Einstein, possibly the most famous scientist in the world, has been elect
 
 
 @spd_victorious
-title: <span style="color: #c00000;">**SPD**</span> still in government
+title: <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> still in government
 view-if: spd_in_government == 1 and chancellor_party == "SPD" and total_defeat == 0 and long_war == 0 and not schleicher_spd
 tags: endings
 go-to: eg_menu
 
-The <span style="color: #c00000;">**SPD**</span> is still in government, under Chancellor [+ chancellor +]. Given the circumstances, this is a substantial accomplishment.
+The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is still in government, under Chancellor [+ chancellor +]. Given the circumstances, this is a substantial accomplishment.
 
 @spd_victorious_2
-title: The <span style="color: #c00000;">**SPD**</span> is victorious?
+title: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is victorious?
 view-if: total_defeat == 0 and long_war == 0 and schleicher_spd and wtb_implemented
 tags: endings
 go-to: eg_menu
@@ -497,7 +497,7 @@ view-if: chancellor_party == "KPD" or president == "Thälmann" and total_defeat 
 tags: endings
 go-to: eg_menu
 
-The <span style="color: #700000;">**KPD**</span> has won power in Germany, with our assistance. They will try to remake Germany in the <span style="color: #750e0e;">Soviet</span> image. How much they succeed is yet to be determined.
+The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> has won power in Germany, with our assistance. They will try to remake Germany in the <span style="color: #750e0e;">Soviet</span> image. How much they succeed is yet to be determined.
 
 @works_program
 title: Works program enacted!
@@ -535,20 +535,20 @@ Unemployment is still at dangerously high levels. Even though Hitler is not in p
 
 
 @emergency_government
-title: <span style="color: #c00000;">**SPD**</span> ruling in an emergency government.
+title: <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> ruling in an emergency government.
 view-if: in_emergency_government == 1
 tags: endings
 go-to: eg_menu
 
-The <span style="color: #c00000;">**SPD**</span> is ruling as part of an emergency minority government, led by President [+ president +] and Chancellor [+ chancellor +]. This is a temporary and unstable arrangement, leaving the door open to further <span style="color: #808080;">authoritarianism</span>.
+The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is ruling as part of an emergency minority government, led by President [+ president +] and Chancellor [+ chancellor +]. This is a temporary and unstable arrangement, leaving the door open to further <span style="color: #808080;">authoritarianism</span>.
 
 @peoples_party_achieved
-title: The <span style="color: #c00000;">**SPD**</span> is a "People's Party".
+title: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is a "People's Party".
 view-if: peoples_party == 1
 tags: endings
 go-to: eg_menu
 
-The <span style="color: #c00000;">**SPD**</span> has been declared a "People's Party", representing all of the people, not just the working class. This policy has many supporters and detractors, and what will become of the party is still unclear.
+The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> has been declared a "People's Party", representing all of the people, not just the working class. This policy has many supporters and detractors, and what will become of the party is still unclear.
 
 @nationalization_achieved
 title: Socialization of the economy has commenced.

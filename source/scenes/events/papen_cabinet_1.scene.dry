@@ -22,9 +22,9 @@ on-display: {!
 
 Franz von Papen has unveiled his new cabinet—assembled almost entirely on Schleicher’s recommendations. Vorwärts wasted no time branding it the “Cabinet of Barons,” with six members drawn from the nobility and only three being commoners. The overtly anti-social character of the cabinet has already alienated the vast majority of the country and firmly sealed Papen’s vast unpopularity among the German people.
 
-The only party formally represented in the cabinet is the <span style="color: #3E88B3;">**DNVP**</span>, which holds three ministries. The remaining posts are occupied by right-wing independents, in line with Papen’s stated goal of forming a government "free from party influence." Schleicher has been promoted to Defense Minister, where he intends to steer the administration from behind the scenes.
+The only party formally represented in the cabinet is the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, which holds three ministries. The remaining posts are occupied by right-wing independents, in line with Papen’s stated goal of forming a government "free from party influence." Schleicher has been promoted to Defense Minister, where he intends to steer the administration from behind the scenes.
 
-At present, only Hugenberg’s [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] are prepared to back the cabinet when the Reichstag reconvenes.
+At present, only Hugenberg’s [? if dnvp_ideology == "Radical": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] are prepared to back the cabinet when the Reichstag reconvenes.
 
 - @papen
 
@@ -34,7 +34,7 @@ on-arrival: workers_spd += 2; workers_kpd += 2; pro_republic -= 3
 
 In his first radio address to the German people, Papen laid out the ideological direction of his government. He denounced previous administrations for steering Germany toward "<span style='color: #9B0000;'>state socialism</span>," blaming them for the "moral decay" wrought by an "unholy class war" and "cultural <span style='color: #9B0000;'>Bolshevism</span>." He also condemned the transformation of Germany into a welfare state and seeks to reverse our progress over the years.
 
-As Vorwärts puts it, this marks "a unique declaration of class war from above." The <span style="color: #c00000;">**SPD**</span>—and even more so the <span style="color: #700000;">**Communists**</span>—after months of decline, are poised for resurgence as the battle between the barons and the people begins. Moreover, if the <span style="color: #7A3C00;">**NSDAP**</span> were to back this cabinet, it could trigger a collapse in their popular support.
+As Vorwärts puts it, this marks "a unique declaration of class war from above." The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>—and even more so the <span style="color: #700000;">**Communists**</span>—after months of decline, are poised for resurgence as the battle between the barons and the people begins. Moreover, if the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> were to back this cabinet, it could trigger a collapse in their popular support.
 
 - @papen_2
 
@@ -44,6 +44,6 @@ subtitle: As part of Schleicher's promise to [+ nsdap_leader +].
 view-if: next_election_time >= time+1
 on-arrival: next_election_time = time+1 if next_election_time >= time+1; next_election_month = month + 1 if next_election_time >= time+1; next_election_year = year if next_election_time >= time+1; next_election_year += 1 if next_election_month > 12; next_election_month -= 12 if next_election_month > 12; next_election_week = week + 7; next_election_week -= 4 if next_election_week > 4; next_election_week -= 4 if next_election_week > 4; next_election_week = 4 if next_election_week == 0
 
-Papen has dissolved the Reichstag to spark new elections, as apart of their promise to the <span style="color: #7A3C00;">**NSDAP**</span> and the hope that they'll win the most seats in the Reichstag, allowing Papen a majority needed to establish an authoritarian government.
+Papen has dissolved the Reichstag to spark new elections, as apart of their promise to the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> and the hope that they'll win the most seats in the Reichstag, allowing Papen a majority needed to establish an authoritarian government.
 
 New Reichstag elections are set for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].

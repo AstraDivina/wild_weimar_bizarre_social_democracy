@@ -7,7 +7,7 @@ new-page: true
 
 = Julius Leber
 
-Leber is a former army officer who turned against the military leaders of the Kapp Putsch in 1920, helping us put down the army's attempted coup. He is in favor of expanded democracy and building a broad popular base for the <span style="color: #c00000;">**SPD**</span>.
+Leber is a former army officer who turned against the military leaders of the Kapp Putsch in 1920, helping us put down the army's attempted coup. He is in favor of expanded democracy and building a broad popular base for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>.
 
 - @democratic_rally
 - @military_affairs
@@ -29,7 +29,7 @@ Leber helps us to rally the people in defense of democracy.
 title: Military affairs
 subtitle: We can set our military policy.
 choose-if: advisor_action_timer == 0 and spd_in_government and reichswehr_minister_party == "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not in government. ?][? if reichswehr_minister_party != "SPD": The <span style="color: #c00000;">SPD</span> does not have the Reichswehr ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not in government. ?][? if reichswehr_minister_party != "SPD": The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> does not have the Reichswehr ministry. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: military_policy
 

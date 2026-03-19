@@ -29,7 +29,7 @@ on-arrival: in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_
 
 Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
-The Reichstag is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Nazis</span> pass decrees giving them unlimited power. They, combined with the [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
+The Reichstag is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Nazis</span> pass decrees giving them unlimited power. They, combined with the [? if dnvp_ideology == "Radical": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
 
 Germany is lost.
 

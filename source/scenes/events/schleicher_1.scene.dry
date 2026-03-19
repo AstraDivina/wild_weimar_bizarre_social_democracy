@@ -1,5 +1,5 @@
-title: A Meeting Between the Reichswehr and <span style="color: #7A3C00;">**NSDAP**</span>
-subtitle: <span style="color: #c00000;">**SPD**</span> intelligence has obtained knowledge of a secret meeting...
+title: A Meeting Between the Reichswehr and <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>
+subtitle: <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> intelligence has obtained knowledge of a secret meeting...
 view-if: chancellor = "Papen" and papen_time == 8
 on-arrival: red_general_unlock = 1
 new-page: true
@@ -20,7 +20,7 @@ on-display: {!
 
 = Secret Reichswehr Meeting
 
-Through our intelligence work, the <span style="color: #c00000;">**SPD**</span> has received a copy of minutes of a meeting between <span style="color: #7A3C00;">Nazi</span> leaders Gregor Strasser, Hermann Göring, and [? if not rohm_explode: Ernst Röhm?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**SA**</span>?], with former General Edwin von Stülpnagel, a close ally of Schleicher.
+Through our intelligence work, the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> has received a copy of minutes of a meeting between <span style="color: #7A3C00;">Nazi</span> leaders Gregor Strasser, Hermann Göring, and [? if not rohm_explode: Ernst Röhm?][? if rohm_explode: the leader of the <span style="color: #7A3C00;">**SA**</span>?], with former General Edwin von Stülpnagel, a close ally of Schleicher.
 
 The topic of the conference was about possible joint action between the Reichswehr and the <span style="color: #7A3C00;">**SA**</span>, if the leftists were to make a move following the elections.
 
@@ -41,7 +41,7 @@ on-arrival: schleicher_spd_r += 1; schleicher_spd_support += 1; labor_dissent +=
 
 The invitation for a direct meeting between Theodor Leipart, leader of the ADGB, and von Schleicher is declined. Instead, a larger meeting is held, including Papen, his Interior Minister, and the ADGB’s co-chairs.
 
-At the meeting, the union leaders confront Schleicher over alleged secret agreements with the <span style="color: #7A3C00;">**SA**</span>, prompting both Schleicher and Papen to strike a more conciliatory tone in response to union complaints about unfair government treatment. Schleicher denies any such deals with the <span style="color: #7A3C00;">**SA**</span>, insisting that the government's highest priority is reducing unemployment. Papen also requests the unions to use their influence to persuade the <span style="color: #c00000;">**SPD**</span> to give the government time to deliver results.
+At the meeting, the union leaders confront Schleicher over alleged secret agreements with the <span style="color: #7A3C00;">**SA**</span>, prompting both Schleicher and Papen to strike a more conciliatory tone in response to union complaints about unfair government treatment. Schleicher denies any such deals with the <span style="color: #7A3C00;">**SA**</span>, insisting that the government's highest priority is reducing unemployment. Papen also requests the unions to use their influence to persuade the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> to give the government time to deliver results.
 
 By the end of the meeting, the three unionists are left impressed by Schleicher, who hints at possible concessions to a “patriotic labor movement.” A line of communication between the ADGB and the government remains open—much to Wels’s frustration, as he aims to maintain a united front against the regime.
 

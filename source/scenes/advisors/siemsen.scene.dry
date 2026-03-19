@@ -26,7 +26,7 @@ go-to: rally.pacifism
 @curriculum_
 title: Change the educational curriculum.
 choose-if: advisor_action_timer = 0 and spd_in_government and chancellor_party = "SPD" and (prussia_leader == "Braun" or prussia_leader == "Rosenfeld") and curriculum_timer = 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not currently in government. ?][? if chancellor_party != "SPD": The <span style="color: #c00000;">SPD</span> must control the chancellorship. ?][? if prussia_leader != "Braun" and prussia_leader != "Rosenfeld": The <span style="color: #c00000;">SPD</span> must control the Prussian Minister-President position. ?][? if curriculum_timer > 0 : It is too early to change the curriculum again. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not currently in government. ?][? if chancellor_party != "SPD": The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> must control the chancellorship. ?][? if prussia_leader != "Braun" and prussia_leader != "Rosenfeld": The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> must control the Prussian Minister-President position. ?][? if curriculum_timer > 0 : It is too early to change the curriculum again. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: education_science.curriculum
 
@@ -34,6 +34,6 @@ go-to: education_science.curriculum
 @structure_
 title: Change the structure and funding of education.
 choose-if: advisor_action_timer = 0 and spd_in_government and chancellor_party = "SPD" and (prussia_leader == "Braun" or prussia_leader == "Rosenfeld")
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not currently in government. ?][? if chancellor_party != "SPD": The <span style="color: #c00000;">SPD</span> must control the chancellorship. ?][? if prussia_leader != "Braun" and prussia_leader != "Rosenfeld": The <span style="color: #c00000;">SPD</span> must control the Prussian Minister-President position. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not currently in government. ?][? if chancellor_party != "SPD": The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> must control the chancellorship. ?][? if prussia_leader != "Braun" and prussia_leader != "Rosenfeld": The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> must control the Prussian Minister-President position. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: education_science.structure

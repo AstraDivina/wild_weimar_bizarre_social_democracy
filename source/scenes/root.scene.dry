@@ -1569,7 +1569,7 @@ Here, you can test your skills.
 
 @joever_mode
 title: <div style="text-align: center;"><img src="img/joever.png" alt="Joever"></div>
-subtitle: The <span style="color: #c00000;">**SPD**</span> will start with 0% support.
+subtitle: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> will start with 0% support.
 on-arrival: {!
 Q.workers_spd = 0;
 Q.new_middle_spd = 0;
@@ -1649,7 +1649,7 @@ go-to: 1928_mod_mode_lite
 
 @hitler_mode
 title: Democracy Under Siege
-subtitle: The <span style="color: #7A3C00;">**NSDAP**</span> will start with 40% support, and cannot peak.
+subtitle: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> will start with 40% support, and cannot peak.
 on-arrival: {!
 Q.hitler_mode = 1;
 

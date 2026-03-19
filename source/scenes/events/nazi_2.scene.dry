@@ -19,11 +19,11 @@ on-display: {!
 
 = Transport Strike in Berlin
 
-In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between the BVG (Berlin Transport Company) and our own <span style="color: #c00000;">socialist</span> union, the Gesamtverband. Although the wage cuts have been reduced by roughly 90% due to the Gesamtverband's efforts, the <span style="color: #700000;">**RGO**</span> (the <span style="color: #700000;">**KPD**</span>'s union) has vehemently protested the change.
+In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between the BVG (Berlin Transport Company) and our own <span style="color: #c00000;">socialist</span> union, the Gesamtverband. Although the wage cuts have been reduced by roughly 90% due to the Gesamtverband's efforts, the <span style="color: #700000;">**RGO**</span> (the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>'s union) has vehemently protested the change.
 
-The <span style="color: #700000;">**KPD**</span> is not protesting a modest reduction in the BVG workers’ relatively high wages—employees also benefit from company housing and sports clubs—but is seeking a political strike instead. Despite having a smaller share of workers, the <span style="color: #700000;">**RGO**</span> holds a stronger position due to the formation of "unity committees," which they dominate. Now, a newly formed strike committee that includes the Gesamtverband and the <span style="color: #7A3C00;">**NSBO**</span>, the <span style="color: #7A3C00;">Nazi</span> union, is set to vote on whether to proceed with the strike.
+The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is not protesting a modest reduction in the BVG workers’ relatively high wages—employees also benefit from company housing and sports clubs—but is seeking a political strike instead. Despite having a smaller share of workers, the <span style="color: #700000;">**RGO**</span> holds a stronger position due to the formation of "unity committees," which they dominate. Now, a newly formed strike committee that includes the Gesamtverband and the <span style="color: #7A3C00;">**NSBO**</span>, the <span style="color: #7A3C00;">Nazi</span> union, is set to vote on whether to proceed with the strike.
 
-With extensive <span style="color: #700000;">**KPD**</span> and <span style="color: #7A3C00;">Nazi</span> propaganda spreading throughout the workforce, our local union is left with no choice but to hold a vote among the entire workforce, rather than just union members.
+With extensive <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> and <span style="color: #7A3C00;">Nazi</span> propaganda spreading throughout the workforce, our local union is left with no choice but to hold a vote among the entire workforce, rather than just union members.
 
 # TODO
 
@@ -45,7 +45,7 @@ Through our active efforts to rally reluctant workers—despite the strike being
 title: The strike has begun.
 on-arrival:  workers_spd += 2; workers_kpd += 2; unemployed_spd += 2; unemployed_kpd += 2; pro_republic -= 8
 
-Three days before the election, the strike brings all public transport in Berlin to a halt, gaining significant sympathy among the city's working class. The <span style="color: #700000;">**KPD**</span> and <span style="color: #7A3C00;">**NSDAP**</span> quickly back the strikers, each hoping to make a breakthrough among working-class voters. However, the <span style="color: #c00000;">**SPD**</span> benefits the most, as most strikers are from the Gesamtverband, reigniting worker support for the party.
+Three days before the election, the strike brings all public transport in Berlin to a halt, gaining significant sympathy among the city's working class. The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> and <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> quickly back the strikers, each hoping to make a breakthrough among working-class voters. However, the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> benefits the most, as most strikers are from the Gesamtverband, reigniting worker support for the party.
 
 Chancellor [+ chancellor +] condemns the <span style="color: #7A3C00;">Nazi</span>-<span style="color: #700000;">Communist</span>-<span style="color: #c00000;">socialist</span> alliance as a national betrayal. Arbitrary arrests are made, paramilitary violence erupts, and clashes with police lead to numerous casualties.
 
@@ -67,9 +67,9 @@ Only 84% of the workforce participates in the vote, and of those that vote, 79% 
 title: The strike has begun.
 on-arrival: pro_republic -= 5; workers_kpd += 2; unemployed_kpd += 2; labor_dissent += 5; left_dissent += 5; reformist_dissent -= 5; reformist_strength += 5
 
-Three days before the election, the strike brings all public transport in Berlin to a halt, garnering significant sympathy among the city's working class. The <span style="color: #700000;">**KPD**</span> and <span style="color: #7A3C00;">**NSDAP**</span> are quick to throw their propaganda weight behind the strikers, each hoping for a breakthrough among working-class voters. We have urged workers to abstain from participating in the illegal strike—pointing out that it never actually met the required three-fourths quorum, and that BVG workers remain better off than most in Germany.
+Three days before the election, the strike brings all public transport in Berlin to a halt, garnering significant sympathy among the city's working class. The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> and <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> are quick to throw their propaganda weight behind the strikers, each hoping for a breakthrough among working-class voters. We have urged workers to abstain from participating in the illegal strike—pointing out that it never actually met the required three-fourths quorum, and that BVG workers remain better off than most in Germany.
 
-Chancellor [+ chancellor +] has condemned the <span style="color: #7A3C00;">Nazi</span>-<span style="color: #700000;">Communist</span> cooperation as a betrayal of the nation. While both the <span style="color: #700000;">**RGO**</span> and <span style="color: #7A3C00;">**NSBO**</span> are involved in the same strike, there is little coordination beyond that. The <span style="color: #700000;">**KPD**</span>, however, stands to gain the most politically.
+Chancellor [+ chancellor +] has condemned the <span style="color: #7A3C00;">Nazi</span>-<span style="color: #700000;">Communist</span> cooperation as a betrayal of the nation. While both the <span style="color: #700000;">**RGO**</span> and <span style="color: #7A3C00;">**NSBO**</span> are involved in the same strike, there is little coordination beyond that. The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, however, stands to gain the most politically.
 
 Ultimately, the strike fizzles out after just a few days—unsustainable in a time of mass unemployment.
 

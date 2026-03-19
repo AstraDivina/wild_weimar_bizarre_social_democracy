@@ -27,7 +27,7 @@ new-page: true
 
 =  <span style="color: #D3C24D;">**[+ ddp_name +]**</span> Congress
 
-The <span style="color: #C0A054;">**DVP**</span> has made its decision in favor of merging the two parties; now, the fate of the unification rests with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. The most prominent proponents within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> in favor of the merger are those in the business wing, who have pursued this goal for years.
+The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> has made its decision in favor of merging the two parties; now, the fate of the unification rests with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. The most prominent proponents within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> in favor of the merger are those in the business wing, who have pursued this goal for years.
 
 On the other hand, leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> strongly oppose the merger citing obvious concerns, as well as those who favor a potential merger with the <span style="color: #D3D3A9;">**VNR**</span> instead. A defeat in this decision would spell the end of liberal cooperation for the foreseeable future, severely demoralizing the German middle class, with the blame falling on the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
 
@@ -39,9 +39,9 @@ view-if: lvp_formation_points >= 3
 on-arrival: ddp_relation -= 3; ddp_right += 1.5; lvp_trigger_1_time = time + 1
 face-image: img/weimar_coalition_3.jpg
 
-As expected, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has followed the <span style="color: #C0A054;">**DVP**</span>'s decision and affirmed their support for a united <span style="color: #FFCC00;">Liberal People's Party</span>. 
+As expected, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has followed the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s decision and affirmed their support for a united <span style="color: #FFCC00;">Liberal People's Party</span>. 
 
-However, the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will wield little influence in the wider party, which will consist of twice as many <span style="color: #C0A054;">**DVP**</span> members as <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members.
+However, the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will wield little influence in the wider party, which will consist of twice as many <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> members as <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members.
 
 @ddp_fail
 view-if: lvp_formation_points < 3

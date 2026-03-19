@@ -16,4 +16,4 @@ on-arrival: prussian_concordat = 1; z_relation += 4; catholics_spd += 3*(1-disse
 
 We have signed a Concordat between the Free State of Prussia and the Roman Catholic Church, guaranteeing religious freedom for Catholics in Prussia. This sets the stage for the negotiation of a national Concordat covering all of Germany.
 
-[? if dnvp_ideology == "Radical": The Catholic members of the <span style="color: #3E88B3;">**DNVP**</span> in Prussia are in open conflict with their leadership over the vote, with many leaving the party. ?]
+[? if dnvp_ideology == "Radical": The Catholic members of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> in Prussia are in open conflict with their leadership over the vote, with many leaving the party. ?]

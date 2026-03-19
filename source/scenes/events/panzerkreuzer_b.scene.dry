@@ -22,7 +22,7 @@ on-arrival: left_dissent += 10; labor_dissent += 5; center_dissent += 5; reformi
 
 Our grassroots party members are highly critical of our decision. Many party branches have increased their agitation against our parliamentary fraction. [? if panzerkreuzer_funded : However, given the construction of the previous battlecruiser, this seemed to be a foregone conclusion, and the reaction is muted. ?]
 
-The vote in favor of the battlecruiser easily passes, with opposition only from the <span style="color: #700000;">**KPD**</span>. The ship will be built.
+The vote in favor of the battlecruiser easily passes, with opposition only from the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>. The ship will be built.
 
 @vote_no
 on-arrival: dvp_relation -= 8; lvp_relation -= 5; z_relation -= 5; pacifism += 1; nationalism -= 5*(1-dissent); coalition_dissent += 1; workers_spd += 4*(1-dissent) if nationalism < 49; dvp_right += 1; hindenburg_angry += 5
@@ -33,19 +33,19 @@ Our vote against the battlecruiser is unpopular among the right-wing parties[? i
 @abstain
 on-arrival: dvp_relation -= 5; lvp_relation -= 3; z_relation -= 3; left_dissent += 5; labor_dissent += 5 if not panzerkreuzer_funded; panzerkreuzer_b_funded = 1; kpd_relation -= 3
 
-The center-right parties are critical of our decision to abstain, and the pressure from our left flank is not entirely assuaged. Despite our abstention, the vote in the Reichstag passes, with all parties in favor except the <span style="color: #c00000;">**SPD**</span> and <span style="color: #700000;">**KPD**</span>. The ship will be built.
+The center-right parties are critical of our decision to abstain, and the pressure from our left flank is not entirely assuaged. Despite our abstention, the vote in the Reichstag passes, with all parties in favor except the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>. The ship will be built.
 
 [? if panzerkreuzer_funded : Given the construction of the previous battlecruiser, this seemed to be a foregone conclusion, and the reaction is muted. ?]
 
 @built
 on-arrival: panzerkreuzer_b_funded = 1
 
-Chancellor [+ chancellor +] brings the matter to a full Reichstag vote, which passes with all parties in favor except the <span style="color: #c00000;">**SPD**</span> and <span style="color: #700000;">**KPD**</span>. The ship will be built.
+Chancellor [+ chancellor +] brings the matter to a full Reichstag vote, which passes with all parties in favor except the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>. The ship will be built.
 
 @not_built
 on-arrival: panzerkreuzer_b_funded = 0; budget += 1 if panzerkreuzer_funded = 0; hindenburg_angry += 5; coup_progress += 1
 
-Our vote against the battlecruiser succeeds, with the support of the <span style="color: #700000;">**KPD**</span>. The ship will not be built! [? if panzerkreuzer_funded == 0 : We have saved some budget from not funding the two ships. ?]
+Our vote against the battlecruiser succeeds, with the support of the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>. The ship will not be built! [? if panzerkreuzer_funded == 0 : We have saved some budget from not funding the two ships. ?]
 
 @ministry
 on-arrival: panzerkreuzer_b_funded = 0; budget += 1 if panzerkreuzer_funded = 0; hindenburg_angry += 5; coup_progress += 1

@@ -43,7 +43,7 @@ We argue that the Young Plan is simply the most rational choice for Germany. Alt
 on-arrival: nationalism += 5; workers_spd -= 3; old_middle_spd -= 3; new_middle_spd -= 3; pacifism -= 1; workers_nsdap += 5; rural_nsdap += 5; catholics_spd -= 5; rural_dvp -= 5; pro_republic -= 6
 go-to: recalculate
 
-The referendum is easily going to fail with or without our presence in the campaign. However, nationalist sentiment is inflamed, and the right-wing parties are using our silence around the Plan as a tacit admission of its faults. Our silence has only emboldened the Right, especially the <span style="color: #7A3C00;">**NSDAP**</span>.
+The referendum is easily going to fail with or without our presence in the campaign. However, nationalist sentiment is inflamed, and the right-wing parties are using our silence around the Plan as a tacit admission of its faults. Our silence has only emboldened the Right, especially the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>.
 
 
 @recalculate

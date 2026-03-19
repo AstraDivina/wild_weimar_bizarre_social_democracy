@@ -20,7 +20,7 @@ on-display: {!
 
 = <span style="color: #7A3C00;">**SA**</span>'s Show of Strength
 
-In an attempt to revive the crumbling morale of the <span style="color: #7A3C00;">**SA**</span> and <span style="color: #7A3C00;">**NSDAP**</span>, the paramilitary organization staged a provocative march directly in front of the <span style="color: #700000;">**KPD**</span> headquarters—the Karl Liebknecht House on Bülowplatz, a major square in one of Berlin’s working-class, <span style="color: #700000;">**Communist**</span>-dominated districts.
+In an attempt to revive the crumbling morale of the <span style="color: #7A3C00;">**SA**</span> and <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, the paramilitary organization staged a provocative march directly in front of the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> headquarters—the Karl Liebknecht House on Bülowplatz, a major square in one of Berlin’s working-class, <span style="color: #700000;">**Communist**</span>-dominated districts.
 
 Acting under Schleicher’s orders, Berlin police cleared the building “for safety reasons” and protected the route of the <span style="color: #7A3C00;">**SA**</span> march, deploying armored trucks and machine-gun squads to suppress any hostile fire from the surrounding buildings.
 
@@ -34,6 +34,6 @@ on-arrival: sa_strength += 25; sa_militancy += 0.02; rfb_strength += 10; unemplo
 
 In the days that follow, <span style="color: #7A3C00;">Nazi</span> morale experiences a renewed, if temporary, surge. The rally projects an aura of legitimacy, as the <span style="color: #7A3C00;">Nazis</span> align themselves with the forces of law and order against the <span style="color: #700000;">**Communists**</span>.
 
-For the left, it is a demoralizing blow—an open display of <span style="color: #7A3C00;">Nazi</span> defiance on the very doorstep of the <span style="color: #700000;">**KPD**</span>, unopposed and uncontested, with the implicit approval of the government.
+For the left, it is a demoralizing blow—an open display of <span style="color: #7A3C00;">Nazi</span> defiance on the very doorstep of the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, unopposed and uncontested, with the implicit approval of the government.
 
 # TODO, option to rally against these sa guys with communists... but then again this doesn't happen if they're weaker than democracy_paramilitary

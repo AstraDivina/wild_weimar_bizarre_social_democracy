@@ -10,13 +10,13 @@ go-to: menu if chancellor != "Wirth"; wirth_resign_hindenburg if chancellor == "
 
 @menu
 
-Chancellor [+ chancellor +] has announced his intentions to President [+ president +] to reshuffle the cabinet, sacking and replacing all current <span style="color: #c00000;">**SPD**</span> ministers and replacing them with bourgeois ones. [? if bourgeois_coalition < 50 and (right_coalition < 50 or dnvp_ideology == "Radical" and not dnvp_westarp) and (center_right_coalition < 50 or dnvp_ideology == "Radical") : Luckily, they lack a majority without us, so we can bring them down with a simple motion of no confidence. ?]
+Chancellor [+ chancellor +] has announced his intentions to President [+ president +] to reshuffle the cabinet, sacking and replacing all current <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> ministers and replacing them with bourgeois ones. [? if bourgeois_coalition < 50 and (right_coalition < 50 or dnvp_ideology == "Radical" and not dnvp_westarp) and (center_right_coalition < 50 or dnvp_ideology == "Radical") : Luckily, they lack a majority without us, so we can bring them down with a simple motion of no confidence. ?]
 
 - @try_assuage: Try to assuage our partners.
-- @right_coalition: The <span style="color: #3E88B3;">**DNVP**</span> replaces us in government.
-- @center_right_coalition: The <span style="color: #3E88B3;">**DNVP**</span> replaces us in government.
+- @right_coalition: The <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> replaces us in government.
+- @center_right_coalition: The <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> replaces us in government.
 - @minority_bruning: Brüning's cabinet survives as a minority government.
-- @breitscheid_vonc: Call a constructive motion of no confidence with the <span style="color: #700000;">**KPD**</span>!
+- @breitscheid_vonc: Call a constructive motion of no confidence with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>!
 - @sack_bruning: President [+ president +] will call snap elections.
 - @bourgeois_coalition: The bourgeois have a lone majority.
 - @bruning_chain: What's next?
@@ -27,7 +27,7 @@ Chancellor [+ chancellor +] has announced his intentions to President [+ preside
 
 How do we assuage our partners?
 
-- @dvp_prussia_2: Let the <span style="color: #C0A054;">**DVP**</span> into Prussia.
+- @dvp_prussia_2: Let the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> into Prussia.
 - @give_up_prussia: Give up on leadership of Prussia.
 - @austerity: Enact a massive austerity plan.
 - @resources: Use our resources to reduce dissent within the coalition.
@@ -39,7 +39,7 @@ choose-if: z_leader != "Kaas"
 unavailable-subtitle: [? if z_leader = "Kaas": Kaas and the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] strongly dissents against. ?]
 on-arrival: in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 1; in_minority_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_center_right_coalition_prussia = 0; in_far_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; ddp_in_popular_front_prussia = 0; kpd_goals_seen_prussia = 0; spd_toleration_prussia = 0; dvp_relation += 10; z_relation -= 5; ddp_relation += 3; coalition_dissent -= 1; left_dissent += 5; in_grand_coalition_prussia = 1; dvp_left += 3; new_middle_dvp += 3
 
-Letting the <span style="color: #C0A054;">**DVP**</span> into the Prussian government is an offer too good for them to refuse, no matter their leadership. 
+Letting the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> into the Prussian government is an offer too good for them to refuse, no matter their leadership. 
 
 However, this has negatively impacted our freedom of action we previously had in the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> coalition.
 
@@ -60,7 +60,7 @@ Fine. We enacted a massive austerity program to cut welfare, in order to maintai
 
 @resources
 choose-if: (resources >= 3 and in_weimar_coalition or in_popular_front or in_minority_government) or ((resources >= 3 and in_grand_coalition and not (dvp_ideology == "Right" and year >= 1930) and not lvp_formed) or (resources >= 3 and (in_grand_coalition or in_weimar_coalition) and not (lvp_ideology == "Right" and year >= 1930) and lvp_formed))
-unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (dvp_ideology == "Right" and year >= 1930) and not lvp_formed: The <span style="color: #C0A054;">**DVP**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> doesn't want our resources anymore. ?]
+unavailable-subtitle: [? if resources < 3: We do not have enough resources. ?] [? if in_grand_coalition and (dvp_ideology == "Right" and year >= 1930) and not lvp_formed: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> doesn't want our resources anymore. ?] [? if (in_grand_coalition or in_weimar_coalition) and (lvp_ideology == "Right" and year >= 1930) and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> doesn't want our resources anymore. ?]
 subtitle: -3 resources
 on-arrival: resources -= 3; coalition_dissent -= 1
 
@@ -70,14 +70,14 @@ By transferring resources to our coalition partners, we can reduce their dissent
 view-if: right_coalition >= 50 and bourgeois_coalition < 50
 choose-if: (dnvp_ideology == "Moderate" or dnvp_westarp) and not (year = 1929 and month >= 7)
 on-arrival: center_dissent += 5; reformist_dissent += 5; spd_in_government = 0; grand_coalition_collapsed = 1 if in_grand_coalition; in_grand_coalition = 0; in_weimar_coalition = 0; coalition_dissent = 0
-unavailable-subtitle: The <span style="color: #3E88B3;">DNVP</span> isn't willing to enter government.
+unavailable-subtitle: The <span class="Party PartyDNVP" style="color: #3E88B3;">DNVP</span> isn't willing to enter government.
 go-to: election_1928.right_coalition_2
 
 @center_right_coalition
 view-if: right_coalition < 50 and center_right_coalition >= 50 and bourgeois_coalition < 50 and dnvp_ideology == "Moderate"
 choose-if: not (year = 1929 and month >= 7)
 on-arrival: center_dissent += 5; reformist_dissent += 5; spd_in_government = 0; grand_coalition_collapsed = 1 if in_grand_coalition; in_grand_coalition = 0; in_weimar_coalition = 0; coalition_dissent = 0
-unavailable-subtitle: The <span style="color: #3E88B3;">DNVP</span> isn't willing to enter government.
+unavailable-subtitle: The <span class="Party PartyDNVP" style="color: #3E88B3;">DNVP</span> isn't willing to enter government.
 go-to: election_1928.center_right_coalition_2
 
 @bourgeois_coalition
@@ -97,9 +97,9 @@ choose-if: left_coalition >= 50 and kpd_relation >= 50
 unavailable-subtitle: [? if left_coalition < 50 : We do not have a majority in favor of Breitscheid. ?][? if kpd_relation < 50 : The Communists are unwilling. ?]
 on-arrival: in_left_front = 1; in_grand_coalition = 0; in_weimar_coalition = 0; in_popular_front = 0; chancellor_party = "SPD"; chancellor = "Breitscheid"; coup_progress += 3; capital_strike_progress += 2; coup_progress += 1 if in_left_front_prussia; capital_strike_progress += 1 if in_left_front_prussia; labor_minister_party = "SPD"; interior_minister_party = "SPD"; finance_minister_party = "SPD"; economic_minister_party = "SPD"; justice_minister_party = "SPD"; foreign_minister_party = "SPD"; agriculture_minister_party = "SPD"; reichswehr_minister_party = "SPD"; kpd_relation += 10; z_relation -= 5; ddp_relation -= 5; dvp_relation -= 10; lvp_relation -= 8; reichswehr_loyalty -= 0.05; dvp_right += 10; ddp_right += 5; ddp_cohesion -= 3; lvp_right += 8; liberal_cooperation += 5; bourgeois_cooperation += 10; liberal_cooperation += 3 if in_left_front_prussia or in_popular_front_prussia; bourgeois_cooperation += 5 if in_left_front_prussia or in_popular_front_prussia; reformist_dissent += 20; reformist_strength -= 10; left_dissent -= 30; left_strength += 20
 
-We have successfully passed a motion of no confidence to replace Brüning with Breitscheid. We are now ruling in a united front with the <span style="color: #700000;">**KPD**</span>.
+We have successfully passed a motion of no confidence to replace Brüning with Breitscheid. We are now ruling in a united front with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 
-Whatever their reasoning is, the <span style="color: #c00000;">**SPD**</span> has control over the ministries of government.
+Whatever their reasoning is, the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> has control over the ministries of government.
 
 @sack_bruning
 view-if: constructive_vonc and president_ideology == "Left"

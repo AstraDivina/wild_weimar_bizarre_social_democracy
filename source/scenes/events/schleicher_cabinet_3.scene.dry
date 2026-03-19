@@ -25,4 +25,4 @@ Schleicher was never a true believer in converting his cabinet into a parliament
 
 Even so, Schleicher now seeks to secure a decree—similar to the one he once offered Papen but which was never enacted, as the Reichstag president simply ignored him. Should Hindenburg refuse to issue such a decree, it won’t signal a renewed commitment to constitutional norms. Rather, it would confirm the scope of the conspiracy against Schleicher—one that now includes the President himself.
 
-- @root: [? if not schleicher_spd_adopted: The <span style="color: #c00000;">**SPD**</span> will strongly oppose any effort to violate the constitution. ?][? if schleicher_spd_adopted: The nation needs a break from more polarizing elections. Let the chancellor govern. ?]
+- @root: [? if not schleicher_spd_adopted: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> will strongly oppose any effort to violate the constitution. ?][? if schleicher_spd_adopted: The nation needs a break from more polarizing elections. Let the chancellor govern. ?]

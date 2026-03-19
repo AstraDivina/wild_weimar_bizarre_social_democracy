@@ -19,15 +19,15 @@ I know you don't want to read allat, but please do, reading will make everything
 
 @infotext
 
-Dynamic Social Democracy is an ambitious overhaul mod aimed to bring historical realism and a dynamic party system to the late Weimar Republic. This mod heavily focuses on the <span style="color: #7A3C00;">Nazi Party</span>'s rise to power, and puts emphasis on the disastrous mistakes made by the parties surrounding the <span style="color: #c00000;">**SPD**</span>, which effectively enabled Adolf Hitler's eventual appointment by Hindenburg. This aspect is not represented in the base game, which instead focuses on the player's direct impact.
+Dynamic Social Democracy is an ambitious overhaul mod aimed to bring historical realism and a dynamic party system to the late Weimar Republic. This mod heavily focuses on the <span style="color: #7A3C00;">Nazi Party</span>'s rise to power, and puts emphasis on the disastrous mistakes made by the parties surrounding the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, which effectively enabled Adolf Hitler's eventual appointment by Hindenburg. This aspect is not represented in the base game, which instead focuses on the player's direct impact.
 
 The Weimar party system in this mod reacts to your every move, adjusting ideologies and strategies accordingly. Hindenburg and the bourgeois parties now serve as more realistic and impactful obstacles, as they did in real life.
 
-A real life example is the situation following the 1928 federal election, despite the <span style="color: #c00000;">**SPD**</span>'s clear electoral mandate in 1928, the <span style="color: #000000;">Center</span>, <span style="color: #C0A054;">**DVP**</span>, and Hindenburg himself initially opposed the formation of the Grand Coalition. However, Stresemann's intervention, Hindenburg's desire to use the <span style="color: #c00000;">**SPD**</span>'s anti-militarist stance to renegotiate German reparations, and his strategy to burden the <span style="color: #c00000;">**SPD**</span> with governance to decrease their popularity, is what made this unlikely arrangement possible. 
+A real life example is the situation following the 1928 federal election, despite the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s clear electoral mandate in 1928, the <span style="color: #000000;">Center</span>, <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and Hindenburg himself initially opposed the formation of the Grand Coalition. However, Stresemann's intervention, Hindenburg's desire to use the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s anti-militarist stance to renegotiate German reparations, and his strategy to burden the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> with governance to decrease their popularity, is what made this unlikely arrangement possible. 
 
-What was initially seen with positivity by the <span style="color: #c00000;">**SPD**</span> at the time; their entrance into government may be one of the biggest reasons for the demise of German democracy.
+What was initially seen with positivity by the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> at the time; their entrance into government may be one of the biggest reasons for the demise of German democracy.
 
-By March 1930, all of the factors above were no longer in play, the line between the <span style="color: #C0A054;">**DVP**</span> and the parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> were blurred, the Young Plan was ratified, and the <span style="color: #c00000;">**SPD**</span> was suffering as a result of the economic depression. The appointment of Bruning under an emergency government wasn't improvised when the <span style="color: #C0A054;">**DVP**</span> took down the Grand Coalition, it has been an idea longed by Schleicher, Hindenburg, and many <span style="color: #808080;">reactionary</span> elites.
+By March 1930, all of the factors above were no longer in play, the line between the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> and the parties on the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> were blurred, the Young Plan was ratified, and the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> was suffering as a result of the economic depression. The appointment of Bruning under an emergency government wasn't improvised when the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> took down the Grand Coalition, it has been an idea longed by Schleicher, Hindenburg, and many <span style="color: #808080;">reactionary</span> elites.
 
 "On 6 January 1930, Hugenberg was summoned to meet President Paul von Hindenburg, who told him that now the Young Plan had been passed, he had no more need for Müller, and he was planning to bring in a new presidential government very soon that would be "anti-<span style="color: #D3C24D;">parliamentary</span> and anti-<span style="color: #9B0000;">Marxist</span>"."
 
@@ -49,7 +49,7 @@ A main problem with newer players is that, they overestimate the negative effect
 
 **How do I impact a party's ideologies and get certain paths? Is it RNG?**
 
-Nothing in Dynamic relies on RNG, aside from card draws. The Support for the Republic value plays a crucial role in determining party congress outcomes, particularly within the <span style="color: #3E88B3;">**DNVP**</span>. The liberal parties, on the other hand, are primarily influenced by governmental actions—moving toward economic democracy and left-wing policies will push them rightward, while maintaining good relations and avoiding major socialist policies will bring them closer. Relations also matter significantly, making the negotiation skills of Müller and Braun highly valuable.
+Nothing in Dynamic relies on RNG, aside from card draws. The Support for the Republic value plays a crucial role in determining party congress outcomes, particularly within the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>. The liberal parties, on the other hand, are primarily influenced by governmental actions—moving toward economic democracy and left-wing policies will push them rightward, while maintaining good relations and avoiding major socialist policies will bring them closer. Relations also matter significantly, making the negotiation skills of Müller and Braun highly valuable.
 
 **What happened to the WTB Plan?**
 
@@ -65,11 +65,11 @@ You will have to get Stegerwald as the leader of Prussia, either through Braun r
 
 **How do I cross the rubicon?**
 
-Hindenburg needs to dismiss Chancellor Brüning following the 1932 Presidential elections. This unlocks Rubicon Mode, which remains active for the rest of the game. Since this is the historical sequence of events, you'll need to follow a similar political path, such as securing a Hugenberg-led <span style="color: #3E88B3;">**DNVP**</span>, to have a better chance of unlocking it.
+Hindenburg needs to dismiss Chancellor Brüning following the 1932 Presidential elections. This unlocks Rubicon Mode, which remains active for the rest of the game. Since this is the historical sequence of events, you'll need to follow a similar political path, such as securing a Hugenberg-led <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, to have a better chance of unlocking it.
 
 **Why is the left path so hard?**
 
-Unlike Redux, this mod does not include any post–civil war content or additional <span style="color: #700000;">**KPD**</span> or revolutionary paths. This is primarily due to time constraints—by the time of release, the mod had already been in development for over 9 months. As a result, the only truly "viable" path is the Reformist one, given the immense difficulty of building socialism within a bourgeois democracy—especially with figures like Hindenburg as president and the hostility of the bourgeois parties.
+Unlike Redux, this mod does not include any post–civil war content or additional <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> or revolutionary paths. This is primarily due to time constraints—by the time of release, the mod had already been in development for over 9 months. As a result, the only truly "viable" path is the Reformist one, given the immense difficulty of building socialism within a bourgeois democracy—especially with figures like Hindenburg as president and the hostility of the bourgeois parties.
 
 # for the angry redditors....
 
@@ -230,11 +230,11 @@ on-arrival: {!
 
 = Party Paths
 
-- @ddp_paths: <span style="color: #D3C24D;">**DDP**</span> Paths!
-- @dvp_paths: <span style="color: #C0A054;">**DVP**</span> Paths!
+- @ddp_paths: <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> Paths!
+- @dvp_paths: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Paths!
 - @lvp_paths: <span style="color: #FFCC00;">**LVP**</span> Paths!
 - @zentrum_paths: <span style="color: #000000;">**Center**</span> Paths!
-- @dnvp_paths: <span style="color: #3E88B3;">**DNVP**</span> Paths!
+- @dnvp_paths: <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Paths!
 - @full_paths: Ultimate Dynamic Flowchart!
 - @back: Back
 - @back2: Back
@@ -343,7 +343,7 @@ elements.forEach(el => {
 
 **V1.01 - 2025/07/06**
 
-[? if not snoopy: - <span style="color: #9B0000;">Left</span>-<span style="color: #c00000;">**SPD**</span> endings and associated achievements. ?]
+[? if not snoopy: - <span style="color: #9B0000;">Left</span>-<span class="Party PartySPD" style="color: #c00000;">**SPD**</span> endings and associated achievements. ?]
 
 [? if not snoopy: - Plethora of bug fixes. ?]
 

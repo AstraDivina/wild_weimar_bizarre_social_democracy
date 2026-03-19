@@ -1,4 +1,4 @@
-title: The <span style="color: #3E88B3;">**DNVP**</span> Rejoins Government
+title: The <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Rejoins Government
 new-page: true
 subtitle: The center-right coalition is restored.
 tags: event
@@ -6,14 +6,14 @@ view-if: year = 1930 and young_plan_ratified and was_in_center_right_coalition a
 on-arrival: still_in_center_right_coalition = 1
 max-visits: 1
 
-= The <span style="color: #3E88B3;">**DNVP**</span> Rejoins Government
+= The <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Rejoins Government
 
-The Young Plan has been ratified, and the controversy surrounding it has largely subsided, prompting the <span style="color: #3E88B3;">**DNVP**</span> to rejoin the cabinet it had previously abandoned. Their primary motivation for reentering the government is their fear of <span style="color: #c00000;">socialist</span> influence over Brüning's policies due to our toleration of Brüning’s administration. As a result, Brüning no longer depends on our votes.
+The Young Plan has been ratified, and the controversy surrounding it has largely subsided, prompting the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> to rejoin the cabinet it had previously abandoned. Their primary motivation for reentering the government is their fear of <span style="color: #c00000;">socialist</span> influence over Brüning's policies due to our toleration of Brüning’s administration. As a result, Brüning no longer depends on our votes.
 
 - @center_right_coalition
 
 @center_right_coalition
-title: The <span style="color: #3E88B3;">**DNVP**</span> replaces us in government.
+title: The <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> replaces us in government.
 on-arrival: spd_toleration = 0; in_right_coalition = 0; in_center_right_coalition = 1
 
 There is nothing we can do. Well actually, you, the player, could've done something. Why did you do this?

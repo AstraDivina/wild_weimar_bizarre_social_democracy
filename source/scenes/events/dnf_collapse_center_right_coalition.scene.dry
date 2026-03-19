@@ -7,9 +7,9 @@ max-visits: 1
 
 = Hugenberg's exit from the coalition
 
-When Hugenberg established his own party, he successfully attracted a significant number of former <span style="color: #3E88B3;">**DNVP**</span> Reichstag members to join his party and to oppose the current center-right coalition. The current government lacks a majority within the Reichstag and may be taken down with a no-confidence vote.
+When Hugenberg established his own party, he successfully attracted a significant number of former <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Reichstag members to join his party and to oppose the current center-right coalition. The current government lacks a majority within the Reichstag and may be taken down with a no-confidence vote.
 
-We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties. It would be extremely unpopular within our party to support a government that has the participation of the <span style="color: #3E88B3;">**DNVP**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party. 
+We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties. It would be extremely unpopular within our party to support a government that has the participation of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>—despite their removal of the most extreme factions—would be highly unpopular within our party. 
 
 - @vonc_yes
 - @vonc_no  
@@ -49,7 +49,7 @@ The right-wing coalition has fallen. New elections have been set for [+ next_ele
 @new_prussia_election
 on-arrival: prussia_coalition_trigger = 1 if center_right_coalition_prussia < 50
 
-Hugenberg has also attracted some members of the <span style="color: #3E88B3;">**DNVP**</span> to split into the <span style="color: #003755;">**DNF**</span> in the Prussian Landtag too, [? if center_right_coalition_prussia < 50 and in_right_coalition_prussia: even if the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> were to join in, they still lack a sufficient majority. ?][? if center_right_coalition_prussia >= 50 and in_right_coalition_prussia: but if the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> were to enter, they would have a governing coalition. ?][? if center_right_coalition_prussia >= 50 and in_center_right_coalition_prussia: but it still isn't enough to deny the ruling coalition a majority. ?][? if center_right_coalition_prussia < 50 and in_center_right_coalition_prussia: and it's enough to deny the ruling coalition a majority. ?]
+Hugenberg has also attracted some members of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> to split into the <span style="color: #003755;">**DNF**</span> in the Prussian Landtag too, [? if center_right_coalition_prussia < 50 and in_right_coalition_prussia: even if the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> were to join in, they still lack a sufficient majority. ?][? if center_right_coalition_prussia >= 50 and in_right_coalition_prussia: but if the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> were to enter, they would have a governing coalition. ?][? if center_right_coalition_prussia >= 50 and in_center_right_coalition_prussia: but it still isn't enough to deny the ruling coalition a majority. ?][? if center_right_coalition_prussia < 50 and in_center_right_coalition_prussia: and it's enough to deny the ruling coalition a majority. ?]
 
 We have an opportunity to change the composition of the Prussian coalition.
 

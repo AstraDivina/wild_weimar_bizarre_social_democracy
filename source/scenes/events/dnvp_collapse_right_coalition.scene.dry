@@ -8,7 +8,7 @@ max-visits: 1
 
 = Hugenberg's exit from the coalition
 
-One of Hugenberg's first acts as leader of the <span style="color: #3E88B3;">**DNVP**</span> is to terminate the coalition with the bourgeois parties as expected. There is no other possible paths to a majority that excludes us, leaving us to determine whether Brüning continues governing or not.
+One of Hugenberg's first acts as leader of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> is to terminate the coalition with the bourgeois parties as expected. There is no other possible paths to a majority that excludes us, leaving us to determine whether Brüning continues governing or not.
 
 We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties. Alternatively, we could enter a reorganized Brüning cabinet.
 
@@ -23,7 +23,7 @@ subtitle: The chancellorship will remain with Brüning.
 view-if: grand_coalition >= 50 or neo_weimar_coalition >= 50
 on-arrival: spd_in_government = 1; spd_toleration = 0; spd_toleration_right = 0; in_grand_coalition = 1; in_right_coalition = 0; chancellor = "Brüning"; chancellor_party = "Z"; foreign_minister_party = "DVP"; foreign_minister_party = "LVP" if lvp_formed; interior_minister_party = ddp_name; justice_minister_party = ddp_name; justice_minister_party  = "LVP" if lvp_formed; labor_minister_party = "Z"; reichswehr_minister_party = "I"; economic_minister_party = "DVP"; economic_minister_party = "LVP" if lvp_formed; finance_minister_party = "Z"; agriculture_minister_party = "Z"; leverage = 25 if leverage >= 25; new_middle_dnvp -= 2; old_middle_dnvp -= 2; rural_dnvp -= 2; left_dissent += 8; ddp_left += 1; lvp_left += 0.5; prussia_negotiations_trigger = 1 if (in_center_right_coalition_prussia or in_right_coalition_prussia)
 
-[? if in_center_right_coalition_prussia or in_right_coalition_prussia: The Prussian coalition isn't able to survive either, pressure from Hugenberg and his supporters forces the <span style="color: #3E88B3;">**DNVP**</span> to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well. ?]
+[? if in_center_right_coalition_prussia or in_right_coalition_prussia: The Prussian coalition isn't able to survive either, pressure from Hugenberg and his supporters forces the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well. ?]
 
 Heinrich Brüning welcomes us into his new cabinet. Now, we have our pick of ministries.
 
@@ -61,6 +61,6 @@ The right-wing coalition has fallen. New elections have been set for [+ next_ele
 @new_prussia_election
 on-arrival: prussia_coalition_trigger = 1
 
-The Prussian coalition isn't able to survive either, pressure from the national conservatives within the <span style="color: #3E88B3;">**DNVP**</span> forces them to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
+The Prussian coalition isn't able to survive either, pressure from the national conservatives within the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> forces them to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
 
 - @prussian_coalition_formation: Negotiate a new Prussian coalition.

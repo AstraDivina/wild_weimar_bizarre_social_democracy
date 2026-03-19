@@ -525,7 +525,7 @@ Vote % changes are compared to the last *Reichstag* election. <br> Seat % change
 {!<tr><td><div class="box" style='background-color:#7A3C00'> </div> !} NSDAP: {!</td><td>!} [+ nsdap_lippe_elections_vote +]% {!</td><td>!} [+ str_votes_change_nsdap_lippe +] {!</td><td>!} [+ nsdap_r_lippe +]% {!</td><td>!} [+ str_change_nsdap_lippe +] {! </td></tr>!}
 {!</table>!}
 <hr id="read-marker">
-Lippe has been governed for the past four years by a coalition of the <span style="color: #c00000;">**SPD**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #0075EB;">**VRP**</span>, with the local <span style="color: #c00000;">**SPD**</span> maintaining a more moderate image.
+Lippe has been governed for the past four years by a coalition of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #0075EB;">**VRP**</span>, with the local <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> maintaining a more moderate image.
 <hr id="read-marker">
 But the real question isn’t the future of Lippe—it’s what the election says about the nation. A <span style="color: #7A3C00;">Nazi</span> victory could prove the party still has life. But a defeat, even after throwing everything into their campaign, would be a crushing blow. With no local elections until the fall, the <span style="color: #7A3C00;">Nazis</span> won’t get another moment like this to remotivate their party.
 
@@ -540,55 +540,55 @@ Who cares what coalition forms here?
 - @nsdap_explode
 
 @nsdap_big_win
-title: The <span style="color: #7A3C00;">**NSDAP**</span> score a crushing victory.
+title: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> score a crushing victory.
 view-if: change_nsdap_votes_lippe >= 6
 on-arrival: lippe_big_win = 1; hindenburg_hitler_r += 2; hindenburg_schleicher_r -= 2; workers_nsdap += 2; unemployed_nsdap += 2; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; nazi_funds += 1; lippe_good = 1
 
-Unexpectedly, the <span style="color: #7A3C00;">**NSDAP**</span> matched their peak electoral performance—proof that the movement isn’t dying, but growing.
+Unexpectedly, the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> matched their peak electoral performance—proof that the movement isn’t dying, but growing.
 
-This is a major propaganda win for the <span style="color: #7A3C00;">**NSDAP**</span>, sure to energize the party and reinforce the belief that [+ nsdap_leader +]’s all-or-nothing strategy is paying off. It’s only a matter of time before Hindenburg acknowledges the <span style="color: #7A3C00;">Nazi</span> surge.
+This is a major propaganda win for the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, sure to energize the party and reinforce the belief that [+ nsdap_leader +]’s all-or-nothing strategy is paying off. It’s only a matter of time before Hindenburg acknowledges the <span style="color: #7A3C00;">Nazi</span> surge.
 
 @nsdap_moderate_win
-title: The <span style="color: #7A3C00;">**NSDAP**</span> score a dubious triumph.
+title: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> score a dubious triumph.
 view-if: change_nsdap_votes_lippe >= 3 and change_nsdap_votes_lippe < 6
 on-arrival: hindenburg_hitler_r += 1; hindenburg_schleicher_r -= 1; new_middle_nsdap += 2; old_middle_nsdap += 2; rural_nsdap += 2; lippe_good = 1
 
-The <span style="color: #7A3C00;">Nazis</span> fell short of their peak results—but still gained votes compared to the last election. To the casual observer, the <span style="color: #7A3C00;">**NSDAP**</span> looks like it’s back on the rise, and they’ve seized on the outcome as a cheap propaganda boost to reenergize their disillusioned base.
+The <span style="color: #7A3C00;">Nazis</span> fell short of their peak results—but still gained votes compared to the last election. To the casual observer, the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> looks like it’s back on the rise, and they’ve seized on the outcome as a cheap propaganda boost to reenergize their disillusioned base.
 
-But if we were to look closer. The <span style="color: #7A3C00;">**NSDAP**</span> cannot replicate the scale of its Lippe campaign—conducted in a state with barely a quarter of a percent of Germany’s population—across the country, especially given its financial troubles. The victory feels artificial.
+But if we were to look closer. The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> cannot replicate the scale of its Lippe campaign—conducted in a state with barely a quarter of a percent of Germany’s population—across the country, especially given its financial troubles. The victory feels artificial.
 
 Still, pressure to bring [+ nsdap_chancellor +] into government is once again rising.
 
 - @hitler_good
 
 @nothing_ever_happens
-title: The <span style="color: #7A3C00;">**NSDAP**</span> fails to make a breakthrough.
+title: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> fails to make a breakthrough.
 view-if: change_nsdap_votes_lippe >= 0 and change_nsdap_votes_lippe < 3
 on-arrival: new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; lippe_good = 1
 
-The <span style="color: #7A3C00;">**NSDAP**</span>, despite going all-out on this campaign, only managed to achieve gains of [+ change_nsdap_votes_lippe +]%. This serves as evidence that the movement is in decline, though slowly.
+The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, despite going all-out on this campaign, only managed to achieve gains of [+ change_nsdap_votes_lippe +]%. This serves as evidence that the movement is in decline, though slowly.
 
-Nevertheless, the <span style="color: #7A3C00;">**NSDAP**</span> continues to use their modest gains as cheap propaganda, though few are swayed. Replicating the success of their Lippe campaign—conducted in a state that comprises barely a quarter of a percent of Germany’s population—across the entire country is not feasible, particularly given their financial troubles. The victory feels artificial.
+Nevertheless, the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> continues to use their modest gains as cheap propaganda, though few are swayed. Replicating the success of their Lippe campaign—conducted in a state that comprises barely a quarter of a percent of Germany’s population—across the entire country is not feasible, particularly given their financial troubles. The victory feels artificial.
 
 - @hitler_eh
 
 @nsdap_joever
-title: The <span style="color: #7A3C00;">**NSDAP**</span>'s suffers a crushing defeat!
+title: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>'s suffers a crushing defeat!
 view-if: change_nsdap_votes_lippe < 0 and change_nsdap_votes_lippe > -4
 on-arrival: hindenburg_hitler_r -= 1; workers_nsdap -= 2; unemployed_nsdap -= 2; new_middle_nsdap -= 4; old_middle_nsdap -= 4; rural_nsdap -= 4; catholics_nsdap -= 2; nazi_funds -= 1
 
-The <span style="color: #7A3C00;">**NSDAP**</span> has suffered a crushing defeat! Despite throwing everything into this campaign, their vote share has actually declined. This is clear evidence that the movement is collapsing rapidly—and that new elections would be disastrous for the <span style="color: #7A3C00;">Nazi</span> cause.
+The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> has suffered a crushing defeat! Despite throwing everything into this campaign, their vote share has actually declined. This is clear evidence that the movement is collapsing rapidly—and that new elections would be disastrous for the <span style="color: #7A3C00;">Nazi</span> cause.
 
 Donations are drying up, party membership is plummeting, defections are soaring, and the political pressure on Schleicher has eased. Land is in sight.
 
 - @hitler_bad
 
 @nsdap_explode
-title: The <span style="color: #7A3C00;">**NSDAP**</span> is rapidly imploding!
+title: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> is rapidly imploding!
 view-if: change_nsdap_votes_lippe <= -4
 on-arrival: hindenburg_hitler_r -= 2; workers_nsdap -= 4; unemployed_nsdap -= 4; new_middle_nsdap -= 8; old_middle_nsdap -= 8; rural_nsdap -= 6; catholics_nsdap -= 4; nazi_funds -= 2
 
-The <span style="color: #7A3C00;">**NSDAP**</span> is in free fall! Despite throwing everything they had into this campaign, their vote share has actually declined—a humiliating blow that confirms the movement’s rapid implosion.
+The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> is in free fall! Despite throwing everything they had into this campaign, their vote share has actually declined—a humiliating blow that confirms the movement’s rapid implosion.
 
 Donors are abandoning them, defections are accelerating, and local organizations are collapsing. Even fanatics at the highest levels of the party are starting to lose faith. The threat they once posed is rapidly fading, and with the pressure on Schleicher easing, the worst may finally be over.
 
@@ -631,4 +631,4 @@ In a meeting between [+ nsdap_leader +] and the <span style="color: #7A3C00;">Na
 
 In a fit of rage, [+ nsdap_leader +] launched into a long and incoherent tirade against Strasser—denouncing the man who once helped elevate him as a traitor and accusing him of long-standing subversion. Many in the room still sympathized with Strasser’s arguments, and the outburst only deepened their disillusionment with the man they had once regarded as a prophet.
 
-After [+ nsdap_leader +] seemingly lost control, a growing minority within the party now openly call for a reconciliation with Strasser and the <span style="color: #7A3C00;">**NSDAP**</span> entering the Schleicher cabinet. The unrest within the party has quickly leaked to the press, with numerous local <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #7A3C00;">**SA**</span> leaders now at each other’s throats, accelerating the party's collapse.
+After [+ nsdap_leader +] seemingly lost control, a growing minority within the party now openly call for a reconciliation with Strasser and the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> entering the Schleicher cabinet. The unrest within the party has quickly leaked to the press, with numerous local <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #7A3C00;">**SA**</span> leaders now at each other’s throats, accelerating the party's collapse.

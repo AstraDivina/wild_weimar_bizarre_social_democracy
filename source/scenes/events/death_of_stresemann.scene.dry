@@ -10,8 +10,8 @@ new-page: true
 
 = The Death of Gustav Stresemann
 
-Gustav Stresemann, leader of the <span style="color: #C0A054;">**DVP**</span> and longtime foreign minister, has died at the tragically young age of 51. He was the primary force driving his party to support democracy; without him, the democratic forces in the Republic will be so much weaker.
+Gustav Stresemann, leader of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> and longtime foreign minister, has died at the tragically young age of 51. He was the primary force driving his party to support democracy; without him, the democratic forces in the Republic will be so much weaker.
 
 A hole has been left within the liberal movement at the worse possible time, and it is likely that the industrial wing of the party will complete their takeover and subsequently end cooperation with us. 
 
-[? if dvp_leader == "Scholz": Ernst Scholz, his arch enemy on the right wing has succeeded him as leader of the <span style="color: #C0A054;">**DVP**</span>, and leadership election will be conducted in two months.?][? if dvp_leader == "Curtius": Julius Curtius, his successor in foreign affairs, and ally in the left wing of the party, has succeeded him as leader of the <span style="color: #C0A054;">**DVP**</span>, and leadership election will be conducted in two months.?]
+[? if dvp_leader == "Scholz": Ernst Scholz, his arch enemy on the right wing has succeeded him as leader of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and leadership election will be conducted in two months.?][? if dvp_leader == "Curtius": Julius Curtius, his successor in foreign affairs, and ally in the left wing of the party, has succeeded him as leader of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and leadership election will be conducted in two months.?]

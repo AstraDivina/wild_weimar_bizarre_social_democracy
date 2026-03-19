@@ -1,4 +1,4 @@
-title: The <span style="color: #7A3C00;">**NSDAP**</span> Splinters!
+title: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> Splinters!
 subtitle: Their internal contradictions have finally caught up with them.
 view-if: chancellor = "Schleicher" and schleicher_time >= 10 and nazi_explode >= 4 and not hitler_dead
 new-page: true
@@ -17,13 +17,13 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #7A3C00;">**NSDAP**</span> Splinters!
+= The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> Splinters!
 
 With Hitler isolated in Austria and unable to enforce unity through his *Führerprinzip*, the conflicting ideologies and ambitions within the movement have broken into open dispute. While Hitler continues to issue directives to [+ nsdap_leader +] and [+ nsdap_chancellor +], the failure of the all-or-nothing strategy is now blamed squarely on both. Increasingly withdrawn, Hitler has grown critical of the very men he once entrusted with power—though he keeps his discontent private.
 
 Gregor Strasser, seeing the collapse of Goebbels and Göring’s reckless course, has reconsidered. He now believes the <span style="color: #7A3C00;">Nazi</span> movement still has a future—but only without the failed strategies of its current leadership. For the first time, Strasser is willing to defy the distant messiah in Austria and seize control.
 
-The result is a formal split within the <span style="color: #7A3C00;">**NSDAP**</span>: pragmatists like Strasser, Frick, and even Röhm now oppose the disastrous passivity of Goebbels and Göring. To give their faction a political home, they have founded the <span style="color: #6A1E1E;">German Social Union</span> (<span style="color: #6A1E1E;">**DSU**</span>), advocating a middle path—preparing for revolution, while participating in government to avoid total irrelevance.
+The result is a formal split within the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>: pragmatists like Strasser, Frick, and even Röhm now oppose the disastrous passivity of Goebbels and Göring. To give their faction a political home, they have founded the <span style="color: #6A1E1E;">German Social Union</span> (<span style="color: #6A1E1E;">**DSU**</span>), advocating a middle path—preparing for revolution, while participating in government to avoid total irrelevance.
 
 - @nazi_2: Without funds and without support. 
 

@@ -19,7 +19,7 @@ The legality of this action remains highly questionable. The left-wing coalition
 
 @defend
 title: Fight against the overthrow attempt!
-subtitle: Labor will call a general strike. The Reichsbanner and the loyal elements of the Prussian police will resist the coup. The <span style="color: #700000;">**KPD**</span> remains unwavering in its support.
+subtitle: Labor will call a general strike. The Reichsbanner and the loyal elements of the Prussian police will resist the coup. The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> remains unwavering in its support.
 
 The Reichswehr and <span style="color: #3E88B3;">**Stahlhelm**</span> are already surrounding Berlin, and the <span style="color: #7A3C00;">**SA**</span> is supporting them. This could be civil war. We do realize that, correct? 
 
@@ -37,7 +37,7 @@ go-to: defend_2_victory_2
 
 Our combined forces confront the government troops and their <span style="color: #808080;">reactionary</span> auxiliaries, and somehow, our enemies retreat without a fight! They were overwhelmed by our display of strength, and have chosen to slink away. President [+ president +] withdraws the dismissal of the Prussian government, at least for now.
 
-The show of force has reinvigorated support for the <span style="color: #c00000;">**SPD**</span> and <span style="color: #700000;">**KPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
+The show of force has reinvigorated support for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, and has weakened the <span style="color: #7A3C00;">fascists</span>.
 
 @defend_2_victory_2
 achievement: drei_pfeile
@@ -57,6 +57,6 @@ title: Give up on the Prussian government.
 subtitle: The <span style="color: #700000;">**RFB**</span> will fight alone.
 on-arrival: in_right_coalition_prussia = 0; in_weimar_coalition_prussia = 0; in_grand_coalition_prussia = 0; in_popular_front_prussia = 0; in_left_front_prussia = 0; in_spd_majority_prussia = 0; in_center_right_coalition_prussia = 0; in_minority_weimar_coalition_prussia = 0; spd_prussia = 0; prussia_leader = "Goerdeler"; workers_spd -= 5; workers_kpd -= 5; unemployed_kpd -= 5; unemployed_spd -= 5; left_dissent += 10; labor_dissent += 10; rb_militancy = rb_militancy/2; rb_strength -= 1000; rfb_banned = 1; rfb_strength -= 200; rfb_militancy -= 0.25; kpd_relation -= 30; communist_coalition -= 3; next_election_time_prussia = time + 48; next_election_year_prussia = year + 4
 
-The <span style="color: #700000;">communists</span> who resist are brutally suppressed, and without the support of the Reichsbanner, we are forced to surrender the Prussian government to the <span style="color: #808080;">reactionaries</span>. A pall of hopelessness and despair descends over <span style="color: #c00000;">Social Democracy</span>. We have failed. The <span style="color: #700000;">**KPD**</span> will never trust us again. Many in the Reichsbanner simply quit, demoralized by their leaders' lack of a call to action.
+The <span style="color: #700000;">communists</span> who resist are brutally suppressed, and without the support of the Reichsbanner, we are forced to surrender the Prussian government to the <span style="color: #808080;">reactionaries</span>. A pall of hopelessness and despair descends over <span style="color: #c00000;">Social Democracy</span>. We have failed. The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> will never trust us again. Many in the Reichsbanner simply quit, demoralized by their leaders' lack of a call to action.
 
 Hindenburg appoints the <span style="color: #3E88B3;">nationalist</span> Carl Friedrich Goerdeler, who renounces his party affiliation, to govern over Prussia as a <i>Reichskommissar</i>, charged with dismantling the democratic systems we worked hard to build.

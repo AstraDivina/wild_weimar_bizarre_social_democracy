@@ -21,7 +21,7 @@ The industrial Ruhr region is aflame with labor unrest. The employers have start
 subtitle: Popular among the workers, this will alienate the bourgeoisie.
 on-arrival: labor_strength += 5; labor_dissent -= 5; left_dissent -= 5; workers_spd += 6*(1-dissent); coalition_dissent += 1; dvp_relation -= 4; ddp_relation -= 2; capital_strike_progress += 1 if (dvp_relation <= 30 and not lvp_formed); capital_strike_progress += 1 if (lvp_relation <= 30 and lvp_formed); capital_strike_progress += 1 if unemployed > 15; capital_strike_progress += 1 if unemployed > 24; labor_goal_completed += 1; inflation += 0.1; pro_labor += 1; strike_term_seen += 1; dvp_right += 1; ddp_left += 1; ddp_cohesion -= 1; lvp_right += 1; labor_goal_spd += 1; goal_spd_cancel_peoples += 1; economic_growth -= 0.1;
 
-Supporting labor is always popular in the <span style="color: #c00000;">**SPD**</span>, although many of our coalition partners represent employers, and they are less enthused.
+Supporting labor is always popular in the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, although many of our coalition partners represent employers, and they are less enthused.
 
 @support_employers
 subtitle: Popular among the bourgeoisie, much less so among the workers.

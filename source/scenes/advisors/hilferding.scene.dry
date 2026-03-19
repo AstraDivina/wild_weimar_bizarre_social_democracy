@@ -28,7 +28,7 @@ We have reduced the strength of the dissident factions in the party.
 @toleration
 title: Defending Toleration
 subtitle: Hilferding supports cooperation with the bourgeois parties.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_toleration: The <span style="color: #c00000;">SPD</span> is not in toleration. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_toleration: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not in toleration. ?]
 choose-if: spd_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; left_dissent -= 10; neorevisionist_dissent -= 8; center_dissent -= 5
 
@@ -37,7 +37,7 @@ We have reduced dissent among the anti-toleration factions.
 @finance_ministry_
 title: Fiscal Policy
 subtitle: As Finance Minister, Hilferding can enact tax policies.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : <span style="color: #c00000;">SPD</span> not in government: ?] [? if finance_minister_party != "SPD" : The <span style="color: #c00000;">SPD</span> does not control the finance ministry. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> not in government: ?] [? if finance_minister_party != "SPD" : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> does not control the finance ministry. ?]
 choose-if: advisor_action_timer == 0 and spd_in_government == 1 and finance_minister_party == "SPD"
 on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6; last_advisor_action = 1
 go-to: fiscal_policy
@@ -45,7 +45,7 @@ go-to: fiscal_policy
 @economic_democracy_
 title: Economic Democracy
 subtitle: Enact policies to build a more democratic economy.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : <span style="color: #c00000;">SPD</span> not in government: ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : We do not have the necessary government ministers. ?] [? if cvp_economy_accepted : Our coalition agreement stipulates against socialization. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if spd_in_government = 0 : <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> not in government: ?] [? if labor_minister_party != "SPD" or (finance_minister_party != "SPD" and economic_minister_party != "SPD") : We do not have the necessary government ministers. ?] [? if cvp_economy_accepted : Our coalition agreement stipulates against socialization. ?]
 choose-if: advisor_action_timer == 0 and spd_in_government == 1 and (economic_minister_party == "SPD" or finance_minister_party == "SPD") and (labor_minister_party == "SPD")
 on-arrival: advisor_action_timer = 6; economic_democracy_timer -= 10; last_advisor_action = 1
 go-to: economic_democracy

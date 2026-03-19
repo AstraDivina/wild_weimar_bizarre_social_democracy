@@ -56,11 +56,11 @@ Q.impeachment_votes = parseFloat(Q.impeachment_votes.toFixed(1));
 !}
 max-visits: 1
 
-We are able to gather the support of [+ spd_r + kpd_r + sapd_r +]% of the Reichstag, with all <span style="color: #c00000;">**SPD**</span>, <span style="color: #700000;">**KPD**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] deputies expected to vote in favor.
+We are able to gather the support of [+ spd_r + kpd_r + sapd_r +]% of the Reichstag, with all <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] deputies expected to vote in favor.
 
 [? if impeachment_ddp: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has been one of the only bourgeois parties standing up for the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic and the constitution the party's founders drafted. We are expected to see their deputies vote with us. ?][? if not impeachment_ddp and not lvp_formed: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has strayed too far from its former <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> ideals, and now sees support for Hindenburg as a hard but necessary choice in the national interest. ?]
 
-[? if impeachment_dvp: The <span style="color: #C0A054;">**DVP**</span> were once staunch supporters of Hindenburg, but even the industrialists have grown tired of his antics and have lobbied the party to vote against the president. ?][? if not impeachment_dvp and not lvp_formed and dvp_exist: The <span style="color: #C0A054;">**DVP**</span> remains trapped in its <span style="color: #808080;">reactionary</span> spiral and will not support our motion. ?]
+[? if impeachment_dvp: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> were once staunch supporters of Hindenburg, but even the industrialists have grown tired of his antics and have lobbied the party to vote against the president. ?][? if not impeachment_dvp and not lvp_formed and dvp_exist: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> remains trapped in its <span style="color: #808080;">reactionary</span> spiral and will not support our motion. ?]
 
 [? if impeachment_lvp: The <span style="color: #FFCC00;">**LVP**</span>, nominally a <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> party, has remained faithful to its democratic convictions and will vote against President Hindenburg. ?][? if not impeachment_lvp and lvp_formed: The <span style="color: #FFCC00;">**LVP**</span> has drifted far from its professed <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> and democratic principles. Swayed by its <span style="color: #808080;">reactionary</span> right wing, it will reluctantly remain aligned with Hindenburg. ?]
 
@@ -70,7 +70,7 @@ We are able to gather the support of [+ spd_r + kpd_r + sapd_r +]% of the Reichs
 
 The right-wing parties and <span style="color: #3E88B3;">nationalists</span> remain Hindenburg’s most loyal supporters. Even Hugenberg recognizes the danger of a potential <span style="color: #c00000;">socialist</span> president should Hindenburg be removed from office.
 
-The <span style="color: #7A3C00;">**NSDAP**</span>[? if nvf_exist:&nbsp;and <span style="color: #142e20;">**NVF**</span>?] will break with the <span style="color: #6A1E1E;">**DSU**</span> on the vote, and vote to impeach the president that has impeded their progress over and over again.
+The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>[? if nvf_exist:&nbsp;and <span style="color: #142e20;">**NVF**</span>?] will break with the <span style="color: #6A1E1E;">**DSU**</span> on the vote, and vote to impeach the president that has impeded their progress over and over again.
 
 - @reichstag_impeach_2
 - @reichstag_impeach_fail

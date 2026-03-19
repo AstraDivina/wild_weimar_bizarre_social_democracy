@@ -562,7 +562,7 @@ The German people had only briefly united behind their so-called savior, General
 
 With Schleicher nearing the end—both politically and personally—he is in no position to stop the unraveling of his own creation. Perhaps this will be remembered as his greatest blunder: that everything he built ends in anticlimax. Yet the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> system has already been gutted over the past few years.
 
-The Blocparteis will return to their independent status, and it is primarily the [? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] that will absorb the right wing. Meanwhile, the left wing has formed a new national party—the <span style="color: #fe9e00;">Old Social Democratic Party</span> (<span style="color: #fe9e00;">**ASPD**</span>)—anchored in class collaboration, nationalism, and laborism. They champion something they call “Volksocialism,” whatever that’s supposed to mean.
+The Blocparteis will return to their independent status, and it is primarily the [? if dnvp_ideology == "Moderate": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] that will absorb the right wing. Meanwhile, the left wing has formed a new national party—the <span style="color: #fe9e00;">Old Social Democratic Party</span> (<span style="color: #fe9e00;">**ASPD**</span>)—anchored in class collaboration, nationalism, and laborism. They champion something they call “Volksocialism,” whatever that’s supposed to mean.
 
 - @dnef_collapse_2
 
@@ -602,8 +602,8 @@ Following the collapse of the <span style="color: #BFC8CC;">**DNEF**</span>, a v
 - @dnef_collapse_3
 
 @dnef_collapse_3
-title: Kuno von Westarp -[? if dnvp_ideology == "Radical":&nbsp;Former?] <span style="color: #3E88B3;">**DNVP**</span>
-subtitle: Hindenburg's preferred choice once again, and [? if dnvp_leader != "Westarp":former?] <span style="color: #3E88B3;">**DNVP**</span> party leader.
+title: Kuno von Westarp -[? if dnvp_ideology == "Radical":&nbsp;Former?] <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>
+subtitle: Hindenburg's preferred choice once again, and [? if dnvp_leader != "Westarp":former?] <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> party leader.
 face-image: img/portraits/Treviranus.jpg
 on-arrival: {!
 Q.chancellor = "Treviranus";
@@ -645,7 +645,7 @@ Without a clear governing majority, [+ old_chancellor +] loses the little confid
 
 Westarp, despite being once again begged by an older and increasingly sick Hindenburg, has declined the offer. Instead, he recommends the appointment of rising star and <span style="color: #0087DC;">Volkskonservativ</span> leader Gottfried Treviranus. With deep ties to German industry, the Right, and a pseudo-<span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> veneer, Treviranus is a candidate aimed at stabilizing Germany’s worsening crisis.
 
-Much like Papen’s dismissal in favor of Schleicher, the political class breathes yet another sigh of relief. Even within the <span style="color: #c00000;">**SPD**</span>, many find it easier to confront the devil they know rather than face Schleicher’s dynamic and unpredictable rule.
+Much like Papen’s dismissal in favor of Schleicher, the political class breathes yet another sigh of relief. Even within the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, many find it easier to confront the devil they know rather than face Schleicher’s dynamic and unpredictable rule.
 
 Treviranus will seek to construct a working majority via parliament. The Reichstag will convene on [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +].
 

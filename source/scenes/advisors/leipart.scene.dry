@@ -37,7 +37,7 @@ on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; la
 
 @schleicher
 title: Negotiating with the Red General
-subtitle: Leipart will attempt to convince the <span style="color: #c00000;">**SPD**</span> to support Schleicher.
+subtitle: Leipart will attempt to convince the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> to support Schleicher.
 view-if: red_general_unlock and rubicon
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]

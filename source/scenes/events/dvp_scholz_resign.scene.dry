@@ -1,4 +1,4 @@
-title: <span style="color: #C0A054;">**DVP**</span> Executive Committee Meeting
+title: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Executive Committee Meeting
 subtitle: Ernst Scholz has resigned!
 view-if: year = 1930 and month = 12 and dvp_leader == "Scholz" and not lvp_formed
 on-arrival: dvp_left += 2 if dvp_relation >= 35; dvp_left += 2 if in_grand_coalition
@@ -7,11 +7,11 @@ tags: event
 face-image: img/portraits/ernst_scholz.jpg
 new-page: true
 
-= <span style="color: #C0A054;">**DVP**</span> Executive Committee Meeting
+= <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Executive Committee Meeting
 
 Ernst Scholz, recovering from surgery the past few months due to a resurgence of his health problems, has ultimately resigned in favor of his deputy Eduard Dingeldey, who is now guaranteed to succeed him as chairman.
 
-Eduard Dingeldey is one of the first within the <span style="color: #C0A054;">**DVP**</span> to support the movement for bourgeois unity and is popular with the youth and bourgeois unity groups that have coalesced on the <span style="color: #C0A054;">**DVP**</span>'s left wing, having rallied around Schnell and his efforts last month. Dingeldey is also sufficiently conservative on most political issues—particularly on the question of cooperation with the <span style="color: #c00000;">**SPD**</span>—to gain support from the party's right wing.
+Eduard Dingeldey is one of the first within the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> to support the movement for bourgeois unity and is popular with the youth and bourgeois unity groups that have coalesced on the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing, having rallied around Schnell and his efforts last month. Dingeldey is also sufficiently conservative on most political issues—particularly on the question of cooperation with the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>—to gain support from the party's right wing.
 
 - @resultsdvp: The party votes...
 
@@ -31,6 +31,6 @@ go-to: dingeldey
 on-arrival: dvp_leader = "Dingeldey"; old_middle_dvp -= 2; new_middle_dvp -= 2; old_middle_nsdap += 2; new_middle_nsdap += 2; pro_republic -= 3; liberal_cooperation -= 1; bourgeois_cooperation += 1
 face-image: img/portraits/dingeldey.jpg
 
-Dingeldey's election to the chairmanship represents a triumph for the reform-minded elements on the <span style="color: #C0A054;">**DVP**</span>'s left wing and met with strong approval from the movement towards bourgeois unity. However, despite the enthusiasm exhibited by those on the left wing, his election doesn't seem to represent a shift to the left at all and only confirms the party's shift to the right. [? if chancellor == "Brüning" and not spd_in_government: Dingeldey doesn't even feel great loyalty toward the Brüning government and believes that the party could only fulfill its mission towards bourgeois concentration after it is freed from the burden of governmental responsibility.?] So far, he has proven to be a weak and ineffectual leader, capitulating to the right wing at every possible opportunity.
+Dingeldey's election to the chairmanship represents a triumph for the reform-minded elements on the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing and met with strong approval from the movement towards bourgeois unity. However, despite the enthusiasm exhibited by those on the left wing, his election doesn't seem to represent a shift to the left at all and only confirms the party's shift to the right. [? if chancellor == "Brüning" and not spd_in_government: Dingeldey doesn't even feel great loyalty toward the Brüning government and believes that the party could only fulfill its mission towards bourgeois concentration after it is freed from the burden of governmental responsibility.?] So far, he has proven to be a weak and ineffectual leader, capitulating to the right wing at every possible opportunity.
 
-Furthermore, Dingeldey is not particularly interested in a closer relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and definitely not with us, but rather with parties to the right, such as the <span style="color: #3E88B3;">**DNVP**</span> and even the <span style="color: #7A3C00;">**NSDAP**</span>, to transform them into a 'constructive component of the state.' This does not bode well for the future of <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> democracy.
+Furthermore, Dingeldey is not particularly interested in a closer relationship with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and definitely not with us, but rather with parties to the right, such as the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> and even the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, to transform them into a 'constructive component of the state.' This does not bode well for the future of <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> democracy.

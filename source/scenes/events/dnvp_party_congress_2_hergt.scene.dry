@@ -1,5 +1,5 @@
-title: <span style="color: #3E88B3;">**DNVP**</span> Congress
-subtitle: The <span style="color: #3E88B3;">DNVP</span> decides their fate...
+title: <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Congress
+subtitle: The <span class="Party PartyDNVP" style="color: #3E88B3;">DNVP</span> decides their fate...
 view-if: year = 1929 and month = 11 and dnvp_leader = "Hergt"
 on-arrival: pro_republic += 3
 max-visits: 1
@@ -7,11 +7,11 @@ tags: event
 face-image: img/dnvp2.jpg
 new-page: true
 
-= <span style="color: #3E88B3;">**DNVP**</span> Congress
+= <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Congress
 
-The internal dissent within the <span style="color: #3E88B3;">**DNVP**</span> has risen again with conflict over their participation in the referendum against the Young Plan[? if was_in_right_coalition == 1:&nbsp;and their withdrawal from the government[? if spd_in_government == 1:&nbsp;leaving us in power?]?]. 
+The internal dissent within the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> has risen again with conflict over their participation in the referendum against the Young Plan[? if was_in_right_coalition == 1:&nbsp;and their withdrawal from the government[? if spd_in_government == 1:&nbsp;leaving us in power?]?]. 
 
-The "unity of the no" against <span style="color: #9B0000;">Marxism</span> has been losing its force over the years, and now is the time for the <span style="color: #3E88B3;">**DNVP**</span> to define itself through the next challenging years. [? if young_plan_signatures >= 10: The success of the Young Plan referendum to reach the adequate signatures has bolstered the current leadership.?][? if weimar_ref_signatures >= 30: The high support for the referendum for the revision of the constitution has bolstered the current leadership.?]
+The "unity of the no" against <span style="color: #9B0000;">Marxism</span> has been losing its force over the years, and now is the time for the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> to define itself through the next challenging years. [? if young_plan_signatures >= 10: The success of the Young Plan referendum to reach the adequate signatures has bolstered the current leadership.?][? if weimar_ref_signatures >= 30: The high support for the referendum for the revision of the constitution has bolstered the current leadership.?]
 
 - @resultsdnvp: The congress unfolds...
 
@@ -22,17 +22,17 @@ go-to: statusquo if ((young_plan_signatures >= 10 and pro_republic_8 < 70) or (w
 on-arrival: hergt_stays = 1; old_middle_dnf -= 2; old_middle_dnvp += 2; new_middle_dnvp += 1; new_middle_dnf -= 1; nationalism += 3; catholics_dnvp += 3 if stegerwald_path; catholics_other -= 3 if stegerwald_path
 face-image: img/portraits/OskarHergt.jpg
 
-Despite some dissent from the more <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> forces within the <span style="color: #3E88B3;">**DNVP**</span>, the congress goes through without incident. The willingness of their leadership to negotiate with the <span style="color: #7A3C00;">**NSDAP**</span> is certainly concerning.
+Despite some dissent from the more <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> forces within the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, the congress goes through without incident. The willingness of their leadership to negotiate with the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> is certainly concerning.
 
-[? if stegerwald_path: As a result of Stegerwald capturing the <span style="color: #3E88B3;">**DNVP**</span>'s working-class voters, the party is refocusing to reach out to Catholics. ?]
+[? if stegerwald_path: As a result of Stegerwald capturing the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>'s working-class voters, the party is refocusing to reach out to Catholics. ?]
 
 @christiansocial
 on-arrival: dnvp_leader = "Lambach"; workers_dnvp += 20; workers_dnvp += 5 if unions_independent; workers_spd -= 5; workers_kpd -= 2; z_workers -= 5 if stegerwald_path; labor_dissent += 10; old_middle_dnvp -= 5; old_middle_dnf += 5; new_middle_dnvp += 2; new_middle_other -= 2; workers_other -= 4; rural_dnvp -= 6; rural_dnf += 4; rural_dvp += 4; old_middle_dvp += 6; new_middle_dvp += 6; rural_lvp += 4; old_middle_lvp += 6; new_middle_lvp += 6; ddp_right += 1; dvp_right += 2; lvp_right += 2
 face-image: img/dnvpposter.jpg
 
-The exodus of workers from our support base has greatly strengthened the <span style="color: #6D5298;">Christian Socials</span> within the <span style="color: #3E88B3;">**DNVP**</span>, who seek to take advantage of our alienation of the trade unions. 
+The exodus of workers from our support base has greatly strengthened the <span style="color: #6D5298;">Christian Socials</span> within the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, who seek to take advantage of our alienation of the trade unions. 
 
-Walther Lambach has been elected leader of the <span style="color: #3E88B3;">**DNVP**</span>, a trade union leader and the center of discourse within their party in the last congress. He claims a middle ground between socialism and capitalism, and to reconcile capital and labor, it remains to be seen how his leadership would impact the political landscape.
+Walther Lambach has been elected leader of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, a trade union leader and the center of discourse within their party in the last congress. He claims a middle ground between socialism and capitalism, and to reconcile capital and labor, it remains to be seen how his leadership would impact the political landscape.
 
 @youngconservative
 on-arrival: dnvp_leader = "Treviranus"; true_christian_democracy = 1; rural_dnf += 3; old_middle_dnf += 3; rural_other -= 3; old_middle_other -= 3; new_middle_other -= 3; new_middle_dnvp += 3; workers_dnvp += 1; catholics_dnvp += 3; catholics_other -= 3; pro_republic += 5; dvp_left += 2; ddp_left += 1; lvp_left += 2; catholics_dnvp += 3 if stegerwald_path; catholics_other -= 3 if stegerwald_path
@@ -40,4 +40,4 @@ face-image: img/portraits/Treviranus.jpg
 
 The reluctance for the party around Hergt and Westarp to fully commit to a democratic party has been increasingly under fire from the <span style="color: #6D5298;">Christian Socials</span> and "Young Conservatives", and [? if young_plan_signatures < 10 and pro_republic_8 < 70: the failure for the referendum against the Young Plan to reach the signature threshold has tipped the balance in their favor?][? if weimar_ref_signatures < 30 and pro_republic_8 >= 70: the underperformance of the referendum for the revision of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> constitution has tipped the balance in their favor?][? if (was_in_center_right_coalition == 1 and pro_republic_8 >= 70 and pro_republic >= 70) and not (weimar_ref_signatures < 30 and pro_republic_8 >= 70) and not (young_plan_signatures < 10 and pro_republic_8 < 70): the national opinion increasingly shifting in favor of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ub</span><span style="color: #FFCC00;">lic</span>?]. 
 
-Gottfried Treviranus has been elected as leader of the <span style="color: #3E88B3;">**DNVP**</span>, a member of the "Young Conservative" faction and is supportive of transforming the party into a constructive conservative force, akin to the <span style="color: #0087DC;">British Tories</span>. The defeat of the radical right and national conservative forces within the <span style="color: #3E88B3;">**DNVP**</span> helps pave the way for Treviranus' vision of a <span style="color: #87CEFA;">Christian Democratic</span>, albeit nationalist party. [? if stegerwald_path: As a result of Stegerwald capturing the <span style="color: #3E88B3;">**DNVP**</span>'s working-class voters, the party is refocusing to reach out to Catholics. ?]
+Gottfried Treviranus has been elected as leader of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, a member of the "Young Conservative" faction and is supportive of transforming the party into a constructive conservative force, akin to the <span style="color: #0087DC;">British Tories</span>. The defeat of the radical right and national conservative forces within the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> helps pave the way for Treviranus' vision of a <span style="color: #87CEFA;">Christian Democratic</span>, albeit nationalist party. [? if stegerwald_path: As a result of Stegerwald capturing the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>'s working-class voters, the party is refocusing to reach out to Catholics. ?]

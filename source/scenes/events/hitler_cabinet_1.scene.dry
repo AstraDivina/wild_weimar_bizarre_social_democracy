@@ -18,7 +18,7 @@ on-display: {!
 
 = The Enabling Act
 
-As the Reichstag gets back to business once again, the bill on debate is not one of no-confidence, but rather an "Enabling Act" proposed by [+ nsdap_chancellor +] and the <span style="color: #7A3C00;">**NSDAP**</span>. With Schleicher's blessing, the cabinet believes that certain elements of the constitution will have to suspended in order to crush the <span style="color: #700000;">**Communists**</span> and Reichsbanner. 
+As the Reichstag gets back to business once again, the bill on debate is not one of no-confidence, but rather an "Enabling Act" proposed by [+ nsdap_chancellor +] and the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>. With Schleicher's blessing, the cabinet believes that certain elements of the constitution will have to suspended in order to crush the <span style="color: #700000;">**Communists**</span> and Reichsbanner. 
 
 However, this is not something the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] can easily swallow...
 
@@ -49,7 +49,7 @@ Do we realize that this means civil war, against the full force of the state?
 
 Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
-The Reichstag is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Nazis</span> pass decrees giving them unlimited power. They, combined with the [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
+The Reichstag is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Nazis</span> pass decrees giving them unlimited power. They, combined with the [? if dnvp_ideology == "Radical": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections.
 
 Germany is lost.
 

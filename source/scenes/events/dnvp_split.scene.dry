@@ -1,4 +1,4 @@
-title: <span style="color: #3E88B3;">**DNVP**</span> Splits!
+title: <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Splits!
 subtitle: Hugenberg and his supporters leave...
 view-if: year = 1928 and month = 11 and dnvp_leader = "Hergt"
 max-visits: 1
@@ -19,9 +19,9 @@ new-page: true
 
 = <span style="color: #003755;">Deutschnationale Front</span> founded
 
-Hugenberg and his supporters have went through with his plans to organize a secession from the right of the <span style="color: #3E88B3;">**DNVP**</span> and formed his own political party, the <i>Deutschnationale Front</i> (<span style="color: #003755;">**DNF**</span>). Hugenberg has brought a considerable amount of party infrastructure into his own splinter party, however, it doesn't appear like the <span style="color: #003755;">**DNF**</span> would have much electoral appeal as the <span style="color: #3E88B3;">**DNVP**</span>. The <span style="color: #3E88B3;">**Stahlhelm**</span> paramilitary is caught between the two parties, but doesn't pledge support for either one. It may take some time until the <span style="color: #3E88B3;">**DNVP**</span> rebuilds to fill the hole Hugenberg's influence left behind.
+Hugenberg and his supporters have went through with his plans to organize a secession from the right of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> and formed his own political party, the <i>Deutschnationale Front</i> (<span style="color: #003755;">**DNF**</span>). Hugenberg has brought a considerable amount of party infrastructure into his own splinter party, however, it doesn't appear like the <span style="color: #003755;">**DNF**</span> would have much electoral appeal as the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>. The <span style="color: #3E88B3;">**Stahlhelm**</span> paramilitary is caught between the two parties, but doesn't pledge support for either one. It may take some time until the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> rebuilds to fill the hole Hugenberg's influence left behind.
 
-The <span style="color: #385A38;">agrarian</span>, industrialist, <span style="color: #6D5298;">Christian Social</span>, and the new 'Young Conservative' wings of the parties have largely remained in the <span style="color: #3E88B3;">**DNVP**</span>, and will hopefully change their attitude towards the republic. The small <span style="color: #7A3C00;">**NSDAP**</span> has gained among some radicalized <span style="color: #003755;">**DNF**</span> supporters.
+The <span style="color: #385A38;">agrarian</span>, industrialist, <span style="color: #6D5298;">Christian Social</span>, and the new 'Young Conservative' wings of the parties have largely remained in the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, and will hopefully change their attitude towards the republic. The small <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> has gained among some radicalized <span style="color: #003755;">**DNF**</span> supporters.
 
 - @goodnews: We'll watch as the enemies of the republic tear themselves apart.
 

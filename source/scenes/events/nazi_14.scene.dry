@@ -30,7 +30,7 @@ However, the collapse of the Harzburg Front, Hugenberg's distrust of [+ nsdap_ch
 - @nazi_2
 
 @nazi_2
-title: The <span style="color: #3E88B3;">**Stahlhelm**</span> and the [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] are sounded out for cabinet posts.
+title: The <span style="color: #3E88B3;">**Stahlhelm**</span> and the [? if dnvp_ideology == "Radical": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #003755;">**DNF**</span>?] are sounded out for cabinet posts.
 
 Franz Seldte of the <span style="color: #3E88B3;">**Stahlhelm**</span>, a staunch opponent of Schleicher’s efforts to bring his paramilitary under state control, quickly succumbed to the promise of a cabinet post. His decision is announced during negotiations with Hugenberg, putting the latter at a disadvantage and increasing the pressure on him to follow suit.
 

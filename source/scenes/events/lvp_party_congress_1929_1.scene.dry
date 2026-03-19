@@ -252,26 +252,26 @@ Despite this, Dietrich is not as extreme as the industrialists on the right of t
 
 @curtius
 title: Julius Curtius is elected!
-subtitle: Curtius was a member of the former <span style="color: #C0A054;">**DVP**</span>, and is a committed Stresemannite and member of their left wing. He has since succeeded Stresemann on foreign policy matters.
-unavailable-subtitle: [? if dingeldey_lead: The <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, and point out his lackluster record as a successor to Stresemann. ?][? if dietrich_lead or heuss_lead: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Luther. ?][? if lvp_deadlock: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, while the right wing of the party prefers a more right-wing former <span style="color: #C0A054;">DVP</span> member. ?]
+subtitle: Curtius was a member of the former <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and is a committed Stresemannite and member of their left wing. He has since succeeded Stresemann on foreign policy matters.
+unavailable-subtitle: [? if dingeldey_lead: The <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, and point out his lackluster record as a successor to Stresemann. ?][? if dietrich_lead or heuss_lead: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Luther. ?][? if lvp_deadlock: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, while the right wing of the party prefers a more right-wing former <span class="Party PartyDVP" style="color: #C0A054;">DVP</span> member. ?]
 choose-if: curtius_lead
 view-if: not curtius_resign_lvp and not (curtius_banking_crisis and banking_crisis_seen)
 on-arrival: lvp_relation += 4; lvp_left += 2; lvp_leader = "Curtius"; pro_republic += 3; old_middle_lvp += 4; new_middle_lvp += 4
 face-image: img/portraits/curtius.jpg
 
-Julius Curtius, Stresemann's successor in foreign affairs and a former member of the <span style="color: #C0A054;">**DVP**</span>, has won the vote to succeed Luther for the chairmanship. Curtius is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
+Julius Curtius, Stresemann's successor in foreign affairs and a former member of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, has won the vote to succeed Luther for the chairmanship. Curtius is supported by the 'Pragmatic Center', and was put forth as a compromise candidate. 
 
-As a former member of the <span style="color: #C0A054;">**DVP**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
+As a former member of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing, he is in favor of closer cooperation with us. However, his leadership has been quite uninspiring, to say the least. [? if foreign_minister_party == "LVP": The responsibilities of the foreign ministry prevent him from being involved in the day-to-day running of his party, which is now delegated to a group of his associates in the 'Pragmatic Center'. ?]
 
 @dingeldey
 title: Eduard Dingeldey is elected.
-subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**DVP**</span>, and commonly associated with the industrial-right of the party.
+subtitle: Dingeldey was a member of the former <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and commonly associated with the industrial-right of the party.
 unavailable-subtitle: The right-industrial faction of the <span style="color: #FFCC00;">LVP</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
 on-arrival: lvp_relation -= 6; lvp_right += 3; lvp_leader = "Dingeldey"; new_middle_lvp -= 5; workers_lvp -= 2; old_middle_lvp += 4; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**DVP**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #FFCC00;">**LVP**</span> and the <span style="color: #3E88B3;">**DNVP**</span>.
+Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #FFCC00;">**LVP**</span> and the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>.
 
 However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #FFCC00;">**LVP**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #FFCC00;">**LVP**</span>'s internal politics.
 

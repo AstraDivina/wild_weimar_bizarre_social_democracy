@@ -47,7 +47,7 @@ We also aim to improve relations with our eastern neighbors, <span style="color:
 
 @improve_soviet_eco
 title: Expand our exports to the <span style="color: #750e0e;">**Soviet Union**</span>.
-subtitle: A win for our economy and for our relationship with the <span style="color: #700000;">**KPD**</span>.
+subtitle: A win for our economy and for our relationship with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 view-if: year >= 1930
 on-arrival: soviet_export = 1; soviet_relation += 1; economic_growth += 0.5; unemployed -= 0.5; foreign_goal_completed += 1; kpd_relation += 6; communist_coalition += 1; hindenburg_angry += 15; z_relation -= 3; ddp_relation -= 3; dvp_relation -= 3; lvp_relation -= 3; dvp_right += 1; lvp_right += 1; ddp_right += 1
 max-visits: 1
@@ -58,7 +58,7 @@ The <span style="color: #940000;">Soviets</span> are pleased by this, and we sta
 
 @improve_soviet
 title: Improve our relations with the <span style="color: #750e0e;">**Soviet Union**</span>.
-subtitle: We could also broach the question of the <span style="color: #700000;">**KPD**</span>...
+subtitle: We could also broach the question of the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>...
 
 The <span style="color: #750e0e;">Soviet Union</span> also suffered from the international order created by the Treaty of Versailles; they have been participating in our secret rearmament program. The Treaty of Rapallo in 1922 affirmed our friendly relations.
 
@@ -82,9 +82,9 @@ on-arrival: soviet_aid_forpol = 1; budget -= 1; soviet_relation += 2; coalition_
 
 The <span style="color: #940000;">Soviets</span> are pleased that we have sent them aid, and have not asked for anything specific in exchange. Our coalition partners are less pleased.
 
-- @kpd: Ask if <span style="color: #940000;">Moscow</span> could help repair our relations with the <span style="color: #700000;">**KPD**</span>.
+- @kpd: Ask if <span style="color: #940000;">Moscow</span> could help repair our relations with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 - @wittorf: Do the <span style="color: #940000;">Soviets</span> know about the Wittorf Affair? Do they know that we know?
-- @root: Do not mention the <span style="color: #700000;">**KPD**</span>.
+- @root: Do not mention the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 
 @soviet_economic_aid_no
 
@@ -94,7 +94,7 @@ The <span style="color: #940000;">Soviets</span> are slightly upset, but they se
 @kpd
 on-arrival: kpd_relation += 8*(1-dissent); communist_coalition += 1 if kpd_foreign_seen == 0; kpd_foreign_seen = 1
 
-We also mention the <span style="color: #700000;">**KPD**</span> in our conversations with the <span style="color: #940000;">Soviet</span> ambassador. They claim that the <span style="color: #700000;">**KPD**</span> is entirely independent of the <span style="color: #940000;">Soviet</span> government, and that the conflict is Thälmann's doing. But, soon after our conversation we notice a slight improvement in attitudes from the <span style="color: #700000;">**KPD**</span>.
+We also mention the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> in our conversations with the <span style="color: #940000;">Soviet</span> ambassador. They claim that the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is entirely independent of the <span style="color: #940000;">Soviet</span> government, and that the conflict is Thälmann's doing. But, soon after our conversation we notice a slight improvement in attitudes from the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 
 @wittorf
 view-if: wittorf_secret = 1 and ((year = 1929 and month < 6) or year = 1928) and wittorf_soviet_union = 0
@@ -161,7 +161,7 @@ max-visits: 1
 
 With our success in negotiating a pause in reparation payments, the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> have been convinced of our sincere commitment to pacifism and distancing from militarism. Additionally, <span style="color: #002654;">France</span>'s new <span style="color: #E0B0FF;">left-wing</span> Prime Minister has been considerably more amicable than their predecessor. As a result, we have secured their agreement to a conference aimed at finally settling the reparations issue.
 
-In the end, Germany is required to make only a final payment of three billion marks, effectively ending future reparation obligations. This has greatly boosted investor confidence and sparked a new wave of capital inflows to Germany. This has greatly eased tensions within our government, with our party receiving credit for the achievement—much to the detriment of the <span style="color: #7A3C00;">**NSDAP**</span>, which had built much of its appeal on the narrative of Germany’s "national slavery."
+In the end, Germany is required to make only a final payment of three billion marks, effectively ending future reparation obligations. This has greatly boosted investor confidence and sparked a new wave of capital inflows to Germany. This has greatly eased tensions within our government, with our party receiving credit for the achievement—much to the detriment of the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, which had built much of its appeal on the narrative of Germany’s "national slavery."
 
 - @schleicher_spd
 
@@ -173,7 +173,7 @@ on-arrival: military_parity = 1 if eu or (west_relation >= 8 and reformist_stren
 
 General Schleicher has demanded that we raise the issue of rearmament, which remains restricted under the Treaty of Versailles. However, <span style="color: #002654;">French</span> Premier Édouard Herriot seized on this as an admission that Germany is, in fact, capable of paying its reparations and would simply redirect freed-up funds toward rearmament.
 
-[? if military_parity:[? if eu: However, with the formation of the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span> and its defense agreements, preventing Germany’s rearmament has become increasingly irrelevant. As a result, military restrictions are lifted!?][? if not eu: However, our exceptionally friendly relations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> have led them to begrudgingly grant us flexibility in rearmament, believing that we could serve as a bulwark against the <span style="color: #700000;">Bolsheviks</span>.?] As a result, the <span style="color: #7A3C00;">**NSDAP**</span> has lost yet another propaganda tool. However, we continue to suffer heavy losses to the <span style="color: #700000;">**Communists**</span>[? if not lvp_formed:&nbsp;and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who we have suffered serious defections to?]. ?]
+[? if military_parity:[? if eu: However, with the formation of the <span style="color: #001489;">European</span> <span style="color: #FFDD00;">Union</span> and its defense agreements, preventing Germany’s rearmament has become increasingly irrelevant. As a result, military restrictions are lifted!?][? if not eu: However, our exceptionally friendly relations with the <span style="color: #0A3161;">Western</span> <span style="color: #C8102E;">Allies</span> have led them to begrudgingly grant us flexibility in rearmament, believing that we could serve as a bulwark against the <span style="color: #700000;">Bolsheviks</span>.?] As a result, the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> has lost yet another propaganda tool. However, we continue to suffer heavy losses to the <span style="color: #700000;">**Communists**</span>[? if not lvp_formed:&nbsp;and <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who we have suffered serious defections to?]. ?]
 
 [? if not military_parity: This has caused great embarrassment to our pacifist and democratic image, both at home and abroad. Damn you, Schleicher! ?]
 

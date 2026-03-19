@@ -9,7 +9,7 @@ tags: event
 
 With Schleicher resigning in shame, the <span style="color: #BFC8CC;">**DNEF**</span> no longer has a god-like figure to rally around. The factions and politicians once held together by his influence have now decided it is best to go their separate ways.
 
-The <i>Blocparteis</i> are freed, and the bulk of the organization — those not drawn from their ranks — has splintered off in different directions. The right-wing, more nationalist section has salvaged the party's national structures and will continue on by merging into the [? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?], now rallying behind Treviranus.
+The <i>Blocparteis</i> are freed, and the bulk of the organization — those not drawn from their ranks — has splintered off in different directions. The right-wing, more nationalist section has salvaged the party's national structures and will continue on by merging into the [? if dnvp_ideology == "Moderate": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?], now rallying behind Treviranus.
 
 The more left-leaning—and quite frankly, eccentric—elements of the movement have formed a new <span style="color: #fe9e00;">Old Social Democratic Party</span> (<span style="color: #fe9e00;">**ASPD**</span>), grounded in class collaboration, nationalism, and laborism. They call for a "Volksocialism", whatever that means.
 

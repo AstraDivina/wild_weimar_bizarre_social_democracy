@@ -1,4 +1,4 @@
-title: <span style="color: #D3C24D;">**DDP**</span> Reformation
+title: <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> Reformation
 subtitle: The <span style="color: #D3C24D;">German Democratic Party</span> is becoming the <span style="color: #D3C24D;">German State Party</span>.
 view-if: year == 1930 and month >= 8 and not lvp_formed
 on-arrival: {!
@@ -43,11 +43,11 @@ tags: event
 face-image: img/ddp.jpg
 new-page: true
 
-= <span style="color: #D3C24D;">**DDP**</span> Reformation
+= <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> Reformation
 
-The <span style="color: #D3C24D;">**DDP**</span> is a fascinating party, plagued by infighting since the republic's foundation and struggling to define its platform in a failed attempt to appeal to voters from all demographics.[? if stolper_program_adopted:&nbsp;Recently, however, the party seems to have turned a new page, rallying around a renewed focus on middle-class interests. ?][? if not stolper_program_adopted:&nbsp;A recent attempt to shift focus toward the middle class has been quietly buried due to internal dissent, perhaps factionalism and personal rivalries may be a permanent feature of this party. ?]
+The <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> is a fascinating party, plagued by infighting since the republic's foundation and struggling to define its platform in a failed attempt to appeal to voters from all demographics.[? if stolper_program_adopted:&nbsp;Recently, however, the party seems to have turned a new page, rallying around a renewed focus on middle-class interests. ?][? if not stolper_program_adopted:&nbsp;A recent attempt to shift focus toward the middle class has been quietly buried due to internal dissent, perhaps factionalism and personal rivalries may be a permanent feature of this party. ?]
 
-Pessimism is a widespread feeling within the party, leading to mounting pressure on leader Koch-Weser to do "something". After weeks of secret negotiations, the <span style="color: #D3C24D;">**DDP**</span> is announcing the result of a proposed merger of the <span style="color: #D3C24D;">**DDP**</span> and <span style="color: #D3D3A9;">**VNR**</span>, a party admired by senior party officials for its "<span class="tooltip-text" title="good mod">dynamism</span>". [? if not vnr_cool: However, the <span style="color: #D3D3A9;">**VNR**</span>'s weak electoral performance has led many to question whether a merger is worthwhile. ?]
+Pessimism is a widespread feeling within the party, leading to mounting pressure on leader Koch-Weser to do "something". After weeks of secret negotiations, the <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> is announcing the result of a proposed merger of the <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> and <span style="color: #D3D3A9;">**VNR**</span>, a party admired by senior party officials for its "<span class="tooltip-text" title="good mod">dynamism</span>". [? if not vnr_cool: However, the <span style="color: #D3D3A9;">**VNR**</span>'s weak electoral performance has led many to question whether a merger is worthwhile. ?]
 
 - @dstp_formed: The <span style="color: #D3C24D;">**DStP**</span> is formed.
 - @status_quo: The negotiations fail.
@@ -59,9 +59,9 @@ face-image: img/dstp.jpg
 achievement: dstp_dilemma
 go-to: recalculate
 
-This has come as a complete shock to those inside and outside the party, for the <span style="color: #D3C24D;">**DDP**</span> to merge with the political wing of a mildly anti-Semitic paramilitary group "Young German Order". Ongoing negotiations to unite the liberal and bourgeois parties has been considerably damaged, due to the <span style="color: #D3C24D;">**DDP**</span>'s attempts to promote a left-wing split from the <span style="color: #C0A054;">**DVP**</span>.
+This has come as a complete shock to those inside and outside the party, for the <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> to merge with the political wing of a mildly anti-Semitic paramilitary group "Young German Order". Ongoing negotiations to unite the liberal and bourgeois parties has been considerably damaged, due to the <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span>'s attempts to promote a left-wing split from the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>.
 
-In this agreement, the <span style="color: #D3C24D;">**DDP**</span> has promised a "extension of the party to the right", which can only spell trouble for our closest bourgeois ally. Despite this, the formation of the <span style="color: #D3C24D;">**DStP**</span> wasn't a simple left-right divide within the party, the Social Republican Circle and labor leader Ernst Lemmer helps prevent a major split among the left. However, cracks are already beginning to show within this arrangement, it is only a matter of time before this experiment falls apart.
+In this agreement, the <span class="Party PartyDDP" style="color: #D3C24D;">**DDP**</span> has promised a "extension of the party to the right", which can only spell trouble for our closest bourgeois ally. Despite this, the formation of the <span style="color: #D3C24D;">**DStP**</span> wasn't a simple left-right divide within the party, the Social Republican Circle and labor leader Ernst Lemmer helps prevent a major split among the left. However, cracks are already beginning to show within this arrangement, it is only a matter of time before this experiment falls apart.
 
 @status_quo
 view-if: dstp_formation_points < 3

@@ -22,7 +22,7 @@ go-to: campaign_menu
 
 Being the only state election between Schleicher's appointment and Strasser’s resignation, which, alongside several local elections, has painted a picture of the <span style="color: #7A3C00;">Nazi Party</span>'s rapid decline, the <span style="color: #7A3C00;">Nazis</span> are eager to pour all their resources into a victory in this microstate. The intensity of their campaign is unprecedented, with [+ nsdap_chancellor +] and dozens of nationally prominent <span style="color: #7A3C00;">Nazi</span> leaders holding rallies as many as a dozen times per day.
 
-A defeat here would cement the growing belief that the party is collapsing—and deny them a much-needed propaganda victory to revitalize their flagging morale. The local <span style="color: #c00000;">**SPD**</span> remains strong, having secured 39% of the vote in the last election and winning a majority of the urban vote. Meanwhile, the various bourgeois parties that once dominated the rural areas have become irrelevant and are likely to crumble under the weight of the <span style="color: #7A3C00;">**NSDAP**</span> campaign.
+A defeat here would cement the growing belief that the party is collapsing—and deny them a much-needed propaganda victory to revitalize their flagging morale. The local <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> remains strong, having secured 39% of the vote in the last election and winning a majority of the urban vote. Meanwhile, the various bourgeois parties that once dominated the rural areas have become irrelevant and are likely to crumble under the weight of the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> campaign.
 
 The odds favor the <span style="color: #7A3C00;">Nazis</span>: the near-total absence of Catholics, a 60% rural population, and the fact that this state constitutes just a quarter of a percent of Germany’s population—all make it possible for them to blanket the area with propaganda and demonstrations at minimal cost.
 
@@ -37,23 +37,23 @@ This is a high-stakes campaign: if the <span style="color: #7A3C00;">Nazis</span
 
 @schleicher
 title: Chancellor Schleicher offers to lend supporting parties state funding.
-unavailable-subtitle: And that includes no one at the moment, not even the <span style="color: #3E88B3;">DNVP</span>.
+unavailable-subtitle: And that includes no one at the moment, not even the <span class="Party PartyDNVP" style="color: #3E88B3;">DNVP</span>.
 choose-if: schleicher_spd_r >= 3
 on-arrival: resources += 2; schleicher_spd_support += 1; schleicher_spd_lippe = 1; nsdap_lippe -= 0.05; schleicher_spd_influence += 1
 max-visits: 1
 go-to: campaign_menu
 
-Schleicher, in recognition of the <span style="color: #c00000;">**SPD**</span>'s relative support for his cabinet, has granted us access to secret state funding for the campaign. This move is also likely to improve the party's perception of the chancellor.
+Schleicher, in recognition of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s relative support for his cabinet, has granted us access to secret state funding for the campaign. This move is also likely to improve the party's perception of the chancellor.
 
 @campaign_low
-title: Leave campaigning to the local <span style="color: #c00000;">**SPD**</span>.
+title: Leave campaigning to the local <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>.
 subtitle: This is the default option.
 view-if: not schleicher_spd_lippe
 on-arrival: campaign_low_lippe = 1
 
-We don't need to worry about Lippe. Local campaigning efforts are left to the historically popular local <span style="color: #c00000;">**SPD**</span> and Minister-President, who seek to maintain the loyalty of the state's working-class.
+We don't need to worry about Lippe. Local campaigning efforts are left to the historically popular local <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and Minister-President, who seek to maintain the loyalty of the state's working-class.
 
-Our campaign pales in comparison to the <span style="color: #7A3C00;">Nazi</span> one by miles, who have received a welcome surprise by Hugenberg announcing a political truce with the <span style="color: #7A3C00;">**NSDAP**</span>, a step toward reconciliation. Therefore, their campaign has free rein over the rural 60% of the state.
+Our campaign pales in comparison to the <span style="color: #7A3C00;">Nazi</span> one by miles, who have received a welcome surprise by Hugenberg announcing a political truce with the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, a step toward reconciliation. Therefore, their campaign has free rein over the rural 60% of the state.
 
 @campaign_med
 title: Launch a campaign among the urban sections of Lippe, focusing on the working-class.
@@ -63,9 +63,9 @@ choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 1; spd_lippe += 0.1; spd_lippe -= 0.05 if not democracy_paramilitary
 
-Despite Lippe's small size, we must step up our ground game. Speakers are brought in from all over the country to preach to the workers about the dangers of <span style="color: #7A3C00;">Nazism</span>, and highlight the <span style="color: #c00000;">**SPD**</span>'s accomplishments on behalf of the working class. [? if democracy_paramilitary: Despite the <span style="color: #7A3C00;">**SA**</span>'s attempts at disruption, Reichsbanner units brought in from other parts of the country maintain order. ?][? if not democracy_paramilitary: However, the <span style="color: #7A3C00;">**SA**</span> has repeatedly disrupted our gatherings, and attacked many of our officials. ?]
+Despite Lippe's small size, we must step up our ground game. Speakers are brought in from all over the country to preach to the workers about the dangers of <span style="color: #7A3C00;">Nazism</span>, and highlight the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s accomplishments on behalf of the working class. [? if democracy_paramilitary: Despite the <span style="color: #7A3C00;">**SA**</span>'s attempts at disruption, Reichsbanner units brought in from other parts of the country maintain order. ?][? if not democracy_paramilitary: However, the <span style="color: #7A3C00;">**SA**</span> has repeatedly disrupted our gatherings, and attacked many of our officials. ?]
 
-Our campaign still pales in comparison to the <span style="color: #7A3C00;">Nazis</span>, who were given a significant boost when Hugenberg announced a political truce with the <span style="color: #7A3C00;">**NSDAP**</span>, marking a step toward reconciliation. As a result, their campaign now has free rein over the rural 60% of the state.
+Our campaign still pales in comparison to the <span style="color: #7A3C00;">Nazis</span>, who were given a significant boost when Hugenberg announced a political truce with the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, marking a step toward reconciliation. As a result, their campaign now has free rein over the rural 60% of the state.
 
 @campaign_high
 title: Launch an extensive ground and propaganda campaign, reaching all corners of the state.
@@ -74,6 +74,6 @@ choose-if: resources >= 2
 unavailable-subtitle: Not enough resources.
 on-arrival: resources -= 2; spd_lippe += 0.2; spd_lippe -= 0.05 if not democracy_paramilitary; spd_lippe -= 0.05 if not peoples_party
 
-Despite Lippe's small size, our campaign needs to rival the <span style="color: #7A3C00;">Nazis</span>. Speakers are brought in from all over the country to preach to the workers about the dangers of <span style="color: #7A3C00;">Nazism</span>, and highlight the <span style="color: #c00000;">**SPD**</span>'s accomplishments on behalf of the working class. We made efforts to campaign among the traditionally conservative rural areas of the state, [? if not peoples_party: however, we have not historically campaigned much among the farmers, and they do not trust us over the <span style="color: #7A3C00;">Nazis</span>. ?][? if peoples_party: with varying degrees of success. ?][? if democracy_paramilitary: Despite the <span style="color: #7A3C00;">**SA**</span>'s attempts at disruption, Reichsbanner units brought in from other parts of the country maintain order. ?][? if not democracy_paramilitary: However, the <span style="color: #7A3C00;">**SA**</span> has repeatedly disrupted our gatherings, and attacked many of our officials. ?]
+Despite Lippe's small size, our campaign needs to rival the <span style="color: #7A3C00;">Nazis</span>. Speakers are brought in from all over the country to preach to the workers about the dangers of <span style="color: #7A3C00;">Nazism</span>, and highlight the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s accomplishments on behalf of the working class. We made efforts to campaign among the traditionally conservative rural areas of the state, [? if not peoples_party: however, we have not historically campaigned much among the farmers, and they do not trust us over the <span style="color: #7A3C00;">Nazis</span>. ?][? if peoples_party: with varying degrees of success. ?][? if democracy_paramilitary: Despite the <span style="color: #7A3C00;">**SA**</span>'s attempts at disruption, Reichsbanner units brought in from other parts of the country maintain order. ?][? if not democracy_paramilitary: However, the <span style="color: #7A3C00;">**SA**</span> has repeatedly disrupted our gatherings, and attacked many of our officials. ?]
 
-Although our campaigning efforts may finally have caught up to the one of the <span style="color: #7A3C00;">Nazis</span>, they've received a welcome surprise by Hugenberg announcing a political truce with the <span style="color: #7A3C00;">**NSDAP**</span>, a step toward reconciliation. As a result, their campaign is free from bourgeois counter-campaigns in the rural 60% of the state.
+Although our campaigning efforts may finally have caught up to the one of the <span style="color: #7A3C00;">Nazis</span>, they've received a welcome surprise by Hugenberg announcing a political truce with the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, a step toward reconciliation. As a result, their campaign is free from bourgeois counter-campaigns in the rural 60% of the state.

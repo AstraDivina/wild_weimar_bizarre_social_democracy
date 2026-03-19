@@ -1,4 +1,4 @@
-title: <span style="color: #3E88B3;">**DNVP**</span> Moderates split!
+title: <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Moderates split!
 subtitle: Westarp had enough of Hugenberg's antics.
 view-if: year = 1930 and month = 7 and dnvp_leader = "Hugenberg" and not dnvp_split_2 and not hugenberg_reinstated and not kvp_formed and bruning_event_timer == 0
 priority: -1
@@ -7,9 +7,9 @@ tags: event
 face-image: img/dnvp2.jpg
 new-page: true
 
-= <span style="color: #3E88B3;">**DNVP**</span> Moderates split!
+= <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> Moderates split!
 
-The moderate anti-Hugenberg wing of the <span style="color: #3E88B3;">**DNVP**</span> had already decided to break with the party, and it was only a matter of finding the right pretext. This opportunity came when Hugenberg passed a resolution to strengthen his <i>Führerprinzip</i> over the party, making the decisions of the party executive committee and leader binding on all members of the party’s delegations to the Reichstag and state parliaments.
+The moderate anti-Hugenberg wing of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> had already decided to break with the party, and it was only a matter of finding the right pretext. This opportunity came when Hugenberg passed a resolution to strengthen his <i>Führerprinzip</i> over the party, making the decisions of the party executive committee and leader binding on all members of the party’s delegations to the Reichstag and state parliaments.
 
 The moderates within the party were powerless to stop the adoption of the resolution, which led to Westarp and the remaining moderates [? if not kvp_formed: splitting off into various parties on the moderate German right?][? if kvp_formed: to join their friends in the newly founded <span style="color: #0087DC;">**KVP**</span>?].
 
@@ -20,4 +20,4 @@ The moderates within the party were powerless to stop the adoption of the resolu
 on-arrival: other_r += dnvp_r*0.3 if not kvp_formed; kvp_r += dnvp_r*0.3 if kvp_formed; dnvp_r = dnvp_r*0.7; rural_dnvp -= 4; new_middle_dnvp -= 4; old_middle_dnvp -= 4; rural_other += 4 if not kvp_formed; new_middle_other += 4 if not kvp_formed; old_middle_other += 4 if not kvp_formed; rural_kvp += 4 if kvp_formed; new_middle_kvp += 4 if kvp_formed; old_middle_kvp += 4 if kvp_formed; dnvp_split_2 = 1; dnvp_split_2_timer = 1 if not kvp_formed
 face-image: img/portraits/Kuno_von_Westarp.jpg
 
-Unfortunately, the party district organizations remain loyal to Hugenberg, who has worked to fill the party bureaucracy with his own supporters. As a result, the defection of the entire moderate wing of the <span style="color: #3E88B3;">**DNVP**</span> is less impactful than it would have been. Furthermore, many on the right believe that an internal resolution is not a strong enough pretext to break with the party and may choose to remain with Hugenberg.
+Unfortunately, the party district organizations remain loyal to Hugenberg, who has worked to fill the party bureaucracy with his own supporters. As a result, the defection of the entire moderate wing of the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> is less impactful than it would have been. Furthermore, many on the right believe that an internal resolution is not a strong enough pretext to break with the party and may choose to remain with Hugenberg.

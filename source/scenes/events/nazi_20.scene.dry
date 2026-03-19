@@ -1,5 +1,5 @@
 title: Hitler Commits Suicide!
-subtitle: The <span style="color: #7A3C00;">**NSDAP**</span> disintegrates!
+subtitle: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> disintegrates!
 view-if: chancellor = "Schleicher" and schleicher_time == 9 and nsdap_leader == "Hitler"
 new-page: true
 tags: event

@@ -9,7 +9,7 @@ go-to: schleicher_menu if not schleicher_spd_adopted; schleicher_spd_established
 
 = Relations with the Red General
 
-While the <span style="color: #c00000;">**SPD**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the ADGB, our union, has shown some openness to an accommodation with General Kurt von Schleicher. He has also shown interest in winning over the union through his support for public works.
+While the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> remains steadfast in its commitment to a united front against the incumbent <span style="color: #808080;">reactionary</span> government, the ADGB, our union, has shown some openness to an accommodation with General Kurt von Schleicher. He has also shown interest in winning over the union through his support for public works.
 
 @schleicher_menu
 
@@ -27,7 +27,7 @@ choose-if: labor_strength + reformist_strength + social_patriot_strength >= (cen
 on-arrival: schleicher_spd_adopted = 1; schleicher_spd_r += 1 if schleicher_spd_r < 5; center_dissent += 5; left_dissent += 10; labor_strength += 10; reformist_strength += 5; schleicher_approval += 2
 max-visits: 1
 
-The ADGB leadership has now officially—although only in private—taken a stance in favor of cooperating with the "Red General." The union will attempt to leverage its influence over the <span style="color: #c00000;">**SPD**</span> to push our hesitant party leadership toward adopting the same position.
+The ADGB leadership has now officially—although only in private—taken a stance in favor of cooperating with the "Red General." The union will attempt to leverage its influence over the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> to push our hesitant party leadership toward adopting the same position.
 
 Gradually, a shift in opinion is becoming visible within the party. Otto Braun has now come out in support of making deals with the General.
 
@@ -38,12 +38,12 @@ view-if: schleicher_spd_support < 10
 choose-if: labor_strength + reformist_strength + social_patriot_strength >= (center_strength*1.5) + left_strength
 on-arrival: schleicher_spd_support += 3; schleicher_spd_support += 1 if wtb_adopted; schleicher_spd_support -= 1 if chancellor == "Papen"; schleicher_spd_support -= 1 if otl_prussian_coup_seen; workers_spd -= 1; unemployed_spd -= 1; workers_kpd += 1; unemployed_kpd += 1; center_dissent += 5; left_dissent += 5
 
-Slowly but surely, the ADGB leadership is beginning to warm to the idea of constructive cooperation with the so-called "Red General." However, much work remains to be done—many within the union, and the overwhelming majority of the <span style="color: #c00000;">**SPD**</span>, remain firmly opposed to cooperating with the man [? if chancellor == "Papen": propping up the widely despised Papen cabinet?][? if chancellor == "Schleicher": who now heads a widely unpopular government?]. [? if wtb_adopted: Our adoption of the WTB Plan—and Schleicher’s public support for similar public works initiatives—has modestly increased the party’s willingness to consider cooperation. ?]
+Slowly but surely, the ADGB leadership is beginning to warm to the idea of constructive cooperation with the so-called "Red General." However, much work remains to be done—many within the union, and the overwhelming majority of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, remain firmly opposed to cooperating with the man [? if chancellor == "Papen": propping up the widely despised Papen cabinet?][? if chancellor == "Schleicher": who now heads a widely unpopular government?]. [? if wtb_adopted: Our adoption of the WTB Plan—and Schleicher’s public support for similar public works initiatives—has modestly increased the party’s willingness to consider cooperation. ?]
 
-[? if otl_prussian_coup_seen: Furthermore, his role in the coup against our Prussian government has only deepened the animosity toward both him and the <span style="color: #c00000;">**SPD**</span>. ?] Rumors about our cooperation has damaged our standing among the working class.
+[? if otl_prussian_coup_seen: Furthermore, his role in the coup against our Prussian government has only deepened the animosity toward both him and the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>. ?] Rumors about our cooperation has damaged our standing among the working class.
 
 @united_front
-subtitle: The consensus view within the <span style="color: #c00000;">**SPD**</span>. We are a democratic party after all.
+subtitle: The consensus view within the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>. We are a democratic party after all.
 on-arrival: schleicher_spd_support -= 2 if schleicher_spd_support > 0; schleicher_spd_r -= 1 if schleicher_spd_r > 0; schleicher_spd_influence -= 1 if schleicher_spd_influence > 0; workers_spd += 2; workers_kpd -= 1; left_dissent -= 5; center_dissent -= 5
 
 We continue to argue for a united opposition of the democratic parties against the unpopular [+ chancellor +] government, and win support among the people for doing so. 
@@ -59,13 +59,13 @@ We continue to argue for a united opposition of the democratic parties against t
 subtitle: More regular meetings will be held between the two groups.
 on-arrival: schleicher_spd_r += 1; schleicher_spd_support += 1; schleicher_spd_influence += 1
 
-Regular secret meetings between the ADGB, the <span style="color: #c00000;">**SPD**</span>, and von Schleicher are being held. This will aid in reducing the mutual distrust between the party and the government.
+Regular secret meetings between the ADGB, the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, and von Schleicher are being held. This will aid in reducing the mutual distrust between the party and the government.
 
 @schleicher_distance
 subtitle: We will sideline his sympathizers.
 on-arrival: schleicher_spd_r -= 1; schleicher_spd_support -= 2; schleicher_spd_influence -= 1; labor_dissent += 8; reformist_dissent += 8; social_patriot_dissent += 8; center_dissent -= 5; left_dissent -= 5; neorevisionist_dissent -= 5; reformist_strength -= 4; labor_strength -= 4; social_patriot_strength -= 4
 
-In recent months, Schleicher has gained significant sympathizers within the Reformist and Labor factions of the <span style="color: #c00000;">**SPD**</span>. Sidelining them would provoke Schleicher’s distrust and stir dissent within their factions affected.
+In recent months, Schleicher has gained significant sympathizers within the Reformist and Labor factions of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>. Sidelining them would provoke Schleicher’s distrust and stir dissent within their factions affected.
 
 @concessions
 view-if: chancellor == "Schleicher" and schleicher_time >= 8 and schleicher_spd_concession < 2
@@ -75,7 +75,7 @@ subtitle: There's a limit to what we can demand, but we can look at our options.
 
 Labor demands the restoration of their rights and welfare.
 
-The <span style="color: #c00000;">**SPD**</span> a cabinet reshuffle.
+The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> a cabinet reshuffle.
 
 We may only demand one, as to not push our luck.
 
@@ -119,6 +119,6 @@ on-arrival: schleicher_spd_concession += 1; schleicher_spd_influence += 2; schle
 
 Although many <span style="color: #808080;">reactionary</span> figures in the cabinet have already been replaced by <span style="color: #000000;">Center Party</span> appointees, further reform is needed to nudge Schleicher’s government toward a more democratic appearance.
 
-The Finance Ministry, previously held by Schwerin von Krosigk, is handed over to a more neutral, non-partisan banker. The Interior Ministry and the Minister without Portfolio post are assigned to the [? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] moderate, Gottfried Treviranus. The Agricultural Ministry is granted to Hans Schlange-Schöningen, a [? if not kvp_formed and dnvp_ideology == "Radical": <span style="color: #7FCEB1;">**CNBLP**</span>?][? if kvp_formed: <span style="color: #0087DC;">**KVP**</span>?][? if dnvp_ideology == "Moderate": <span style="color: #3E88B3;">**DNVP**</span>?] <span style="color: #385A38;">agrarian</span> in support of peasant homesteads.
+The Finance Ministry, previously held by Schwerin von Krosigk, is handed over to a more neutral, non-partisan banker. The Interior Ministry and the Minister without Portfolio post are assigned to the [? if dnvp_ideology == "Moderate": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?][? if dnvp_ideology == "Radical": <span style="color: #0087DC;">**KVP**</span>?] moderate, Gottfried Treviranus. The Agricultural Ministry is granted to Hans Schlange-Schöningen, a [? if not kvp_formed and dnvp_ideology == "Radical": <span style="color: #7FCEB1;">**CNBLP**</span>?][? if kvp_formed: <span style="color: #0087DC;">**KVP**</span>?][? if dnvp_ideology == "Moderate": <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>?] <span style="color: #385A38;">agrarian</span> in support of peasant homesteads.
 
 Though these shifts may seem minor on the surface, the entry of more democratic-leaning ministers into the cabinet makes our continued support more palatable to both the party and our electorate—and subtly shifts the balance in key cabinet votes.

@@ -57,7 +57,7 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-We must bring down the Schleicher cabinet as soon as possible. But the <span style="color: #c00000;">**SPD**</span> and the <span style="color: #700000;">**Communists**</span> lack the votes on the committee to push the proposal through, as the <span style="color: #7A3C00;">Nazis</span> vote it down.
+We must bring down the Schleicher cabinet as soon as possible. But the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and the <span style="color: #700000;">**Communists**</span> lack the votes on the committee to push the proposal through, as the <span style="color: #7A3C00;">Nazis</span> vote it down.
 
 Instead, the <span style="color: #000000;">Center Party</span> offers a compromise: the Reichstag will reconvene early in Week [+ next_reichstag_week +], [+ next_reichstag_month : month +] [+ next_reichstag_year +], with the condition that the committee will reexamine the matter one week prior.
 

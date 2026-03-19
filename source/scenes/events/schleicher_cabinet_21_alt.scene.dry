@@ -41,7 +41,7 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-As expected, Treviranus isn't able to conjure up a majority without the <span style="color: #c00000;">**SPD**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
+As expected, Treviranus isn't able to conjure up a majority without the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
 
 New Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
 

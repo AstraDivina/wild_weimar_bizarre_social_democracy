@@ -10,8 +10,8 @@ max-visits: 1
 
 The Foreign Ministry under Gustav Stresemann has agreed to the Young Plan, an agreement with the Western powers to reduce Germany's reparation payments and give us more fiscal autonomy. Simultaneously, <span style="color: #002654;">France</span> will agree to withdraw its military occupation from the Rhineland.
 
-While this seems to be a positive development for the country, the <span style="color: #3E88B3;">**DNVP**</span>, despite their moderation, opposes the plan, claiming that any reparations are a form of national slavery. They have called for a vote of no confidence against the government, supported by the <span style="color: #7A3C00;">**NSDAP**</span>, 
-<span style="color: #003755;">**DNF**</span> and the <span style="color: #700000;">**KPD**</span>, and for a referendum on the Young Plan.
+While this seems to be a positive development for the country, the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, despite their moderation, opposes the plan, claiming that any reparations are a form of national slavery. They have called for a vote of no confidence against the government, supported by the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, 
+<span style="color: #003755;">**DNF**</span> and the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, and for a referendum on the Young Plan.
 
 We can either vote to bring down the government and hold new elections, or "tolerate" a government led by the remaining bourgeois parties.
 
@@ -51,6 +51,6 @@ The <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;"
 @new_prussia_election
 on-arrival: prussia_coalition_trigger = 1
 
-The Prussian coalition isn't able to survive either, pressure from the national conservatives within the <span style="color: #3E88B3;">**DNVP**</span> forces them to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
+The Prussian coalition isn't able to survive either, pressure from the national conservatives within the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> forces them to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
 
 - @prussian_coalition_formation: Negotiate a new Prussian coalition.

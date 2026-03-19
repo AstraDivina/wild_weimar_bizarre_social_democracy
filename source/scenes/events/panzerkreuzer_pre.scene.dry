@@ -18,9 +18,9 @@ This presents us with an opportunity: we could campaign against the ship’s con
 @anti_ship
 on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 2*(1-dissent); panzerkreuzer_campaign = 1
 
-Our catchy slogan has helped rally the workers’ vote and limit defections to the <span style="color: #700000;">**KPD**</span>.
+Our catchy slogan has helped rally the workers’ vote and limit defections to the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 
 @pro_ship
 on-arrival: workers_kpd += 2; unemployed_kpd += 2; labor_dissent += 5; left_dissent += 5; kpd_relation -= 6; panzerkreuzer_campaign = 0
 
-Our silence has left the <span style="color: #700000;">**KPD**</span> as the sole party vocally opposing the ship’s construction—and they waste no time accusing us of betrayal. The Left and Labor factions voice their displeasure.
+Our silence has left the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> as the sole party vocally opposing the ship’s construction—and they waste no time accusing us of betrayal. The Left and Labor factions voice their displeasure.

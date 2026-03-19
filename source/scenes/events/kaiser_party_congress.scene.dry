@@ -26,7 +26,7 @@ The influx of Protestant conservatives into the <span style="color: #000000;">Ce
 
 Unsurprisingly, this development has sparked outrage among the <span style="color: #FF7F00;">Christian Left</span> and Kaiser’s supporters, many of whom have resigned their posts in protest. The party’s close ties to left-leaning unions have been severely strained, plunging the organization into temporary disarray as labor-aligned factions voice their anger. 
 
-Yet despite this internal upheaval, the party remains poised to continue its cannibalization of the fragmented right—especially the beleaguered <span style="color: #3E88B3;">**DNVP**</span>. This shift is symbolized by the party's rebranding as the <i>Christliche Volkspartei</i> (<span style="color: #000000;">Christian People's Party</span>).
+Yet despite this internal upheaval, the party remains poised to continue its cannibalization of the fragmented right—especially the beleaguered <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>. This shift is symbolized by the party's rebranding as the <i>Christliche Volkspartei</i> (<span style="color: #000000;">Christian People's Party</span>).
 
 [? if dnvp_ideology == "Moderate": Talks of a merger with the <span style='color: #3E88B3;'>**DNVP**</span> are becoming increasingly common—though support is limited to their <span style='color: #0087DC;'>People's Conservatives</span> and <span style='color: #6D5298;'>Christian Socials</span>. A merger remains impossible without one of those factions having strong, centralized leadership within their party. At the same time, we must prevent any government cooperation between them and the <span style='color: #000000;'>Center</span>—lest we allow conditions for such a union to emerge. ?]
 

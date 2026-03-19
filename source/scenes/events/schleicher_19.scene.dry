@@ -49,9 +49,9 @@ Q.schleicher_spd_r -= 2;
 Q.schleicher_spd_support -= 5;
 !}
 
-Schleicher now wields extensive influence over the <span style="color: #c00000;">**SPD**</span>, and even greater sway within our affiliated trade union, the ADGB. Exploiting this grip—alongside a relentless psychological campaign among the rank-and-file and open intimidation by the Reichswehr militia, which threatens action if no decision is made before the deadline—Schleicher forces their submission to the German Labor Front—soon to be integrated.
+Schleicher now wields extensive influence over the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, and even greater sway within our affiliated trade union, the ADGB. Exploiting this grip—alongside a relentless psychological campaign among the rank-and-file and open intimidation by the Reichswehr militia, which threatens action if no decision is made before the deadline—Schleicher forces their submission to the German Labor Front—soon to be integrated.
 
-The new ADGB chairmen waste no time: they denounce all ties to political parties and pledge loyalty to nothing but the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**SPD**</span> members are purged without ceremony.
+The new ADGB chairmen waste no time: they denounce all ties to political parties and pledge loyalty to nothing but the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> members are purged without ceremony.
 
 The fall of the ADGB marks the beginning of the end. If even the workers no longer stand with us—what power do we really have left?
 
@@ -90,7 +90,7 @@ Q.schleicher_spd_r -= 2;
 Q.schleicher_spd_support -= 4;
 !}
 
-The ADGB is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**SPD**</span> elements are purged without ceremony.
+The ADGB is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> elements are purged without ceremony.
 
 The fall of the ADGB marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
 
@@ -228,7 +228,7 @@ on-arrival: hammerstein_win = 1
 
 The general strike proves short-lived. An endless supply of unemployed strikebreakers and Schleicher's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The Reichsbanner is no match for the Reichswehr.
 
-Seizing the moment, Schleicher expands his crackdown, accusing the <span style="color: #c00000;">**SPD**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
+Seizing the moment, Schleicher expands his crackdown, accusing the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
 
 Germany is lost.
 

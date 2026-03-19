@@ -1,4 +1,4 @@
-title: <span style="color: #C0A054;">**DVP**</span> & <span style="color: #D3C24D;">**[+ ddp_name +]**</span> Congress
+title: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> & <span style="color: #D3C24D;">**[+ ddp_name +]**</span> Congress
 subtitle: The future of the liberal movement will be decided here.
 view-if: lvp_merger_2_timer == 1 and lvp_timer_2_trigger
 on-arrival: {!
@@ -44,9 +44,9 @@ priority: 2
 face-image: img/dvp.jpg
 new-page: true
 
-= <span style="color: #C0A054;">**DVP**</span> Congress
+= <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Congress
 
-The <span style="color: #C0A054;">**DVP**</span>, under the leadership of [+ dvp_leader +], is locked in conflict with the party’s right wing and industrial backers over the proposed merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. With no other choice, [+ dvp_leader +] has called for an emergency party congress to formally vote on the merger. [? if dvp_leader == "Scholz" or dvp_leader == "Dingeldey": Since the leader of the <span style="color: #C0A054;">**DVP**</span> is a rightist himself, he will help convince reluctant party members that it is an alliance of necessity. ?][? if dvp_leader == "Luther": Hans Luther has been a long-time supporter for liberal unity, and will essentially use his sizable influence among the German bourgeoisie to almost guarantee the passage of the vote. ?]
+The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, under the leadership of [+ dvp_leader +], is locked in conflict with the party’s right wing and industrial backers over the proposed merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. With no other choice, [+ dvp_leader +] has called for an emergency party congress to formally vote on the merger. [? if dvp_leader == "Scholz" or dvp_leader == "Dingeldey": Since the leader of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> is a rightist himself, he will help convince reluctant party members that it is an alliance of necessity. ?][? if dvp_leader == "Luther": Hans Luther has been a long-time supporter for liberal unity, and will essentially use his sizable influence among the German bourgeoisie to almost guarantee the passage of the vote. ?]
 
 Meanwhile, the Liberal Association has made significant progress in preparing for a unified liberal party, establishing a national framework and drafting a middle-class-oriented policy platform that enjoys broad support from both sides. However, a defeat at this congress would spell the end of liberal cooperation for the foreseeable future, and will greatly demoralize the German middle.
 
@@ -58,7 +58,7 @@ view-if: lvp_formation_points >= 4
 on-arrival: dvp_relation += 2; dvp_left += 2
 face-image: img/weimar_coalition_3.jpg
 
-The momentum towards liberal unity has proven too great for the holdouts within the <span style="color: #C0A054;">**DVP**</span>'s right wing to stand against. The party has officially voted to approve the merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, although the latter has yet to reach a final decision.
+The momentum towards liberal unity has proven too great for the holdouts within the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s right wing to stand against. The party has officially voted to approve the merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, although the latter has yet to reach a final decision.
 
 Despite this victory, many are halfhearted in their support of liberal unity, only viewing it as an alliance of necessity, which could spark some problems in the proposed wider party.
 
@@ -69,4 +69,4 @@ view-if: lvp_formation_points < 4
 on-arrival: dvp_relation -= 3; dvp_right += 5; new_middle_dvp -= 2; old_middle_dvp -= 2; pro_republic -= 3; liberal_cooperation -= 10
 face-image: img/portraits/hitler.jpg
 
-Unfortunately, the efforts to unify the liberal parties have ended in failure. The right wing and industrial backers of the <span style="color: #C0A054;">**DVP**</span> successfully swayed a narrow majority to reject the merger proposal. This outcome has greatly demoralized the German middle and has forced the disbandment of the Liberal Association.
+Unfortunately, the efforts to unify the liberal parties have ended in failure. The right wing and industrial backers of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> successfully swayed a narrow majority to reject the merger proposal. This outcome has greatly demoralized the German middle and has forced the disbandment of the Liberal Association.

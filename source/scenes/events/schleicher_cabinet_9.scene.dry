@@ -20,7 +20,7 @@ on-display: {!
 
 = Schleicher Enacts Concessions to Labor!
 
-Presumably aiming to win over the unions' affiliated parties—the <span style="color: #000000;">Center Party</span> and the <span style="color: #c00000;">SPD</span>—and to bolster public confidence in his leadership at the grassroots level, Schleicher has enacted a new decree.
+Presumably aiming to win over the unions' affiliated parties—the <span style="color: #000000;">Center Party</span> and the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>—and to bolster public confidence in his leadership at the grassroots level, Schleicher has enacted a new decree.
 
 An eight-hour workday is now mandated across most industries, intended to "spread out" employment among more workers. The means test for unemployment insurance has been abolished, and welfare funding has been increased to offset years of austerity.
 
@@ -63,6 +63,6 @@ Q.social_patriot_dissent += 20;
 Q.labor_strength += 5; 
 !}
 
-With Schleicher granting concessions to the workers on his own initiative—rather than under pressure from the <span style="color: #c00000;">SPD</span>—he alone reaps the political rewards. Even some radicalized <span style="color: #700000;">Communist</span> workers begin to drift away, as the less ideological and politically disengaged prioritize their livelihoods over loyalty to their traditional parties.
+With Schleicher granting concessions to the workers on his own initiative—rather than under pressure from the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>—he alone reaps the political rewards. Even some radicalized <span style="color: #700000;">Communist</span> workers begin to drift away, as the less ideological and politically disengaged prioritize their livelihoods over loyalty to their traditional parties.
 
 But hey, at least the workers aren’t suffering as much anymore. This alone has led the ADGB to adopt a friendlier stance toward the chancellor, giving Schleicher growing influence within our party, using the unions as his middleman.

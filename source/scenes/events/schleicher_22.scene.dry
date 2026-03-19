@@ -66,7 +66,7 @@ go-to: new_reichstag
 
 The various <span style="color: #7A3C00;">Nazi</span> splinter parties that have emerged are now beginning to collapse entirely. Burdening such a dynamic, revolutionary movement with the compromises of government—and failing to deliver real solutions to their base’s hardships—has sapped their morale and dried up donations.
 
-Overcome with resignation, Strasser announces his withdrawal from political life, intending to return to his old profession as a local pharmacist. Many other top <span style="color: #7A3C00;">Nazi</span> figures follow suit, as [+ nsdap_leader +] remains too paranoid and vengeful to allow any splitters back into the <span style="color: #7A3C00;">**NSDAP**</span>.
+Overcome with resignation, Strasser announces his withdrawal from political life, intending to return to his old profession as a local pharmacist. Many other top <span style="color: #7A3C00;">Nazi</span> figures follow suit, as [+ nsdap_leader +] remains too paranoid and vengeful to allow any splitters back into the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>.
 
 The <span style="color: #6A1E1E;">**DSU**</span> has since fallen under the control of a radical clique of self-styled "<span style="color: #7A3C00;">national</span> <span style="color: #700000;">bolsheviks</span>" surrounding Gregor Strasser’s more extreme brother, Otto Strasser. 
 

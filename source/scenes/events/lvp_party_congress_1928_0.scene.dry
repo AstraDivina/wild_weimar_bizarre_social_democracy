@@ -8,7 +8,7 @@ new-page: true
 
 = First <span style="color: #FFCC00;">**LVP**</span> Party Congress
 
-The <span style="color: #FFCC00;">Liberal People's Party</span> (<span style="color: #FFCC00;">**LVP**</span>) has officially been founded! Hans Luther, former chancellor and <span style="color: #C0A054;">**DVP**</span> member, has been chosen as the interim leader of the new party.
+The <span style="color: #FFCC00;">Liberal People's Party</span> (<span style="color: #FFCC00;">**LVP**</span>) has officially been founded! Hans Luther, former chancellor and <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> member, has been chosen as the interim leader of the new party.
 
 The <span style="color: #FFCC00;">**LVP**</span>'s inaugural congress will play a major role in shaping the direction of the newly founded party, and most importantly, decide who will lead the liberal movement forward.
 
@@ -21,7 +21,7 @@ face-image: img/portraits/luther.jpg
 
 Hans Luther is once again chosen to lead the <span style="color: #FFCC00;">**LVP**</span>, a long-time advocate for liberal and bourgeois unity, and a figure acceptable to both wings of the newly unified party. 
 
-Meanwhile, the right wing of the <span style="color: #C0A054;">**DVP**</span>, despite their initial resistance to the merger, is now focusing on shifting the <span style="color: #FFCC00;">**LVP**</span> further right, leveraging the support of the party's industrial backers.
+Meanwhile, the right wing of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, despite their initial resistance to the merger, is now focusing on shifting the <span style="color: #FFCC00;">**LVP**</span> further right, leveraging the support of the party's industrial backers.
 
 - @lvp_weimar
 - @lvp_groko
@@ -45,7 +45,7 @@ if (!Q.lvp_formed) Q.finance_minister_party = 'DVP';
 Q.agriculture_minister_party = 'Z';
 !}
 
-As a result of the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span style="color: #C0A054;">**DVP**</span> having merged, they demand that their members that were formerly apart of the <span style="color: #C0A054;">**DVP**</span> to be included in the government. We will have to reshuffle the cabinet.
+As a result of the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> having merged, they demand that their members that were formerly apart of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> to be included in the government. We will have to reshuffle the cabinet.
 
 - @election_1928.ministries: Shuffle the cabinet.
 
@@ -53,7 +53,7 @@ As a result of the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**
 title: Renegotiate the ruling coalition.
 view-if: in_grand_coalition and spd_in_government
 
-As a result of the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span style="color: #C0A054;">**DVP**</span> having merged, we could go ahead with kicking the small <span style="color: #A2D8E0;">**BVP**</span> out of government. This will leave us with a majority <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition.
+As a result of the left-liberal <span style="color: #D3C24D;">**[+ ddp_name +]**</span> and conservative-liberal <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> having merged, we could go ahead with kicking the small <span style="color: #A2D8E0;">**BVP**</span> out of government. This will leave us with a majority <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition.
 
 - @weimar: Form a <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition.
 - @groko: Maintain the Grand Coalition.

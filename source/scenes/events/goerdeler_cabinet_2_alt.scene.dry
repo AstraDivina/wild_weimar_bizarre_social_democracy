@@ -9,7 +9,7 @@ face-image: img/portraits/AlfredHugenberg.jpg
 
 = Goerdeler I Survives
 
-A parliamentary coalition composed of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and all parties to its right—excluding the <span style="color: #7A3C00;">**NSDAP**</span>—somehow holds a majority. Hugenberg, emboldened by an electoral boost from an influx of more "reactionary" <span style="color: #7A3C00;">Nazi</span> voters, has once again grown overconfident, now believing he no longer needs the <span style="color: #7A3C00;">**NSDAP**</span> to enter government.
+A parliamentary coalition composed of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and all parties to its right—excluding the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>—somehow holds a majority. Hugenberg, emboldened by an electoral boost from an influx of more "reactionary" <span style="color: #7A3C00;">Nazi</span> voters, has once again grown overconfident, now believing he no longer needs the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> to enter government.
 
 He assumes that [+ nsdap_leader +], increasingly pressured by senior figures like Strasser and Frick, will eventually cave to preserve party unity and join the government on his terms. In the meantime, Hugenberg has taken the first step—accepting appointments as Vice-Chancellor and Finance Minister. Martin Schiele has been removed, replaced by the more conservative Kalckreuth.
 
@@ -40,6 +40,6 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-Before the Reichstag was to convene, Goerdeler presents a decree to dissolve it. He expects that, with the exodus of voters from the <span style="color: #7A3C00;">**NSDAP**</span> and the certainty of their collapse next election, they will be forced to become more sensible. 
+Before the Reichstag was to convene, Goerdeler presents a decree to dissolve it. He expects that, with the exodus of voters from the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> and the certainty of their collapse next election, they will be forced to become more sensible. 
 
 New elections have been set for [+ next_election_month : month +] [+ next_election_year +].

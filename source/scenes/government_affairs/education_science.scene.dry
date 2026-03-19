@@ -87,7 +87,7 @@ choose-if: science_funding >= 1
 unavailable-subtitle: We have not funded science.
 on-arrival: budget += 1; science -= 1; science_funding -= 1; applied_research -= 0.33; kwg_research -= 0.33; medical_research -= 0.33; economic_growth -= 0.5; new_middle_spd -= 5; workers_spd -= 2; ddp_relation -= 4; lvp_relation -= 2; unemployed += 0.3; ddp_right += 1; lvp_right += 0.5; goal_spd_cancel_peoples += 1
 
-We have cut funding for science. This has a negative effect on our economic growth, and unemployed scientists are less likely to support the <span style="color: #c00000;">**SPD**</span>.
+We have cut funding for science. This has a negative effect on our economic growth, and unemployed scientists are less likely to support the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>.
 
 
 @structure
@@ -123,7 +123,7 @@ go-to: vote_of_no_confidence.vonc_menu if (in_weimar_coalition and not in_social
 
 # instant VONC from zentrum
 
-The <span style="color: #c00000;">**SPD**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, [? if not dvp_exist: former ?]<span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #700000;">**KPD**</span> vote in favor of secular education, overcoming the opposition of the religiously-oriented [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and <span style="color: #3E88B3;">**DNVP**</span>. We have funded secular community schools to replace some previous denominational schools.
+The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, [? if not dvp_exist: former ?]<span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> vote in favor of secular education, overcoming the opposition of the religiously-oriented [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>. We have funded secular community schools to replace some previous denominational schools.
 
 [? if in_weimar_coalition or in_grand_coalition or in_popular_front or in_emergency_government: Of course, the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is in revolt at this proposal, and have called for a vote of no confidence in our government. ?]
 

@@ -1,5 +1,5 @@
 title: Wittorf Affair
-subtitle: A crisis in the <span style="color: #700000;">**KPD**</span>?
+subtitle: A crisis in the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>?
 new-page: true
 view-if: kpd_relation >= 30 and comintern_seen and year = 1928 and month >= 8 and month <= 10
 max-visits: 1
@@ -8,9 +8,9 @@ tags: event
 
 = Wittorf Affair
 
-Our spies and contacts amongst the communists have brought news of a scandal engulfing the <span style="color: #700000;">**KPD**</span> leadership. An associate of <span style="color: #700000;">**KPD**</span> chairman Ernst Thälmann, a <span style="color: #700000;">**KPD**</span> official named John Wittorf, is accused of embezzling campaign funds, diverting thousands of Reichsmarks for personal use, and Thälmann is accused of covering up the affair. The party's central committee considers this charge serious.
+Our spies and contacts amongst the communists have brought news of a scandal engulfing the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> leadership. An associate of <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> chairman Ernst Thälmann, a <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> official named John Wittorf, is accused of embezzling campaign funds, diverting thousands of Reichsmarks for personal use, and Thälmann is accused of covering up the affair. The party's central committee considers this charge serious.
 
-The Conciliators in the <span style="color: #700000;">**KPD**</span>, a faction opposed to the party's present hard-line policy, are said to have leaked this information to aid them in the intra-party struggle. Dissident communists in the Leninbund also have information about this affair, and are planning to publish it.
+The Conciliators in the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, a faction opposed to the party's present hard-line policy, are said to have leaked this information to aid them in the intra-party struggle. Dissident communists in the Leninbund also have information about this affair, and are planning to publish it.
 
 What should we do with this information?
 
@@ -19,10 +19,10 @@ What should we do with this information?
 - @secret
 
 @publicize
-title: We will publicize the scandal to damage the <span style="color: #700000;">**KPD**</span> and Thälmann.
+title: We will publicize the scandal to damage the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> and Thälmann.
 on-arrival: kpd_relation -= 10; workers_kpd -= 4; unemployed_kpd -= 4
 
-Our newspapers are among the first to publicize the affair, bringing a torment of criticism to the hypocrisy of the communists. We have damaged the <span style="color: #700000;">**KPD**</span>'s standing among the workers, but also perhaps closed the door on further cooperation.
+Our newspapers are among the first to publicize the affair, bringing a torment of criticism to the hypocrisy of the communists. We have damaged the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>'s standing among the workers, but also perhaps closed the door on further cooperation.
 
 In the end, <span style="color: #8B0000;">Stalin</span>'s pressure helps to keep Thälmann from facing much in the way of consequences.
 
@@ -30,13 +30,13 @@ In the end, <span style="color: #8B0000;">Stalin</span>'s pressure helps to keep
 title: Do nothing with the information.
 on-arrival: workers_kpd -= 2; unemployed_kpd -= 2
 
-The information spreads without our help, leading to some loss of <span style="color: #700000;">**KPD**</span> support among the workers.
+The information spreads without our help, leading to some loss of <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> support among the workers.
 
 
 @secret
-title: It is best to keep this information secret. Prevent the Leninbund and dissident <span style="color: #700000;">**KPD**</span> members from spreading this.
+title: It is best to keep this information secret. Prevent the Leninbund and dissident <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> members from spreading this.
 choose-if: levi_advisor or rosenfeld_advisor
 unavailable-subtitle: We do not have contacts among the dissident communists.
 on-arrival: wittorf_secret = 1; reformist_dissent += 5; left_dissent += 5
 
-Some among our leadership consider it unsavory to engage in cloak-and-dagger scheming. However, keeping this secret might be necessary to work with the <span style="color: #700000;">**KPD**</span>, and the information might become useful later.
+Some among our leadership consider it unsavory to engage in cloak-and-dagger scheming. However, keeping this secret might be necessary to work with the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>, and the information might become useful later.

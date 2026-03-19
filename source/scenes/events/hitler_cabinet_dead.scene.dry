@@ -6,7 +6,7 @@ max-visits: 1
 
 = [+ chancellor +] is Sacked
 
-The newly elected president, [+ president +], holds little sympathy for [+ chancellor +] or his party, and has compelled his resignation as Chancellor. The <span style="color: #7A3C00;">**NSDAP**</span>, however, refuses to yield—denouncing the move as “anti-democratic,” insisting that [+ chancellor +] is still the head of government, and openly threatening armed resistance.
+The newly elected president, [+ president +], holds little sympathy for [+ chancellor +] or his party, and has compelled his resignation as Chancellor. The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, however, refuses to yield—denouncing the move as “anti-democratic,” insisting that [+ chancellor +] is still the head of government, and openly threatening armed resistance.
 
 What are we to do now?
 
@@ -90,7 +90,7 @@ Q.rubicon_mini_leave = 1;
 
 Still, they place more trust in [+ president +] than in Chancellor [+ old_chancellor +], and under this influence, [+ old_chancellor +] was forced to accept his defeat. His removal, along with the replacement of many <span style="color: #7A3C00;">Nazi</span> cabinet ministers, has stopped Germany's slippery slope into dictatorship.
 
-[? if chancellor == "Brüning": Heinrich Brüning of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is appointed as interim chancellor. ?][? if chancellor == "Wels": Otto Wels of the <span style="color: #c00000;">**SPD**</span> is selected as appointed chancellor. ?]
+[? if chancellor == "Brüning": Heinrich Brüning of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is appointed as interim chancellor. ?][? if chancellor == "Wels": Otto Wels of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is selected as appointed chancellor. ?]
 
 The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
 

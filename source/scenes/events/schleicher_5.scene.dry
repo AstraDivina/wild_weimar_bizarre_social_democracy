@@ -19,9 +19,9 @@ on-display: {!
 
 = Political Truce with Schleicher
 
-With Theodor Leipart’s announcement that he would support a Schleicher cabinet if Papen were the only alternative, numerous leaks have surfaced to the public—much to the annoyance of those in the <span style="color: #c00000;">**SPD**</span>. Many workers still view Schleicher as merely a continuation of the despised Papen cabinet, and it remains in our electoral interest to uphold total opposition to him.
+With Theodor Leipart’s announcement that he would support a Schleicher cabinet if Papen were the only alternative, numerous leaks have surfaced to the public—much to the annoyance of those in the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>. Many workers still view Schleicher as merely a continuation of the despised Papen cabinet, and it remains in our electoral interest to uphold total opposition to him.
 
-Meanwhile, the ADGB has sought to shape Schleicher’s proposed public works program and fears that a parliamentary ousting would pave the way for Papen’s return. The specifics of our negotiations have been exaggerated—and in many cases, outright misreported—creating a serious public relations crisis among the <span style="color: #c00000;">**SPD**</span>’s working-class base.
+Meanwhile, the ADGB has sought to shape Schleicher’s proposed public works program and fears that a parliamentary ousting would pave the way for Papen’s return. The specifics of our negotiations have been exaggerated—and in many cases, outright misreported—creating a serious public relations crisis among the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>’s working-class base.
 
 What should our stance be moving forward?
 
@@ -34,7 +34,7 @@ unavailable-subtitle: The party is too distrustful of Schleicher to allow this.
 choose-if: schleicher_spd_support >= 6 and labor_strength >= (center_strength*2) + left_strength
 on-arrival: schleicher_spd_support += 2; schleicher_spd_r += 1 if schleicher_spd_r < 5; workers_spd -= 4; unemployed_spd -= 4; center_dissent += 10; neorevisionist_dissent += 10; schleicher_spd_adopted = 1; schleicher_approval += 1
 
-In a public statement, the ADGB stops short of denying rumors of a political truce, instead arguing that the chancellor should be given a few months free from parliamentary interference to implement his public works program. The move has been justified to the <span style="color: #c00000;">**SPD**</span> leadership by claiming it would peel voters away from both the <span style="color: #700000;">**Communists**</span> and the <span style="color: #7A3C00;">Nazis</span>, while benefiting the workers we represent.
+In a public statement, the ADGB stops short of denying rumors of a political truce, instead arguing that the chancellor should be given a few months free from parliamentary interference to implement his public works program. The move has been justified to the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> leadership by claiming it would peel voters away from both the <span style="color: #700000;">**Communists**</span> and the <span style="color: #7A3C00;">Nazis</span>, while benefiting the workers we represent.
 
 Needless to say, the union representing the very workers who suffered under his predecessor has lost credibility in their eyes.
 

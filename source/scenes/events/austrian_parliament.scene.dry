@@ -57,7 +57,7 @@ on-arrival: resources -= 1; sdapo_strength += 1; sdapo_strength += 1 if customs_
 subtitle: -1 resource
 choose-if: resources >= 1
 
-It is somewhat of a breach of diplomatic protocol for the <span style="color: #c00000;">**SPD**</span> to so directly interfere in another country's affairs, supporting the <span style="color: #A50034;">Austrian social democrats</span>.
+It is somewhat of a breach of diplomatic protocol for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> to so directly interfere in another country's affairs, supporting the <span style="color: #A50034;">Austrian social democrats</span>.
 
 The Dollfuß regime does not give in, but its opponents have an added advantage. That may not be enough when dealing with the total force of the <span style="color: #7A3C00;">fascist</span> state.
 

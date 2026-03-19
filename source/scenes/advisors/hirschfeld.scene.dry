@@ -7,7 +7,7 @@ new-page: true
 
 = Magnus Hirschfeld
 
-Magnus Hirschfeld is the founder of the Institut für Sexualwissenschaft and an advocate for the rights of sexual minorities. [? if homosexual_rights: He currently has considerable support among party factions due to the <span style="color: #c00000;">**SPD**</span>'s achievement in <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights. ?]
+Magnus Hirschfeld is the founder of the Institut für Sexualwissenschaft and an advocate for the rights of sexual minorities. [? if homosexual_rights: He currently has considerable support among party factions due to the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s achievement in <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights. ?]
 
 
 - @homosexual_rights_
@@ -20,7 +20,7 @@ Magnus Hirschfeld is the founder of the Institut für Sexualwissenschaft and an 
 title: <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights
 subtitle: Enact policy that supports <span style="color: red;">ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights.
 choose-if: advisor_action_timer = 0 and spd_in_government and progressive_coalition >= 50 and not cvp_women_accepted
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not currently in government. ?][? if progressive_coalition < 50 : We do not have the votes to enact these policies. ?] [? if cvp_women_accepted : Our coalition agreement stipulates against action toward <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not currently in government. ?][? if progressive_coalition < 50 : We do not have the votes to enact these policies. ?] [? if cvp_women_accepted : Our coalition agreement stipulates against action toward <span style="color: red;">Ho</span><span style="color: orange;">m</span><span style="color: yellow;">o</span><span style="color: green;">se</span><span style="color: blue;">xu</span><span style="color: purple;">al</span> rights. ?]
 on-arrival: advisor_action_timer = 6; homosexual_rights_timer -= 11; last_advisor_action = 1
 go-to: homosexual_rights
 
@@ -29,7 +29,7 @@ go-to: homosexual_rights
 title: Women's rights
 subtitle: Enact policy with regards to women's rights.
 choose-if: advisor_action_timer = 0 and spd_in_government and not cvp_women_accepted
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not currently in government. ?] [? if cvp_women_accepted : Our coalition agreement stipulates against action toward Women's rights. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not currently in government. ?] [? if cvp_women_accepted : Our coalition agreement stipulates against action toward Women's rights. ?]
 on-arrival: advisor_action_timer = 6; womens_rights_timer -= 10; last_advisor_action = 1
 go-to: womens_rights
 
@@ -37,7 +37,7 @@ go-to: womens_rights
 title: Science funding
 subtitle: Increase funding for scientific research.
 choose-if: advisor_action_timer = 0 and spd_in_government and economic_minister_party = "SPD" and chancellor_party = "SPD"
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span style="color: #c00000;">SPD</span> is not currently in government. ?][? if economic_minister_party != "SPD": This requires the Economic Ministry. ?][? if chancellor_party != "SPD": The Chancellor must be an <span style="color: #c00000;">SPD</span> member. ?]
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not spd_in_government : The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is not currently in government. ?][? if economic_minister_party != "SPD": This requires the Economic Ministry. ?][? if chancellor_party != "SPD": The Chancellor must be an <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> member. ?]
 on-arrival: advisor_action_timer = 6; last_advisor_action = 1
 go-to: education_science.increase_science
 

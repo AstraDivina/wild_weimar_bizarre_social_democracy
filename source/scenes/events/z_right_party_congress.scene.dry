@@ -8,14 +8,14 @@ face-image: img/zentrum_3.jpg
 
 = 1930 [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] Conference
 
-With Hugenberg’s hardliners tightening their grip over the <span style="color: #3E88B3;">**DNVP**</span>, any prospect of a merger with the <span style="color: #000000;">Center Party</span> has evaporated. But a new path to expansion has emerged. The party leadership now turns its attention to the fragmented remains of the anti-Hugenberg right—figures like Westarp and his <span style="color: #0087DC;">**KVP**</span>—as potential candidates for absorption.
+With Hugenberg’s hardliners tightening their grip over the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, any prospect of a merger with the <span style="color: #000000;">Center Party</span> has evaporated. But a new path to expansion has emerged. The party leadership now turns its attention to the fragmented remains of the anti-Hugenberg right—figures like Westarp and his <span style="color: #0087DC;">**KVP**</span>—as potential candidates for absorption.
 
-The consequences are obvious. Bringing these elements into the fold would drag the <span style="color: #000000;">Center Party</span> further to the right—foreclosing any serious cooperation with the <span style="color: #c00000;">**SPD**</span> and entrenching the party within the conservative camp.
+The consequences are obvious. Bringing these elements into the fold would drag the <span style="color: #000000;">Center Party</span> further to the right—foreclosing any serious cooperation with the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and entrenching the party within the conservative camp.
 
 A vote is now before them: merge with the <span style="color: #0087DC;">**KVP**</span>—or continue the status quo.
 
 - @cvp_kvp_merger: The <span style="color: #000000;">Center Party</span> absorbs the <span style="color: #0087DC;">**KVP**</span>!
-- @status_quo: The <span style="color: #000000;">Center Party</span> has rejected a merger with the <span style="color: #3E88B3;">**DNVP**</span> splinters.
+- @status_quo: The <span style="color: #000000;">Center Party</span> has rejected a merger with the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> splinters.
 
 @cvp_kvp_merger
 subtitle: The <span style="color: #000000;">Center Party</span> is not in government with us, and our strained relations have nudged them toward this option.
@@ -25,7 +25,7 @@ on-arrival: z_party_name = "CVP"; workers_z -= 3; workers_spd += 3; unemployed_z
 face-image: img/cvp.jpg
 go-to: cvp_kvp_formed if kvp_formed; cvp_kvp_lite_formed if not kvp_formed
 
-The <span style="color: #000000;">Center Party</span> has officially absorbed the much smaller <span style="color: #0087DC;">**KVP**</span>, expanding its reach to the right. Unsurprisingly, this has severely strained relations between our two parties, as former <span style="color: #3E88B3;">**DNVP**</span> figures like Westarp remain openly hostile to any cooperation with the <span style="color: #c00000;">**SPD**</span>.
+The <span style="color: #000000;">Center Party</span> has officially absorbed the much smaller <span style="color: #0087DC;">**KVP**</span>, expanding its reach to the right. Unsurprisingly, this has severely strained relations between our two parties, as former <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> figures like Westarp remain openly hostile to any cooperation with the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>.
 
 Still, the party’s transformation marches on. To mark the merger—and its progress toward becoming an interconfessional Volkspartei—it has formally rebranded itself as the <i>Christliche Volkspartei</i> (<span style="color: #000000;">Christian People's Party</span>)—an effort to finally shed its old, Catholic-associated <span style="color: #000000;">Center</span> label.
 

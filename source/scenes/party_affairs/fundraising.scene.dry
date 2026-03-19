@@ -37,5 +37,5 @@ view-if: dues <= 4
 
 Our members grumble at this, and some of the less committed members leave. But now, we have access to additional resources.
 
-[? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?] The higher dues will make it more difficult for the <span style="color: #c00000;">**SPD**</span> to expand electorally.
+[? if unemployed >= 15 : Because of the presently high unemployment, our members are feeling the extra burden hard. ?] The higher dues will make it more difficult for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> to expand electorally.
 

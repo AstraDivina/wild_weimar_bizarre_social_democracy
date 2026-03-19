@@ -1,5 +1,5 @@
-title: <span style="color: #C0A054;">**DVP**</span> Party Vote
-subtitle: The <span style="color: #C0A054;">**DVP**</span> chooses their new leader...
+title: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Party Vote
+subtitle: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> chooses their new leader...
 view-if: year = 1929 and month = 12 and dvp_reform = 0 and not lvp_formed and not (lvp_timer_1_trigger and (lvp_merger_1_timer or lvp_trigger_1_time))
 on-arrival: dvp_right += 3 if dvp_relation < 30; dvp_left += 2 if dvp_relation >= 50; dvp_right += 2 if not in_grand_coalition
 max-visits: 1
@@ -7,9 +7,9 @@ tags: event
 face-image: img/dvp.jpg
 new-page: true
 
-= <span style="color: #C0A054;">**DVP**</span> Congress
+= <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Congress
 
-The <span style="color: #C0A054;">**DVP**</span> are having an internal party vote to elect a successor to former party leader and statesman Gustav Stresemann. Both the party and its electorate have been shifted significantly to the right in recent years. [? if not in_grand_coalition: The left of the <span style="color: #C0A054;">**DVP**</span> has also been diminished by the current absence of a coalition including both parties. ?]
+The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> are having an internal party vote to elect a successor to former party leader and statesman Gustav Stresemann. Both the party and its electorate have been shifted significantly to the right in recent years. [? if not in_grand_coalition: The left of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> has also been diminished by the current absence of a coalition including both parties. ?]
 
 The candidate on the right is current party leader Ernst Scholz. Scholz has heavy ties to industry and a record of opposing bourgeois unity. [? if foreign_minister_party = "DVP" and economic_minister_party != "DVP": On the left is Foreign Minister Julius Curtius, who succeeded Stresemann for the position. However, Curtius has taken himself out of the running by taking the position. A movement to draft former Chancellor Hans Luther is met with his own personal reluctance, effectively leaving Scholz as the only suitable choice.?][? if foreign_minister_party != "DVP" and economic_minister_party = "DVP": On the left is Economic Minster Julius Curtius, who has favor among the youth groups. However, Curtius has taken himself out of the running by retaining his position. A movement to draft former Chancellor Hans Luther is met with his own personal reluctance, effectively leaving Scholz as the only suitable choice.?][? if foreign_minister_party != "DVP" and economic_minister_party != "DVP": On the left is Julius Curtius, who has favor among the youth groups. A movement to draft former Chancellor Hans Luther has failed to gain momentum, and the factions of the party have rallied behind their own prospective candidate.?]
 
@@ -33,20 +33,20 @@ face-image: img/portraits/curtius.jpg
 
 Julius Curtius has surprisingly won the vote to succeed Stresemann for the chairmanship. The right-wing of the party have created a special vice-chairmanship position to maintain their influence on the party however. The Reichstag delegation are also able to act independently with Scholz remaining as their leader.
 
-Nonetheless, this is still excellent news for us and our relations with the <span style="color: #C0A054;">**DVP**</span>. [? if in_grand_coalition: We have noticed a decrease in coalition tensions. ?]
+Nonetheless, this is still excellent news for us and our relations with the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>. [? if in_grand_coalition: We have noticed a decrease in coalition tensions. ?]
 
 @scholz
 on-arrival: dvp_leader = "Scholz"; dvp_right += 5; dvp_relation -= 5; old_middle_dvp -= 2; new_middle_dvp -= 2; pro_republic -= 3; ddp_right += 1; ddp_cohesion -= 0.5; liberal_cooperation -= 2; bourgeois_cooperation -= 2
 face-image: img/portraits/ernst_scholz.jpg
 
-Ernst Scholz has won the vote to succeed Stresemann for the chairmanship. The left-wing of the <span style="color: #C0A054;">**DVP**</span> is left increasingly isolated and powerless in party affairs. The industrialists now possesses full control of the former liberal party, and will now oversee its decline in the face of the depression.
+Ernst Scholz has won the vote to succeed Stresemann for the chairmanship. The left-wing of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> is left increasingly isolated and powerless in party affairs. The industrialists now possesses full control of the former liberal party, and will now oversee its decline in the face of the depression.
 
-This is bad news for our relationship with the <span style="color: #C0A054;">**DVP**</span>, and makes the formation of future governments involving us nearly impossible[? if in_grand_coalition:, and the current government untenable?].
+This is bad news for our relationship with the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and makes the formation of future governments involving us nearly impossible[? if in_grand_coalition:, and the current government untenable?].
 
 @luther
 on-arrival: dvp_leader = "Luther"; dvp_left += 3; liberal_cooperation += 5; bourgeois_cooperation += 5; dvp_relation += 3; new_middle_dvp += 3; old_middle_dvp += 3; pro_republic += 3; ddp_left += 1; ddp_cohesion += 1.5
 face-image: img/portraits/luther.jpg
 
-Hans Luther has surprisingly won the vote to succeed Stresemann for the chairmanship. Luther has support among the industrialists and the left of the party, and commands strong influence over the party. Perhaps he's what the <span style="color: #C0A054;">**DVP**</span> needs in order to survive this crisis of German democracy.
+Hans Luther has surprisingly won the vote to succeed Stresemann for the chairmanship. Luther has support among the industrialists and the left of the party, and commands strong influence over the party. Perhaps he's what the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> needs in order to survive this crisis of German democracy.
 
 Luther is particularly supportive of uniting the liberal parties and even for the creation of a broad bourgeois party. [? if in_grand_coalition: He has also voiced support for maintaining the Grand coalition and cooperation between the two parties. ?][? if not in_grand_coalition: He has voiced support for a coalition government involving us and cooperation between the two parties. ?]

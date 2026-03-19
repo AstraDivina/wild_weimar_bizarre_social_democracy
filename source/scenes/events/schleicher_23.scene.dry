@@ -1,5 +1,5 @@
 title: "Social Patriotism" Emerges
-subtitle: A new faction takes shape within the <span style="color: #c00000;">**SPD**</span>...
+subtitle: A new faction takes shape within the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>...
 view-if: chancellor = "Schleicher" and dnef_total_votes >= 20 and schleicher_spd_influence >= 6
 new-page: true
 priority: 1
@@ -78,4 +78,4 @@ on-display: {!
 
 The Social Patriots advocate full support for Schleicher’s chancellorship and his rearmament program, believing that only through strength can Germany break free from the chains of Versailles and reclaim its rightful lands.
 
-Schleicher is displeased with our moves to curb the influence of his loyalists within the <span style="color: #c00000;">**SPD**</span> — but for now, this ideology remains far from our party’s leadership. For now.
+Schleicher is displeased with our moves to curb the influence of his loyalists within the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> — but for now, this ideology remains far from our party’s leadership. For now.

@@ -19,7 +19,7 @@ on-display: {!
 
 = Gauleiter Conference Leaked
 
-Berlin's former police chief and <span style="color: #c00000;">**SPD**</span> member Albert Grzesinski, who's also apart of our executive committee, has brought a report received from an informant about a meeting of <span style="color: #7A3C00;">Nazi</span> regional officials. The discussions is of what would happen if the elections were to bring a <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> majority; an immediate state of emergency, suspension of parts of the constitution, non-secret supervised balloting, all with the support of the Defense Minister von Schleicher.
+Berlin's former police chief and <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> member Albert Grzesinski, who's also apart of our executive committee, has brought a report received from an informant about a meeting of <span style="color: #7A3C00;">Nazi</span> regional officials. The discussions is of what would happen if the elections were to bring a <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> majority; an immediate state of emergency, suspension of parts of the constitution, non-secret supervised balloting, all with the support of the Defense Minister von Schleicher.
 
 If a majority isn't received, the alternative would be to pit the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> and von Schleicher's Reichswehr against Papen, and if Papen refused to act, they would be forced to take action themselves.
 
@@ -32,6 +32,6 @@ unavailable-subtitle: Not enough resources.
 choose-if: resources >= 1
 on-arrival: nazi_urgency += 1; resources -= 1; rb_strength += 200; rb_militancy += 0.05
 
-This development has persuaded the <span style="color: #c00000;">**SPD**</span> leadership—and Otto Wels himself—to grant the Reichsbanner independent authority and financial support, which its leaders deem essential.
+This development has persuaded the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> leadership—and Otto Wels himself—to grant the Reichsbanner independent authority and financial support, which its leaders deem essential.
 
 Such backing is especially critical following our loss of Prussia and its well-equipped police force.

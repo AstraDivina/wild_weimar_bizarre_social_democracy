@@ -19,12 +19,12 @@ on-display: {!
 
 = The WTB Plan
 
-Following Woytinsky's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Tarnow, and Baade have presented the WTB Plan, named after them, to the ADGB and <span style="color: #c00000;">**SPD**</span> leadership. While the ADGB has shown enthusiasm and formally adopted the plan, the <span style="color: #c00000;">**SPD**</span>'s economic expert, Rudolf Hilferding, along with Rudolf Breitscheid and party leader Otto Wels, are much more resistant, showing significant skepticism.
+Following Woytinsky's announcement of intentions to draft a national action plan to stimulate the economy through extensive public works, he, Tarnow, and Baade have presented the WTB Plan, named after them, to the ADGB and <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> leadership. While the ADGB has shown enthusiasm and formally adopted the plan, the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s economic expert, Rudolf Hilferding, along with Rudolf Breitscheid and party leader Otto Wels, are much more resistant, showing significant skepticism.
 
 The fear of inflation caused by funding the plan through public works, especially with hyperinflation still fresh in memory, and the unwillingness to "play doctor at the bedside of capitalism," are the main reasons for the Centrists' reluctance. Maybe they can be convinced?
 
 - @center_plan: Woytinsky is promising the workers false hope, retain our current policy.
-- @wtb_plan: Action is needed, and is needed now. We will attempt to convince the <span style="color: #c00000;">**SPD**</span> to formally adopt the plan.
+- @wtb_plan: Action is needed, and is needed now. We will attempt to convince the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> to formally adopt the plan.
 
 @center_plan
 on-arrival: center_strength += 10; center_dissent -= 10; labor_dissent += 10; wtb_support += 1
@@ -45,7 +45,7 @@ unavailable-subtitle: Many workers haven't even heard of the WTB Plan.
 choose-if: wtb_support >= 5
 on-arrival: wtb_adopted = 1; labor_dissent -= 20; reformist_dissent -= 15; labor_strength += 15; center_strength -= 10; center_dissent += 20; left_dissent += 5; economic_plan = 1
 
-An internal vote within the <span style="color: #c00000;">**SPD**</span>'s leadership is called to finally settle the matter. After a contentious debate, the majority of the party is convinced by Woytinsky's reasonings, and outnumbered, the Centrists under Hilferding are defeated.
+An internal vote within the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s leadership is called to finally settle the matter. After a contentious debate, the majority of the party is convinced by Woytinsky's reasonings, and outnumbered, the Centrists under Hilferding are defeated.
 
 With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if spd_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
 
@@ -54,16 +54,16 @@ title: Use the ADGB and the Labor faction's influence to force the party to acce
 subtitle: A confrontation will occur!
 on-arrival: wtb_adopted = 1; labor_dissent -= 15; reformist_dissent -= 10; labor_strength += 10; center_strength -= 15; center_dissent += 30; left_dissent += 5; economic_plan = 1
 
-An internal vote within the <span style="color: #c00000;">**SPD**</span>'s leadership is called to finally settle the matter. After a contentious debate, the majority of the party is convinced by Woytinsky's reasonings, and outnumbered, the Centrists under Hilferding are defeated.
+An internal vote within the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s leadership is called to finally settle the matter. After a contentious debate, the majority of the party is convinced by Woytinsky's reasonings, and outnumbered, the Centrists under Hilferding are defeated.
 
 With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if spd_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]
 
 @situation
-title: Point out the gains of the <span style="color: #7A3C00;">**NSDAP**</span>, who have capitalized on our lack of a program.
-unavailable-subtitle: The party still doesn't view the <span style="color: #7A3C00;">NSDAP</span> as a significant enemy, nor take them seriously.
+title: Point out the gains of the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, who have capitalized on our lack of a program.
+unavailable-subtitle: The party still doesn't view the <span class="Party PartyNSDAP" style="color: #7A3C00;">NSDAP</span> as a significant enemy, nor take them seriously.
 choose-if: nsdap_votes >= 28 or nazi_urgency >= 4
 on-arrival: wtb_adopted = 1; labor_dissent -= 15; reformist_dissent -= 10; labor_strength += 10; center_strength -= 5; center_dissent += 10; left_dissent += 5; economic_plan = 1; workers_spd += 5*(1-dissent); unemployed_spd += 5*(1-dissent)
 
-The collapse in our electoral performance and loss of voters to the <span style="color: #700000;">**KPD**</span> and <span style="color: #7A3C00;">**NSDAP**</span> have opened the party's eyes, and they are now ready to support our plan as a means to present a solution for the workers.
+The collapse in our electoral performance and loss of voters to the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> and <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> have opened the party's eyes, and they are now ready to support our plan as a means to present a solution for the workers.
 
 With our hard work, we have finally convinced the majority of the party to adopt the WTB plan! [? if spd_in_government == 1 : We can begin implementing the plan as soon as possible, as long as we have the Economic and Finance ministries. ?][? if spd_in_government = 0 : We should emphasize the plan in our electoral propaganda. ?]

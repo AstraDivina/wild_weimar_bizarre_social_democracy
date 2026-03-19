@@ -37,7 +37,7 @@ The <span style="color: #7A3C00;">Nazis</span> are one of the foremost threats t
 
 @iron_front
 title: Form the <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span>!
-subtitle: The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> consists of the <span style="color: #c00000;">**SPD**</span>, the trade unions, and the Reichsbanner.
+subtitle: The <span style="color: #c00000;">Iron</span> <span style="color: #1A1A1A;">Front</span> consists of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, the trade unions, and the Reichsbanner.
 view-if: nazi_urgency >= 3 and iron_front_formed == 0
 on-arrival: iron_front_formed = 1; radicalization += 1; nazi_urgency += 1; workers_spd += 5*(1-dissent); pro_republic += 5*(1-dissent); left_dissent -= 8; neorevisionist_dissent -= 10; neorevisionist_strength += 5
 on-display: {!  
@@ -54,13 +54,13 @@ on-display: {!
 !}
 achievement: eiserne_front
 
-The <span style="color: #7A3C00;">Nazi</span> threat can no longer be ignored. We must build a new organization to confront them - the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> - consisting of the <span style="color: #c00000;">**SPD**</span>, the ADGB trade union federation, and the *Reichsbanner* <span style="color: #000000;"><b><i>Schwarz</i></b></span>-<span style="color: #DD0000;"><b><i>Rot</i></b></span>-<span style="color: #FFCC00;"><b><i>Gold</i></b></span>. We have a new symbol - the Three Arrows, pointing down towards the left.
+The <span style="color: #7A3C00;">Nazi</span> threat can no longer be ignored. We must build a new organization to confront them - the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> - consisting of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, the ADGB trade union federation, and the *Reichsbanner* <span style="color: #000000;"><b><i>Schwarz</i></b></span>-<span style="color: #DD0000;"><b><i>Rot</i></b></span>-<span style="color: #FFCC00;"><b><i>Gold</i></b></span>. We have a new symbol - the Three Arrows, pointing down towards the left.
 
 What do the three arrows stand for?
 
 - @unity: Unity, Activity, and Discipline.
 - @anti: Opposition to <span style="color: #7A3C00;">Fascism</span>, <span style="color:rgb(90, 0, 0);">Stalinism</span>, and <span style="color: #808080;">Monarchism</span>.
-- @orgs: The <span style="color: #c00000;">**SPD**</span>, ADGB, and Reichsbanner.
+- @orgs: The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, ADGB, and Reichsbanner.
 - @wtb: Woytinsky, Tarnow, and Baade of the WTB-Plan
 - @all: All of the above.
 

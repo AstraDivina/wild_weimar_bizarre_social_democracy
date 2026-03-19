@@ -13,4 +13,4 @@ view-if: year = 1930 and month = 1
 priority: 2
 max-visits: 1
 
-A new year begins. The economic crisis is worsening throughout the world, with no end in sight. The <span style="color: #7A3C00;">**NSDAP**</span> seems to be strengthening in local elections. All very worrisome trends.
+A new year begins. The economic crisis is worsening throughout the world, with no end in sight. The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> seems to be strengthening in local elections. All very worrisome trends.

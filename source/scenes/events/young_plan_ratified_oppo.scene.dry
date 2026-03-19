@@ -7,7 +7,7 @@ max-visits: 1
 
 = Young Plan Ratified
 
-The Young Plan is finally ratified, and with that, the main reason President Hindenburg and the [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: bourgeois right?] has even considered governing with us. Chancellor [+ chancellor +] is likely to enact a sweeping reform of German finances in order to make the payments, likely including cuts to social spending.
+The Young Plan is finally ratified, and with that, the main reason President Hindenburg and the [? if not lvp_formed: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: bourgeois right?] has even considered governing with us. Chancellor [+ chancellor +] is likely to enact a sweeping reform of German finances in order to make the payments, likely including cuts to social spending.
 
 - @joever: If this year couldn't get any worse...
 

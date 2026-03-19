@@ -33,7 +33,7 @@ on-arrival: pro_republic += 3
 
 Papen’s plan bears obvious similarities to the former <span class="tooltip-text" title="good mod">*Kaiserreich*</span>, and given his <span style="color: #808080;">monarchist</span> sympathies, it’s clear that restoring the monarchy remains his ultimate goal.
 
-[? if largest_party == "NSDAP": Surprisingly, the <span style="color: #7A3C00;">**NSDAP**</span> have also criticized the planned “New State”—ironically invoking democratic principles to argue that the largest party in parliament should be the one to form a government. ?]
+[? if largest_party == "NSDAP": Surprisingly, the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> have also criticized the planned “New State”—ironically invoking democratic principles to argue that the largest party in parliament should be the one to form a government. ?]
 
 @papen_2
 title: Launch an official campaign to rekindle public support for the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system.
@@ -46,4 +46,4 @@ We have launched a propaganda campaign aimed at shifting public opinion back in 
 
 Papen’s plan bears obvious similarities to the former <span class="tooltip-text" title="good mod">*Kaiserreich*</span>, and given his <span style="color: #808080;">monarchist</span> sympathies, it’s clear that restoring the monarchy remains his ultimate goal.
 
-[? if largest_party == "NSDAP": Surprisingly, the <span style="color: #7A3C00;">**NSDAP**</span> have also criticized the planned “New State”—ironically invoking democratic principles to argue that the largest party in parliament should be the one to form a government. ?]
+[? if largest_party == "NSDAP": Surprisingly, the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> have also criticized the planned “New State”—ironically invoking democratic principles to argue that the largest party in parliament should be the one to form a government. ?]

@@ -1,4 +1,4 @@
-title: <span style="color: #C0A054;">**DVP**</span> Congress
+title: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Congress
 subtitle: The future of the liberal movement will be decided here.
 view-if: lvp_merger_timer == 1
 max-visits: 1
@@ -6,11 +6,11 @@ tags: event
 face-image: img/dvp.jpg
 new-page: true
 
-= <span style="color: #C0A054;">**DVP**</span> Congress
+= <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> Congress
 
-Stresemann has called an emergency party congress within the <span style="color: #C0A054;">**DVP**</span> over the contentious issue of a merger with <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. The Liberal Association has already made significant strides in laying the groundwork for a <span style="color: #FFCC00;">united liberal party</span>, including the creation of a national framework and the drafting of a middle-class-oriented policy platform broadly supported by both parties.
+Stresemann has called an emergency party congress within the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> over the contentious issue of a merger with <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. The Liberal Association has already made significant strides in laying the groundwork for a <span style="color: #FFCC00;">united liberal party</span>, including the creation of a national framework and the drafting of a middle-class-oriented policy platform broadly supported by both parties.
 
-However, the right wing of the <span style="color: #C0A054;">**DVP**</span>, led by Ernst Scholz, remains the final stumbling block towards a <span style="color: #FFCC00;">united liberal party</span>. They are determined to oppose the merger, wielding their substantial influence over the party and industrialists to rally against it.
+However, the right wing of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, led by Ernst Scholz, remains the final stumbling block towards a <span style="color: #FFCC00;">united liberal party</span>. They are determined to oppose the merger, wielding their substantial influence over the party and industrialists to rally against it.
 
 - @lvp_formed: The party votes...
 
@@ -18,4 +18,4 @@ However, the right wing of the <span style="color: #C0A054;">**DVP**</span>, led
 on-arrival: dvp_relation += 5; dvp_left += 3; lvp_trigger_time = time + 1
 face-image: img/weimar_coalition_3.jpg
 
-The momentum towards liberal unity has proven too great for the few holdouts within the <span style="color: #C0A054;">**DVP**</span>'s right wing to stand against. The party has officially voted to approve the merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who have also done the same. Both parties will now work together to establish the framework of the new <span style="color: #FFCC00;">Liberal People's Party</span>.
+The momentum towards liberal unity has proven too great for the few holdouts within the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s right wing to stand against. The party has officially voted to approve the merger with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, who have also done the same. Both parties will now work together to establish the framework of the new <span style="color: #FFCC00;">Liberal People's Party</span>.

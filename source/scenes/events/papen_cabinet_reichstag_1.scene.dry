@@ -23,17 +23,17 @@ go-to: nsdap_lead if largest_party == "NSDAP"; spd_lead if largest_party != "NSD
 
 @nsdap_lead
 
-The Reichstag has reconvened for the first time since the election, with a significantly larger contingent of <span style="color: #7A3C00;">**NSDAP**</span> members now present. The immediate issue at hand is the election of the President of the Reichstag. While the position has traditionally been a procedural one, it has taken on heightened importance under Papen's presidential government, given the President's authority to influence the agenda and adjourn sessions.
+The Reichstag has reconvened for the first time since the election, with a significantly larger contingent of <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> members now present. The immediate issue at hand is the election of the President of the Reichstag. While the position has traditionally been a procedural one, it has taken on heightened importance under Papen's presidential government, given the President's authority to influence the agenda and adjourn sessions.
 
-By long-standing custom, the role is granted to the largest parliamentary delegation. That delegation is now the <span style="color: #7A3C00;">**NSDAP**</span>. The <span style="color: #000000;">Center Party</span> holds the balance of power. Will they uphold tradition and hand a key parliamentary post to an openly anti-constitutional party?
+By long-standing custom, the role is granted to the largest parliamentary delegation. That delegation is now the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>. The <span style="color: #000000;">Center Party</span> holds the balance of power. Will they uphold tradition and hand a key parliamentary post to an openly anti-constitutional party?
 
 - @reichstag_calculations
 
 @spd_lead
 
-The Reichstag has reconvened for the first time since the election, with a significantly larger contingent of <span style="color: #7A3C00;">**NSDAP**</span> members now present. The immediate issue at hand is the election of the President of the Reichstag. While the position has traditionally been a procedural one, it has taken on heightened importance under Papen's presidential government, given the President's authority to influence the agenda and adjourn sessions.
+The Reichstag has reconvened for the first time since the election, with a significantly larger contingent of <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> members now present. The immediate issue at hand is the election of the President of the Reichstag. While the position has traditionally been a procedural one, it has taken on heightened importance under Papen's presidential government, given the President's authority to influence the agenda and adjourn sessions.
 
-By long-standing custom, the role is granted to the largest parliamentary delegation. That delegation isn't the <span style="color: #7A3C00;">**NSDAP**</span>, but the <span style="color: #000000;">Center Party</span> backing them nonetheless is a key part of negotiations between the two parties. Without such backing, it is likely that our candidate, Paul Löbe, would be elected once again.
+By long-standing custom, the role is granted to the largest parliamentary delegation. That delegation isn't the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, but the <span style="color: #000000;">Center Party</span> backing them nonetheless is a key part of negotiations between the two parties. Without such backing, it is likely that our candidate, Paul Löbe, would be elected once again.
 
 - @reichstag_calculations
 
@@ -69,7 +69,7 @@ Q.reichstag_goring = 1;
 Q.reichstag_president = "Göring";
 !}
 
-With negotiations between the <span style="color: #000000;">Center Party</span> and the <span style="color: #7A3C00;">**NSDAP**</span> underway, previously hostile relations have thawed enough for the <span style="color: #000000;">Center Party</span> to support Hermann Göring’s election as President of the Reichstag. The <span style="color: #7A3C00;">**NSDAP**</span> delegation’s newfound decorum convinced many that the party had turned over a new leaf.
+With negotiations between the <span style="color: #000000;">Center Party</span> and the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> underway, previously hostile relations have thawed enough for the <span style="color: #000000;">Center Party</span> to support Hermann Göring’s election as President of the Reichstag. The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> delegation’s newfound decorum convinced many that the party had turned over a new leaf.
 
 In line with a promise made to the <span style="color: #000000;">Center Party</span>, the Reichstag has adjourned for two more weeks to allow coalition talks to take place. Yet unease is growing within the <span style="color: #000000;">Center Party</span> at the possibility of a [+ nsdap_chancellor +] chancellorship, and they may soon walk away from the table.
 
@@ -101,7 +101,7 @@ Q.reichstag_president = "Löbe";
 if (!(Q.largest_party != "NSDAP" && ((Q.weimar_coalition >= 40) || (Q.popular_front_coalition >= 50 && Q.kpd_relation >= 50)))) Q.reichstag_president = "Eßer";
 !}
 
-[? if largest_party != "NSDAP": In Reichstag tradition, as the <span style="color: #c00000;">**SPD**</span> is the largest party, the <span style="color: #000000;">Center Party</span> feels bound to support us, regardless of our relations. ?][? if (z_relation >= 55 or hitler_right_coalition < 50) and largest_party == "NSDAP": However, the <span style="color: #000000;">Center Party</span> simply cannot bring itself to support elevating a <span style="color: #7A3C00;">Nazi</span> to the Reichstag presidency, breaking with tradition to elect our candidate. ?]
+[? if largest_party != "NSDAP": In Reichstag tradition, as the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is the largest party, the <span style="color: #000000;">Center Party</span> feels bound to support us, regardless of our relations. ?][? if (z_relation >= 55 or hitler_right_coalition < 50) and largest_party == "NSDAP": However, the <span style="color: #000000;">Center Party</span> simply cannot bring itself to support elevating a <span style="color: #7A3C00;">Nazi</span> to the Reichstag presidency, breaking with tradition to elect our candidate. ?]
 
 [? if largest_party != "NSDAP" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and kpd_relation >= 50)): Paul Löbe is elected President of the Reichstag once more, a position he held for the majority of the republic. ?][? if not (largest_party != "NSDAP" and ((weimar_coalition >= 40) or (popular_front_coalition >= 50 and kpd_relation >= 50))): Unfortunately, very few other parties are willing—or have the votes—to back our candidate, Paul Löbe, and the chamber instead settles on the <span style="color: #000000;">Center</span>'s Thomas Eßer. ?]
 

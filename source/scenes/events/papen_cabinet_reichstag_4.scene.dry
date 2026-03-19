@@ -20,7 +20,7 @@ on-display: {!
 
 = Vote of No Confidence
 
-Papen once again faces the Reichstag, unfortunate to have taken power just a day before its scheduled reconvocation. It remains unclear whether he has secured a decree authorizing the Reichstag’s dissolution, as he may still be banking on the <span style="color: #7A3C00;">**NSDAP**</span>’s toleration. One thing, however, is certain: Papen has grown disillusioned with the prospect of a [+ nsdap_chancellor +] chancellorship, and now that he holds power again, he has no intention of giving it up on their terms.
+Papen once again faces the Reichstag, unfortunate to have taken power just a day before its scheduled reconvocation. It remains unclear whether he has secured a decree authorizing the Reichstag’s dissolution, as he may still be banking on the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>’s toleration. One thing, however, is certain: Papen has grown disillusioned with the prospect of a [+ nsdap_chancellor +] chancellorship, and now that he holds power again, he has no intention of giving it up on their terms.
 
 However, Papen, and President Hindenburg himself, believe that a forced adjournment of the Reichstag may be necessary, with it only reconvening if a parliamentary majority could agree on a constructive course. This is only a bit less provocative than outright postponing elections, and a threat of civil war is omnipresent.
 
@@ -43,7 +43,7 @@ const header = document.querySelector('header');
 header.style.color = '#ffffff';
 !}
 
-The Reichstag is forcibly adjourned! Police officers and Reichswehr soldiers prevent parliamentarians from entering the building, and fierce riots emerge across the country as news of this unconstitutional act reaches all corners of the nation. The <span style="color: #7A3C00;">**NSDAP**</span>, now convinced that this is all an elaborate plot by Papen to get back into power, firmly breaks with him and any chance of them entering government.
+The Reichstag is forcibly adjourned! Police officers and Reichswehr soldiers prevent parliamentarians from entering the building, and fierce riots emerge across the country as news of this unconstitutional act reaches all corners of the nation. The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, now convinced that this is all an elaborate plot by Papen to get back into power, firmly breaks with him and any chance of them entering government.
 
 However, this time, the Reichswehr is much better equipped, internal conflict plagues the <span style="color: #7A3C00;">**SA**</span>, and Hugenberg, now friendly with Papen once more pressures the <span style="color: #3E88B3;">**Stahlhelm**</span> to fight against leftists instead of the government. 
 
@@ -64,7 +64,7 @@ Do we realize that this means civil war, against the full force of the state?
 title: Bide our time.
 on-arrival: workers_spd -= 5; new_middle_spd -= 5; unemployed_spd -= 5; pro_republic -= 15; rb_strength -= 500; rb_militancy *= 0.7; sa_strength += 50; rfb_strength += 200; rfb_militancy += 0.1; left_dissent += 60; center_dissent += 50; reformist_dissent += 40; labor_dissent += 40; neorevisionist_dissent += 40
 
-The <span style="color: #c00000;">**SPD**</span> is shocked at our decision! How can we allow such a blatant violation of the constitution go like that? Many radicalized Reichsbanner and party officials defeat to the <span style="color: #700000;">**Communists**</span> and the <span style="color: #700000;">**RFB**</span>, vowing to fight against Papen regardless of our instructions.
+The <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is shocked at our decision! How can we allow such a blatant violation of the constitution go like that? Many radicalized Reichsbanner and party officials defeat to the <span style="color: #700000;">**Communists**</span> and the <span style="color: #700000;">**RFB**</span>, vowing to fight against Papen regardless of our instructions.
 
 - @reichstag_4
 - @papen_civil_war_2

@@ -22,9 +22,9 @@ on-display: {!
 
 Schleicher, having survived Papen's schemes for the meantime, is ready to decree a public works program formulated by Employment Commissioner Günther Gereke after weeks of work slowed down by red tape and bureaucracy. The plan provides 500 million Reichsmarks for the plan, and it's expected that more funding will arrive later if the program proves to be successful.
 
-The trade unions are ecstatic, and projected decreases in unemployment—combined with the global economic recovery, is expected to garner much public support for the Schleicher cabinet and a deradicalization of the party landscape, taking away the fuel the <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #700000;">**KPD**</span> thrives on.
+The trade unions are ecstatic, and projected decreases in unemployment—combined with the global economic recovery, is expected to garner much public support for the Schleicher cabinet and a deradicalization of the party landscape, taking away the fuel the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> and <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> thrives on.
 
-For Schleicher, the plan serves a dual purpose: to revitalize Germany’s economy in preparation for rearmament and a return to power on the world stage, and to pressure the <span style="color: #7A3C00;">**NSDAP**</span> into cooperating with his cabinet before their electoral prospects decline as their base returns to work.
+For Schleicher, the plan serves a dual purpose: to revitalize Germany’s economy in preparation for rearmament and a return to power on the world stage, and to pressure the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> into cooperating with his cabinet before their electoral prospects decline as their base returns to work.
 
 - @schleicher_2
 
@@ -34,6 +34,6 @@ on-arrival: unemployed -= 2; economic_growth += 1; schleicher_approval += 4; inf
 
 The plan is approved by the chancellor and signed by Hindenburg without objection. With Schleicher fulfilling a widely popular promise, and the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties beginning to soften their stance on the government, it seems that Schleicher may be here to stay.
 
-While he remains vulnerable to being deposed by Hindenburg, the first victory of the Schleicher cabinet has dealt a severe blow to Papen’s schemes. The president is now likely to view the chancellor more favorably, diminishing the urgency to bring the <span style="color: #7A3C00;">**NSDAP**</span> into the fold.
+While he remains vulnerable to being deposed by Hindenburg, the first victory of the Schleicher cabinet has dealt a severe blow to Papen’s schemes. The president is now likely to view the chancellor more favorably, diminishing the urgency to bring the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> into the fold.
 
 In the coming months, millions of unemployed Germans will return to work, and it is Schleicher who will reap the political rewards.

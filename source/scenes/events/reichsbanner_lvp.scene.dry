@@ -19,7 +19,7 @@ max-visits: 1
 
 = The <span style="color: #FFCC00;">**LVP**</span> and the Reichsbanner
 
-The Reichsbanner has increasingly militarized, acquiring arms, conducting paramilitary training, and attracting a stream of <span style="color: #9B0000;">radicalized</span> <span style="color: #c00000;">**SPD**</span> members. The <span style="color: #FFCC00;">**LVP**</span> in particular is offended by this, as many of its members originate from the semi-monarchist <span style="color: #C0A054;">**DVP**</span> and even have <span style="color: #3E88B3;">**Stahlhelm**</span> memberships. The organization's militarization has provided them with a pretext to sever formal ties with this <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization.
+The Reichsbanner has increasingly militarized, acquiring arms, conducting paramilitary training, and attracting a stream of <span style="color: #9B0000;">radicalized</span> <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> members. The <span style="color: #FFCC00;">**LVP**</span> in particular is offended by this, as many of its members originate from the semi-monarchist <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> and even have <span style="color: #3E88B3;">**Stahlhelm**</span> memberships. The organization's militarization has provided them with a pretext to sever formal ties with this <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> organization.
 
 - @let_go: Let the <span style="color: #FFCC00;">liberals</span> go.
 - @lower_militancy: We must lower the Reichsbanner's militancy.

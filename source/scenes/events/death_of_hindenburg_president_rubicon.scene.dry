@@ -183,7 +183,7 @@ With the <span style="color: #700000;">**Communists**</span> having been heavily
 title: Finally, what about us?
 go-to: candidate_menu
 
-As for the <span style="color: #c00000;">**SPD**</span>, we could support a joint <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition candidate or run our own. The viability of a united front, however, depends entirely on our relations with former coalition partners—and whether they’ve fallen under Schleicher’s influence.
+As for the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, we could support a joint <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition candidate or run our own. The viability of a united front, however, depends entirely on our relations with former coalition partners—and whether they’ve fallen under Schleicher’s influence.
 
 Otto Braun is tired. He ran and failed in the previous two presidential elections, and no longer wishes to run. His wife is ill enough that he wishes to stay by her side.  More importantly, he is deeply pessimistic about the situation we now face.
 
@@ -233,7 +233,7 @@ go-to: r1_menu
 We have endorsed Theodor Heuss, journalist of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: 
 <span style="color: #FFCC00;">**LVP**</span>?]. Perhaps we can form a <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Bloc against Schleicher.
 
-[? if dvp_relation < 60 and dvp_candidate == spd_candidate and dvp_exist and not lvp_formed: With our support of Heuss, the <span style="color: #C0A054;">**DVP**</span> components supporting him have broken away and are now supporting [+ dnef_candidate +] if they haven't already. ?]
+[? if dvp_relation < 60 and dvp_candidate == spd_candidate and dvp_exist and not lvp_formed: With our support of Heuss, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> components supporting him have broken away and are now supporting [+ dnef_candidate +] if they haven't already. ?]
 
 @schumacher_r1
 subtitle: -2 resources.
@@ -311,7 +311,7 @@ The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</spa
 
 [? if z_relation < 50 : With our support of Adenauer, some of the most conservative parts of the <span style="color: #A2D8E0;">Bavarian People's Party</span> have broken away from the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], shifting their support to [+ dnef_candidate +]. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
 
-[? if dvp_candidate_switch: The <span style="color: #C0A054;">**DVP**</span> have also switched to supporting [+ dnef_candidate +] as they're heavily uncomfortable with being on the same side as us. ?]
+[? if dvp_candidate_switch: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> have also switched to supporting [+ dnef_candidate +] as they're heavily uncomfortable with being on the same side as us. ?]
 
 @z_partial
 
@@ -339,7 +339,7 @@ on-arrival: ddp_candidate = spd_candidate if ddp_relation >= 40 and not dstp_dne
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if ddp_candidate = spd_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ spd_candidate +]! This is largely because [+ spd_candidate +] is the candidate of the <span style="color: #000000;">Center Party</span>, not of the <span style="color: #c00000;">**SPD**</span>. ?]
+[? if ddp_candidate = spd_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ spd_candidate +]! This is largely because [+ spd_candidate +] is the candidate of the <span style="color: #000000;">Center Party</span>, not of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>. ?]
 [? if ddp_candidate != spd_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ spd_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing with Schleicher undoubtedly playing a role. ?]
 
 
@@ -370,22 +370,22 @@ on-arrival: lvp_candidate = spd_candidate if lvp_relation >= 45 and not lvp_dnef
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = spd_candidate:  The <span style="color: #FFCC00;">**LVP**</span> is reluctantly persuaded to support [+ spd_candidate +]! This is largely because [+ spd_candidate +] is the candidate of the <span style="color: #000000;">Center Party</span>, not of the <span style="color: #c00000;">**SPD**</span>. ?]
+[? if lvp_candidate = spd_candidate:  The <span style="color: #FFCC00;">**LVP**</span> is reluctantly persuaded to support [+ spd_candidate +]! This is largely because [+ spd_candidate +] is the candidate of the <span style="color: #000000;">Center Party</span>, not of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>. ?]
 [? if lvp_candidate != spd_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ spd_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing with Schleicher undoubtedly playing a role. ?]
 
 @convince_dvp_unity
-title: Convince the <span style="color: #C0A054;">**DVP**</span> to support [+ spd_candidate +].
-subtitle: [? if spd_candidate = ddp_candidate and not dvp_dnef: The <span style="color: #C0A054;">**DVP**</span> are uncomfortable in participating on the same side as the <span style="color: #c00000;">socialists</span>. ?]
-unavailable-subtitle: The <span style="color: #C0A054;">DVP</span> is not willing to support our candidate.
+title: Convince the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> to support [+ spd_candidate +].
+subtitle: [? if spd_candidate = ddp_candidate and not dvp_dnef: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> are uncomfortable in participating on the same side as the <span style="color: #c00000;">socialists</span>. ?]
+unavailable-subtitle: The <span class="Party PartyDVP" style="color: #C0A054;">DVP</span> is not willing to support our candidate.
 view-if: (spd_candidate = "Adenauer" or spd_candidate = "Heuss") and dvp_candidate != spd_candidate and not dvp_dnef and not lvp_formed
 choose-if: dvp_relation >= 60 and dvp_leader != "Dingeldey" and dvp_ideology != "Right"
 on-arrival: dvp_candidate = spd_candidate; dvp_relation += 5; dvp_left += 1; dvp_candidate_switch = 1 if dvp_candidate != dnef_candidate and dvp_candidate == spd_candidate; dvp_candidate = dnef_candidate if dvp_candidate == spd_candidate
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if dvp_candidate = spd_candidate: Thanks to our good relations, and the fact that our candidate is a unity candidate not affiliated with the <span style="color: #c00000;">**SPD**</span>, the <span style="color: #C0A054;">**DVP**</span> is persuaded to support [+ spd_candidate +]. ?]
+[? if dvp_candidate = spd_candidate: Thanks to our good relations, and the fact that our candidate is a unity candidate not affiliated with the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> is persuaded to support [+ spd_candidate +]. ?]
 
-[? if dvp_candidate_switch: The <span style="color: #C0A054;">**DVP**</span> have also switched to supporting [+ dnef_candidate +] as they're heavily uncomfortable with being on the same side as us. ?]
+[? if dvp_candidate_switch: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> have also switched to supporting [+ dnef_candidate +] as they're heavily uncomfortable with being on the same side as us. ?]
 
 @round_1
 go-to: election_algorithm
@@ -555,7 +555,7 @@ We have endorsed Konrad Adenauer of the [? if z_party_name != "CVP": <span style
 
 [? if z_relation < 50 : With our support of Adenauer, some of the most conservative parts of the <span style="color: #A2D8E0;">Bavarian People's Party</span> have broken away from the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], shifting their support to [+ dnef_candidate +]. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and boycotting the election instead. ?]
+[? if kpd_candidate = spd_candidate: The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and boycotting the election instead. ?]
 
 @r2_endorse_heuss
 title: Switch our support to Theodor Heuss.
@@ -565,9 +565,9 @@ go-to: r2_campaigning
 
 We have endorsed Theodor Heuss of the [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?].
 
-[? if dvp_relation < 60 and dvp_candidate == spd_candidate and dvp_exist and not lvp_formed: With our support of Heuss, the <span style="color: #C0A054;">**DVP**</span> components supporting him have broken away and are now supporting [+ dnef_candidate +] if they haven't already. ?]
+[? if dvp_relation < 60 and dvp_candidate == spd_candidate and dvp_exist and not lvp_formed: With our support of Heuss, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> components supporting him have broken away and are now supporting [+ dnef_candidate +] if they haven't already. ?]
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and boycotting the election instead. ?]
+[? if kpd_candidate = spd_candidate: The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and boycotting the election instead. ?]
 
 @r2_campaigning
 view-if: round = 1

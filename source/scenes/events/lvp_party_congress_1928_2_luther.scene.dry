@@ -168,27 +168,27 @@ His association with the former <span style="color: #D3C24D;">**[+ ddp_name +]**
 
 @dieckmann
 title: Johannes Dieckmann is elected!
-subtitle: Dieckmann is a member of the Saxon Landtag and a former member of the <span style="color: #C0A054;">**DVP**</span>, being a committed follower of Stresemann.
-unavailable-subtitle: [? if dingeldey_lead: The <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, and too unknown. ?][? if maier_lead or heuss_lead: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Luther. ?][? if lvp_deadlock: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, while the right wing of the party prefers a more right-wing former <span style="color: #C0A054;">DVP</span> member. ?]
+subtitle: Dieckmann is a member of the Saxon Landtag and a former member of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, being a committed follower of Stresemann.
+unavailable-subtitle: [? if dingeldey_lead: The <span style="color: #FFCC00;">LVP</span> perceive him as too left-wing, and too unknown. ?][? if maier_lead or heuss_lead: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, to replace Luther. ?][? if lvp_deadlock: The left wing of the <span style="color: #FFCC00;">LVP</span> wants to elect a former <span style="color: #D3C24D;">[+ ddp_name +]</span> member, while the right wing of the party prefers a more right-wing former <span class="Party PartyDVP" style="color: #C0A054;">DVP</span> member. ?]
 choose-if: dieckmann_lead
 on-arrival: lvp_relation += 5; lvp_left += 2; lvp_leader = "Dieckmann"; pro_republic += 3; new_middle_lvp += 4; old_middle_lvp += 4; rural_lvp -= 2
 face-image: img/portraits/dieckmann.jpg
 
 (If you can find an image of him taken around this period of time, please message the modman.)
 
-Johannes Dieckmann, a relatively minor figure who only recently became president of the <span style="color: #FFCC00;">**LVP**</span>'s parliamentary group in the Saxon Landtag, has been elected party chairman. A longtime associate of Stresemann and a member of the <span style="color: #C0A054;">**DVP**</span>'s left wing, Dieckmann even chaired a revolutionary soldiers' council in 1918.
+Johannes Dieckmann, a relatively minor figure who only recently became president of the <span style="color: #FFCC00;">**LVP**</span>'s parliamentary group in the Saxon Landtag, has been elected party chairman. A longtime associate of Stresemann and a member of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing, Dieckmann even chaired a revolutionary soldiers' council in 1918.
 
 His youth and low profile have left him with few enemies—unlike Curtius—making him a palatable compromise. While he represents an improvement over Luther’s policies, it is a slight one.
 
 @dingeldey
 title: Eduard Dingeldey is elected.
-subtitle: Dingeldey was a member of the former <span style="color: #C0A054;">**DVP**</span>, and commonly associated with the industrial-right of the party.
+subtitle: Dingeldey was a member of the former <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>, and commonly associated with the industrial-right of the party.
 unavailable-subtitle: The right-industrial faction of the <span style="color: #FFCC00;">LVP</span> lack the power necessary to install their candidate.
 choose-if: dingeldey_lead
 on-arrival: lvp_relation -= 5; lvp_right += 3; lvp_leader = "Dingeldey"; new_middle_lvp -= 4; workers_lvp -= 2; old_middle_lvp += 2; coalition_dissent += 1; dingeldey_explode_time = time + 8; dingeldey_election_time = time
 face-image: img/portraits/dingeldey.jpg
 
-Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span style="color: #C0A054;">**DVP**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #FFCC00;">**LVP**</span> and the <span style="color: #3E88B3;">**DNVP**</span>.
+Eduard Dingeldey, previously part of the movement for bourgeois unity, has now been elected chairman of the <span style="color: #FFCC00;">**LVP**</span>. Dingeldey is backed by the industrial forces on the right of the party, alongside former <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> members. He appears to be focused on fostering closer cooperation with the array of parties between the <span style="color: #FFCC00;">**LVP**</span> and the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>.
 
 However, Dingeldey has thus far proven to be an ineffectual leader, often capitulating to the right wing of the <span style="color: #FFCC00;">**LVP**</span>. Recently, we’ve observed a deterioration in relations with his party, alongside a noticeable rightward shift in the <span style="color: #FFCC00;">**LVP**</span>'s internal politics.
 

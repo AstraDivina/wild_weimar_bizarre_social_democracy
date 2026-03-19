@@ -15,9 +15,9 @@ on-arrival: muller_died_in_office = 1
 
 Chancellor Hermann Müller has died while in office. He will be greatly missed. But now, we must select a new Chancellor.
 
-- @braun_chancellor: Otto Braun (<span style="color: #c00000;">**SPD**</span>) for Chancellor.
-- @wels_chancellor: Otto Wels (<span style="color: #c00000;">**SPD**</span>) for Chancellor.
-- @breitscheid_chancellor: Rudolf Breitscheid (<span style="color: #c00000;">**SPD**</span>) for Chancellor.
+- @braun_chancellor: Otto Braun (<span class="Party PartySPD" style="color: #c00000;">**SPD**</span>) for Chancellor.
+- @wels_chancellor: Otto Wels (<span class="Party PartySPD" style="color: #c00000;">**SPD**</span>) for Chancellor.
+- @breitscheid_chancellor: Rudolf Breitscheid (<span class="Party PartySPD" style="color: #c00000;">**SPD**</span>) for Chancellor.
 - @bruning_chancellor: Let Heinrich Bruning of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] become Chancellor.
 - @wirth_chancellor: Joseph Wirth of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] should be Chancellor.
 
@@ -56,4 +56,4 @@ Our coalition partners accept Joseph Wirth of the [? if z_party_name != "CVP": <
 
 @not_pm
 
-Hermann Müller, one of the <span style="color: #c00000;">**SPD**</span>'s long-time leaders, has died. He will be greatly missed.
+Hermann Müller, one of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s long-time leaders, has died. He will be greatly missed.

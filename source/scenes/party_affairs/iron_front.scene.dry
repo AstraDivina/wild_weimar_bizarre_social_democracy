@@ -21,9 +21,9 @@ on-display: {!
 
 = The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>
 
-The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> is our new anti-<span style="color: #7A3C00;">fascists</span> coordination front, consisting of the <span style="color: #c00000;">**SPD**</span>, the trade unions, and the Reichsbanner. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>?
+The <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span> is our new anti-<span style="color: #7A3C00;">fascists</span> coordination front, consisting of the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>, the trade unions, and the Reichsbanner. How should we use the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>?
 
-[? if workers_spd < 45 or workers_spd < workers_nsdap or workers_spd < workers_kpd : Unfortunately, the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>'s effectiveness is dragged down by the <span style="color: #c00000;">**SPD**</span>'s unpopularity, as the <span style="color: #c00000;">**SPD**</span> is no longer the dominant party among the workers. Many Reichsbanner members have left, and many workers are not interested. ?]
+[? if workers_spd < 45 or workers_spd < workers_nsdap or workers_spd < workers_kpd : Unfortunately, the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>'s effectiveness is dragged down by the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span>'s unpopularity, as the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> is no longer the dominant party among the workers. Many Reichsbanner members have left, and many workers are not interested. ?]
 
 - @defense: Rally for defense against the <span style="color: #7A3C00;">fascists</span> with the Reichsbanner.
 - @pacifism: Rally for pacifism, against nationalism and war.
@@ -58,7 +58,7 @@ choose-if: return_to_normalcy = 0 and (wtb_implemented >= wtb_rally or (not spd_
 unavailable-subtitle: [? if return_to_normalcy == 1: The economic crisis is largely over now, and the public is no longer interested in hearing about it. ?] [? if wtb_rally > wtb_implemented: Rhetoric alone has its limits; further implementation of the WTB plan is necessary to continue an effective campaign. ?]
 on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 4*(1-dissent); new_middle_spd += 2*(1-dissent); old_middle_spd += 1*(1-dissent); rural_spd += 1*(1-dissent); workers_spd += 4*(1-dissent) if wtb_implemented; unemployed_spd += 4*(1-dissent) if wtb_implemented; rural_spd += 2*(1-dissent) if wtb_implemented; new_middle_spd += 3*(1-dissent) if wtb_implemented; old_middle_spd += 2*(1-dissent) if wtb_implemented; wtb_rally += 1
 
-The WTB-Plan is the rallying point for the entire <span style="color: #c00000;">**SPD**</span> and its affiliated organizations, including the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
+The WTB-Plan is the rallying point for the entire <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> and its affiliated organizations, including the <span style="color: #c00000;">**Iron**</span> <span style="color: #1A1A1A;">**Front**</span>. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
 @antisemitism
 title: Rally against antisemitism and in defense of <span style="color: #005EB8;">Jewish</span> Germans.

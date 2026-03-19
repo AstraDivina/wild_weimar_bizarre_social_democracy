@@ -136,9 +136,9 @@ view-if: chancellor_party != "KPD" and president != "Thälmann"
 go-to: war_menu
 on-arrival: war_choices += 1
 
-There are [+ rfb_strength +] thousand fighters with the <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**RFB**</span>, in addition to the workers who support the <span style="color: #700000;">**KPD**</span>.
+There are [+ rfb_strength +] thousand fighters with the <span style="color: #700000;">Communist</span> <span style="color: #8B0000;">**RFB**</span>, in addition to the workers who support the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>.
 
-[? if kpd_relation >= 60 : The <span style="color: #700000;">**KPD**</span> is entirely on our side, owing to our good relations. ?][? if kpd_relation < 60 and kpd_relation >= 45 : Most of the <span style="color: #700000;">**KPD**</span> is on our side, due to their good relations with us. ?][? if kpd_relation < 45 : The <span style="color: #700000;">**KPD**</span> does not support us. ?]
+[? if kpd_relation >= 60 : The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is entirely on our side, owing to our good relations. ?][? if kpd_relation < 60 and kpd_relation >= 45 : Most of the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> is on our side, due to their good relations with us. ?][? if kpd_relation < 45 : The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> does not support us. ?]
 
 @general_strike
 max-visits: 1
@@ -177,7 +177,7 @@ go-to: defeat if total_defeat = 1; long_war if long_war = 1; republic_victory if
 
 Our forces are no match for those of the <span style="color: #808080;">reactionaries</span>. Reichsbanner fighters are quickly overpowered by the forces of the <span style="color: #3E88B3;">Stahlhelm</span>, <span style="color: #7A3C00;">**SA**</span>, and Reichswehr. Many are killed before the rest surrender. Our remaining leaders either flee the country or face execution, as the <span style="color: #808080;">reactionaries</span> and <span style="color: #7A3C00;">Nazis</span> soon turn on each other.
 
-[? if papen_win: Following our defeat, the better-equipped Reichswehr and <span style="color: #3E88B3;">**Stahlhelm**</span> turn against the weakening <span style="color: #7A3C00;">**SA**</span>, defeating them after a brutal struggle. [+ nsdap_leader +] commits suicide, and many high-ranking <span style="color: #7A3C00;">**NSDAP**</span> leaders are imprisoned. Papen has won—though with 90% of the country against him. ?][? if nsdap_win: Following our defeat, the fanatical <span style="color: #7A3C00;">**SA**</span> overwhelms the smaller but well equipped Reichswehr, and uses defections of pro-<span style="color: #7A3C00;">Nazi</span> elements in the <span style="color: #3E88B3;">**Stahlhelm**</span> to their advantage. Eventually, Papen, hated by 90% of the German people, is captured and executed along with President Hindenburg. Ernst Röhm and the <span style="color: #7A3C00;">**SA**</span> now have significant influence in the new Germany, vowing to go on a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.  ?]
+[? if papen_win: Following our defeat, the better-equipped Reichswehr and <span style="color: #3E88B3;">**Stahlhelm**</span> turn against the weakening <span style="color: #7A3C00;">**SA**</span>, defeating them after a brutal struggle. [+ nsdap_leader +] commits suicide, and many high-ranking <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> leaders are imprisoned. Papen has won—though with 90% of the country against him. ?][? if nsdap_win: Following our defeat, the fanatical <span style="color: #7A3C00;">**SA**</span> overwhelms the smaller but well equipped Reichswehr, and uses defections of pro-<span style="color: #7A3C00;">Nazi</span> elements in the <span style="color: #3E88B3;">**Stahlhelm**</span> to their advantage. Eventually, Papen, hated by 90% of the German people, is captured and executed along with President Hindenburg. Ernst Röhm and the <span style="color: #7A3C00;">**SA**</span> now have significant influence in the new Germany, vowing to go on a campaign of <span style="color: #7e0000;">**unspeakable**</span> <span style="color: #3f0000;">**horror**</span> against <span style="color: #005EB8;">Jews</span>, and endless wars of violent expansion that will ruin all of Europe.  ?]
 
 Our resistance will be recorded in the history books, and in the future, our names will be honored. But for now, all is lost.
 
@@ -223,7 +223,7 @@ unavailable-subtitle: Our relations are not strong enough.
 max-visits: 1
 go-to: long_war_intervention
 
-We send a call for help to the <span style="color: #750e0e;">Soviet Union</span>. The <span style="color: #700000;">**KPD**</span> receives the bulk of the aid, while the Reichsbanner and our loyal military units are left floundering. If we win, this does not bode well for our future.
+We send a call for help to the <span style="color: #750e0e;">Soviet Union</span>. The <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> receives the bulk of the aid, while the Reichsbanner and our loyal military units are left floundering. If we win, this does not bode well for our future.
 
 @east_aid
 choose-if: east_relation >= 2

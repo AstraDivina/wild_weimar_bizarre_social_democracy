@@ -22,9 +22,9 @@ on-display: {!
 
 Schleicher, having survived Papen's schemes for the meantime, is now set to receive the political benefits of getting the German people back to work. Schleicher was essentially seen as a dead man to the German public, lacking confidence of the people and Hindenburg's inner circle—but's that's now set to change.
 
-The trade unions are ecstatic, and projected decreases in unemployment—combined with the global economic recovery, is expected to garner much public support for the Schleicher cabinet and a deradicalization of the party landscape, taking away the fuel the <span style="color: #7A3C00;">**NSDAP**</span> and <span style="color: #700000;">**KPD**</span> thrives on.
+The trade unions are ecstatic, and projected decreases in unemployment—combined with the global economic recovery, is expected to garner much public support for the Schleicher cabinet and a deradicalization of the party landscape, taking away the fuel the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> and <span class="Party PartyKPD" style="color: #700000;">**KPD**</span> thrives on.
 
-For Schleicher, the plan serves a dual purpose: to revitalize Germany’s economy in preparation for rearmament and a return to power on the world stage, and to pressure the <span style="color: #7A3C00;">**NSDAP**</span> into cooperating with his cabinet before their electoral prospects decline as their base returns to work.
+For Schleicher, the plan serves a dual purpose: to revitalize Germany’s economy in preparation for rearmament and a return to power on the world stage, and to pressure the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> into cooperating with his cabinet before their electoral prospects decline as their base returns to work.
 
 - @schleicher_2
 
@@ -34,4 +34,4 @@ on-arrival: schleicher_economy_time = rubicon_time + 24; schleicher_approval += 
 
 With Schleicher delivering on a widely popular promise and the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties beginning to soften their stance toward the government, positive reports about him from across the political spectrum have begun to reach Hindenburg.
 
-This early victory for the Schleicher cabinet has dealt a significant blow to Papen’s schemes. The President is now more inclined to view Schleicher favorably, reducing the perceived need to bring the <span style="color: #7A3C00;">**NSDAP**</span> into government.
+This early victory for the Schleicher cabinet has dealt a significant blow to Papen’s schemes. The President is now more inclined to view Schleicher favorably, reducing the perceived need to bring the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> into government.

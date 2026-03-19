@@ -43,4 +43,4 @@ max-visits: 1
 
 Our policy choices have greatly offended the Centrist faction. Many of our most experienced leaders have resigned.
 
-[? if left_split = 1 : Many former <span style="color: #c00000;">Centrist Marxists</span> have joined with the <span style="color: #9B0000;">**SAPD**</span>, the party formed by dissident leftists. They have brought their support base and organization skills to the party, leading to its growth as a nascent rival to the <span style="color: #c00000;">**SPD**</span> for the support of the working class. ?]
+[? if left_split = 1 : Many former <span style="color: #c00000;">Centrist Marxists</span> have joined with the <span style="color: #9B0000;">**SAPD**</span>, the party formed by dissident leftists. They have brought their support base and organization skills to the party, leading to its growth as a nascent rival to the <span class="Party PartySPD" style="color: #c00000;">**SPD**</span> for the support of the working class. ?]

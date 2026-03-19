@@ -1,4 +1,4 @@
-title: The <span style="color: #7A3C00;">**NSDAP**</span> Splinters!
+title: The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> Splinters!
 subtitle: Their internal contradictions have finally caught up with them.
 view-if: chancellor = "Schleicher" and schleicher_time == 10 and hitler_dead
 new-page: true
@@ -17,9 +17,9 @@ on-display: {!
     contentDiv.appendChild(cardEl);
 !}
 
-= The <span style="color: #7A3C00;">**NSDAP**</span> Splinters!
+= The <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> Splinters!
 
-Those who follow Hitler, even after death, constitute of the Hitlerite faction, who remain in control of the <span style="color: #7A3C00;">**NSDAP**</span>. This group consists of people like Goebbels and Göring.
+Those who follow Hitler, even after death, constitute of the Hitlerite faction, who remain in control of the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>. This group consists of people like Goebbels and Göring.
 
 Those who follow Gregor Strasser, and his line of governmental participation, form the <span style="color: #6A1E1E;">German Social Union</span> (<span style="color: #6A1E1E;">**DSU**</span>). This group consists of people like Strasser and Frick. The former having come back from retirement.
 

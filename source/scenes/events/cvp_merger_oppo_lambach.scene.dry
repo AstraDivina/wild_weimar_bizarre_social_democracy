@@ -1,4 +1,4 @@
-title: The <span style="color: #000000;">Center</span> merges with the <span style="color: #3E88B3;">**DNVP**</span>!
+title: The <span style="color: #000000;">Center</span> merges with the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>!
 subtitle: A behemoth of the German Right is formed...
 view-if: year >= 1931 and (100 - z_relation) >= spd_votes and z_ideology == "Right" and (z_leader == "Stegerwald" or z_leader == "Adenauer") and (((in_spd_majority or in_left_front) and (not spd_prussia or in_left_front_prussia or in_spd_majority_prussia)) or (spd_votes + pro_republic + left_strength >= 150)) and dnvp_leader == "Lambach" and stegerwald_transformation_timer == 0 and not cvp_formed and not dkp_merger_waiting
 max-visits: 1
@@ -18,13 +18,13 @@ on-display: {!
 !}
 new-page: true
 
-= The <span style="color: #000000;">Center</span> merges with the <span style="color: #3E88B3;">**DNVP**</span>
+= The <span style="color: #000000;">Center</span> merges with the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>
 
-The <span style="color: #000000;">Center Party</span>, having undergone a major transformation into a center-right <span style="color: #000000;">Christian People's Party</span> under [+ z_leader +], has been flirting with the idea of merging with [+ dnvp_leader +]'s <span style="color: #3E88B3;">**DNVP**</span> for the past few months. [? if spd_votes + pro_republic < 120 or ((in_spd_majority or in_left_front) and (not spd_prussia or in_left_front_prussia or in_spd_majority_prussia)): Their mutual opposition in the current governing coalition, newfound ideological closeness, and shared fears of both the <span style="color: #7A3C00;">Nazis</span> and <span style="color: #c00000;">socialists</span>—coupled with their electoral decline at the hands of the former—have pushed them toward closer cooperation. ?][? if spd_votes + pro_republic >= 120 and not ((in_spd_majority or in_left_front) and (not spd_prussia or in_left_front_prussia or in_spd_majority_prussia)): Their growing ideological alignment, shared commitment to the Republic, and mutual anxiety over the <span style="color: #c00000;">socialists</span>—whose monumental electoral gains threaten to overturn Germany’s conservative order—have pushed them toward closer cooperation. ?]
+The <span style="color: #000000;">Center Party</span>, having undergone a major transformation into a center-right <span style="color: #000000;">Christian People's Party</span> under [+ z_leader +], has been flirting with the idea of merging with [+ dnvp_leader +]'s <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> for the past few months. [? if spd_votes + pro_republic < 120 or ((in_spd_majority or in_left_front) and (not spd_prussia or in_left_front_prussia or in_spd_majority_prussia)): Their mutual opposition in the current governing coalition, newfound ideological closeness, and shared fears of both the <span style="color: #7A3C00;">Nazis</span> and <span style="color: #c00000;">socialists</span>—coupled with their electoral decline at the hands of the former—have pushed them toward closer cooperation. ?][? if spd_votes + pro_republic >= 120 and not ((in_spd_majority or in_left_front) and (not spd_prussia or in_left_front_prussia or in_spd_majority_prussia)): Their growing ideological alignment, shared commitment to the Republic, and mutual anxiety over the <span style="color: #c00000;">socialists</span>—whose monumental electoral gains threaten to overturn Germany’s conservative order—have pushed them toward closer cooperation. ?]
 
-We have suffered a falling out with the <span style="color: #000000;">Center Party</span>, which now seeks to sever its remaining ties to us in order to clear the path for a merger with the <span style="color: #3E88B3;">**DNVP**</span>. Our few remaining allies within their ranks have been sidelined—left powerless to obstruct the party’s rightward drift. This shift has enabled the party’s leadership, alongside newly integrated right-wing Protestant politicians, to open negotiations with the <span style="color: #3E88B3;">**DNVP**</span> on a possible unification. 
+We have suffered a falling out with the <span style="color: #000000;">Center Party</span>, which now seeks to sever its remaining ties to us in order to clear the path for a merger with the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>. Our few remaining allies within their ranks have been sidelined—left powerless to obstruct the party’s rightward drift. This shift has enabled the party’s leadership, alongside newly integrated right-wing Protestant politicians, to open negotiations with the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> on a possible unification. 
 
-However, resistance remains: the <span style="color: #3E88B3;">**DNVP**</span>’s old guard, led by figures like Westarp and Schiele, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as reparations. Lambach himself is in favor, aligning with [+ z_leader +] in supporting the call for a *Volksgemeinschaft*.
+However, resistance remains: the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>’s old guard, led by figures like Westarp and Schiele, remain deeply skeptical of the merger, citing fundamental disagreements over key "national questions," such as reparations. Lambach himself is in favor, aligning with [+ z_leader +] in supporting the call for a *Volksgemeinschaft*.
 
 - @cvp_dnvp: Negotiations between the two parties have begun.
 
@@ -86,27 +86,27 @@ A great deal of concessions are required to bring both sides to a comprehensive 
 
 Pro-merger factions:
 
-<span style="color: #000000;">Far-Right</span> (<span style="color: #000000;">**Z**</span>)
+<span style="color: #000000;">Far-Right</span> (<span class="Party PartyZ" style="color: #000000;">**Z**</span>)
 
-<span style="color: #000000;">Labor Right</span> (<span style="color: #000000;">**Z**</span>)
+<span style="color: #000000;">Labor Right</span> (<span class="Party PartyZ" style="color: #000000;">**Z**</span>)
 
-<span style="color: #000000;">Protestant Right</span> (<span style="color: #000000;">**Z**</span>)
+<span style="color: #000000;">Protestant Right</span> (<span class="Party PartyZ" style="color: #000000;">**Z**</span>)
 
-<span style="color: #6D5298;">Christian Socials</span> (<span style="color: #3E88B3;">**DNVP**</span>)
+<span style="color: #6D5298;">Christian Socials</span> (<span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>)
 
-<span style="color: #0087DC;">People's Conservatives</span> (<span style="color: #3E88B3;">**DNVP**</span>)
+<span style="color: #0087DC;">People's Conservatives</span> (<span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>)
 
 Skeptical factions:
 
-<span style="color: #000000;">Catholic Center</span> (<span style="color: #000000;">**Z**</span>)
+<span style="color: #000000;">Catholic Center</span> (<span class="Party PartyZ" style="color: #000000;">**Z**</span>)
 
-<span style="color: #3E88B3;">National Conservatives</span> (<span style="color: #3E88B3;">**DNVP**</span>)
+<span style="color: #3E88B3;">National Conservatives</span> (<span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>)
 
 Opposed factions:
 
-<span style="color: #FF7F00;">Christian Left</span> (<span style="color: #000000;">**Z**</span>)
+<span style="color: #FF7F00;">Christian Left</span> (<span class="Party PartyZ" style="color: #000000;">**Z**</span>)
 
-<span style="color: #385A38;">Agrarians</span> (<span style="color: #3E88B3;">**DNVP**</span>)
+<span style="color: #385A38;">Agrarians</span> (<span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>)
 
 Balance of Power: [+ cvp_dnvp_balance : cvp_dnvp_balance +]
 
@@ -126,7 +126,7 @@ view-if: not cvp_reparations
 on-arrival: cvp_reparations = 1
 go-to: reparations_right if cvp_dnvp_balance < 50; reparations_moderate if cvp_dnvp_balance >= 50 and cvp_dnvp_balance < 60; reparations_left if cvp_dnvp_balance >= 60
 
-The reparations issue remains the most contentious point of contention between the two parties, with starkly opposing views on how to handle Germany’s financial obligations. The <span style="color: #3E88B3;">**DNVP**</span>, including Treviranus himself, staunchly opposed the Young Plan and has previously clashed with the <span style="color: #000000;">Center</span> over foreign policy achievements such as the Locarno Treaties in the past.
+The reparations issue remains the most contentious point of contention between the two parties, with starkly opposing views on how to handle Germany’s financial obligations. The <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>, including Treviranus himself, staunchly opposed the Young Plan and has previously clashed with the <span style="color: #000000;">Center</span> over foreign policy achievements such as the Locarno Treaties in the past.
 
 @reparations_right
 on-arrival: cvp_dnvp_balance += 20; cvp_right += 5; nationalism += 10; pro_republic -= 5; west_relation -= 1; east_relation -= 2; z_relation -= 5; old_middle_z += 4; old_middle_dnf -= 4; new_middle_z -= 4; new_middle_dvp += 4; new_middle_lvp += 4; rural_dnf -= 2; rural_z += 2
@@ -176,7 +176,7 @@ view-if: not cvp_monarchy and cvp_reparations
 on-arrival: cvp_monarchy = 1
 go-to: monarchy_right if cvp_dnvp_balance < 30; monarchy_moderate if cvp_dnvp_balance >= 30 and cvp_dnvp_balance < 50; monarchy_left if cvp_dnvp_balance >= 50
 
-The issue of the German <span style="color: #808080;">monarchy</span> remains highly divisive, with both parties holding starkly different views. Despite the unfeasibility of a restoration in the current political climate, the <span style="color: #3E88B3;">**DNVP**</span> has never ceased advocating for a return to the days of the <span class="tooltip-text" title="good mod">Kaiserreich</span>. The <span style="color: #000000;">Center Party</span>, on the other hand, has consistently been a staunch <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> force since the birth of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic. Perhaps the influence of the <span style="color: #0087DC;">People's Conservatives</span> and <span style="color: #6D5298;">Christian Socials</span> will outweigh the strong objections from the <span style="color: #3E88B3;">**DNVP**</span>'s old guard.
+The issue of the German <span style="color: #808080;">monarchy</span> remains highly divisive, with both parties holding starkly different views. Despite the unfeasibility of a restoration in the current political climate, the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> has never ceased advocating for a return to the days of the <span class="tooltip-text" title="good mod">Kaiserreich</span>. The <span style="color: #000000;">Center Party</span>, on the other hand, has consistently been a staunch <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> force since the birth of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic. Perhaps the influence of the <span style="color: #0087DC;">People's Conservatives</span> and <span style="color: #6D5298;">Christian Socials</span> will outweigh the strong objections from the <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span>'s old guard.
 
 @monarchy_right
 on-arrival: cvp_dnvp_balance -= 15; cvp_right += 4; z_relation -= 5; pro_republic -= 5; rural_z += 4; rural_dnf -= 2; rural_other -= 2; old_middle_z += 6; old_middle_dnf -= 4; old_middle_other -= 2; new_middle_z += 2; new_middle_dnf -= 2; workers_z -= 5; workers_spd += 3; workers_ddp += 3; workers_lvp += 3; unemployed_z -= 3; unemployed_spd += 3; unemployed_ddp += 2; unemployed_lvp += 2; catholics_z -= 4; catholics_spd += 4; catholics_ddp += 2; catholics_lvp += 2
@@ -184,7 +184,7 @@ go-to: cvp_dnvp_menu
 
 The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have successfully pushed for the inclusion of support for a constitutional monarchy in the party platform. However, it is no longer a central pillar of the party's ideology.
 
-Monarchy - Support for a constitutional monarchy, similar to the stance of the[? if not dvp_exist or lvp_formed:&nbsp;former?] <span style="color: #C0A054;">**DVP**</span>.
+Monarchy - Support for a constitutional monarchy, similar to the stance of the[? if not dvp_exist or lvp_formed:&nbsp;former?] <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>.
 
 Democracy - Favoring a strengthened presidency, while maintaining a pro-democratic stance
 
@@ -264,7 +264,7 @@ view-if: cvp_reparations and cvp_economy and cvp_monarchy and not cvp_coalition
 on-arrival: cvp_coalition = 1
 go-to: coalition_right if cvp_dnvp_balance < 70; coalition_moderate if cvp_dnvp_balance >= 70 and cvp_dnvp_balance < 85; coalition_left if cvp_dnvp_balance >= 85
 
-The integration of the staunchly anti-<span style="color: #9B0000;">Marxist</span> <span style="color: #3E88B3;">**DNVP**</span> into the <span style="color: #000000;">Center Party</span> will likely rule out any future cooperation with them. However, a vocal minority of progressives still exists within the <span style="color: #000000;">Center</span>, who may argue in our favor. Despite the name, the <span style="color: #6D5298;">Christian Socials</span> are not friendly at all.
+The integration of the staunchly anti-<span style="color: #9B0000;">Marxist</span> <span class="Party PartyDNVP" style="color: #3E88B3;">**DNVP**</span> into the <span style="color: #000000;">Center Party</span> will likely rule out any future cooperation with them. However, a vocal minority of progressives still exists within the <span style="color: #000000;">Center</span>, who may argue in our favor. Despite the name, the <span style="color: #6D5298;">Christian Socials</span> are not friendly at all.
 
 @coalition_right
 on-arrival: cvp_dnvp_balance += 10; cvp_right += 5; z_relation -= 10; rural_z += 6; rural_dnf -= 2; rural_other -= 2; rural_nsdap -= 2; old_middle_z += 10; old_middle_dnf -= 4; old_middle_dvp -= 2; old_middle_lvp -= 2; old_middle_other -= 4; new_middle_z += 6; new_middle_dnf -= 2; new_middle_other -= 4; workers_z -= 3; workers_spd += 3; workers_ddp += 2; workers_lvp += 2; unemployed_z -= 3; unemployed_spd += 3; unemployed_ddp += 2; unemployed_lvp += 2
@@ -272,13 +272,13 @@ go-to: cvp_dnvp_menu
 
 The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have used their leverage to edit in their vehement anti-<span style="color: #c00000;">socialist</span> stance into the party platform.
 
-<span style="color: #c00000;">**SPD**</span> - Strongly against governing with
+<span class="Party PartySPD" style="color: #c00000;">**SPD**</span> - Strongly against governing with
 
 <span style="color: #FFCC00;">**Liberals**</span> - Preferred governing partner
 
 <span style="color: #003755;">**DNF**</span> - Strongly against governing with
 
-<span style="color: #7A3C00;">**NSDAP**</span> - Suspiciously ambiguous
+<span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> - Suspiciously ambiguous
 
 @coalition_moderate
 on-arrival: z_relation -= 5; rural_z += 4; rural_other -= 2; rural_nsdap -= 2; old_middle_z += 6; old_middle_dvp -= 2; old_middle_lvp -= 2; old_middle_other -= 4; new_middle_z += 2; new_middle_other -= 2
@@ -286,13 +286,13 @@ go-to: cvp_dnvp_menu
 
 The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have used their leverage to edit in their vehement anti-<span style="color: #c00000;">socialist</span> stance into the party platform. However, the <span style="color: #FF7F00;">Christian Left</span> has managed to keep an open door for future cooperation—though it's not a very wide one.
 
-<span style="color: #c00000;">**SPD**</span> - Against governing with
+<span class="Party PartySPD" style="color: #c00000;">**SPD**</span> - Against governing with
 
 <span style="color: #FFCC00;">**Liberals**</span> - Preferred governing partner
 
 <span style="color: #003755;">**DNF**</span> - Strongly against governing with
 
-<span style="color: #7A3C00;">**NSDAP**</span> - Suspiciously ambiguous
+<span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> - Suspiciously ambiguous
 
 @coalition_left
 on-arrival: cvp_dnvp_balance -= 10; cvp_left += 5; z_relation += 15; rural_z -= 4; rural_dnf += 2; rural_other += 4; old_middle_z -= 6; old_middle_dnf += 2; old_middle_other += 4; new_middle_z -= 4; new_middle_other += 4; workers_z += 3; workers_spd += 3; unemployed_z += 3; unemployed_spd += 3
@@ -300,13 +300,13 @@ go-to: cvp_dnvp_menu
 
 The <span style="color: #3E88B3;">nationalists</span> and <span style="color: #385A38;">agrarians</span> have attempted to use their leverage to edit in their vehement anti-<span style="color: #c00000;">socialist</span> stance into the party platform. However, the <span style="color: #FF7F00;">Christian Left</span> and [+ z_leader +] has managed to keep an open door for future cooperation.
 
-<span style="color: #c00000;">**SPD**</span> - Open to an agreement
+<span class="Party PartySPD" style="color: #c00000;">**SPD**</span> - Open to an agreement
 
 <span style="color: #FFCC00;">**Liberals**</span> - Preferred governing partner
 
 <span style="color: #003755;">**DNF**</span> - Strongly against governing with
 
-<span style="color: #7A3C00;">**NSDAP**</span> - Against governing with
+<span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span> - Against governing with
 
 
 @congress
@@ -336,13 +336,13 @@ view-if: not cvp_dvp_trigger
 go-to: cvp_party_congress
 
 @cvp_dvp_merger
-title: The <span style="color: #C0A054;">**DVP**</span> also wants in.
+title: The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> also wants in.
 subtitle: Huh?
 call: cvp_dvp_formed
 view-if: cvp_dvp_trigger
 
-Before the <span style="color: #000000;">Christian People's Party</span> was to be announced to the public, representatives from the beleaguered <span style="color: #C0A054;">**DVP**</span> have shown their interest in joining the arrangement as well.
+Before the <span style="color: #000000;">Christian People's Party</span> was to be announced to the public, representatives from the beleaguered <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> have shown their interest in joining the arrangement as well.
 
-This leaves the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> as the only liberal party in the political landscape, now flourishing with defections from the <span style="color: #C0A054;">**DVP**</span>'s left wing.
+This leaves the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> as the only liberal party in the political landscape, now flourishing with defections from the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s left wing.
 
 - @cvp_party_congress

@@ -13,7 +13,7 @@ go-to: what_do if unemployment_insurance_crisis = 2
 
 The economic crisis has caused mass layoffs all throughout Germany, affecting the industrial working class the hardest. Our welfare spending is increasing due to the greater need.
 
-In the midst of all this, our right-wing coalition partners in the <span style="color: #C0A054;">**DVP**</span>[? if ddp_ideology == "Right" and not dstp_formed:, <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] [? if z_party_name != "CVP" and z_ideology != "Left": and <span style="color: #000000;">Center</span>?][? if (z_party_name == "CVP" and z_ideology != "Left") or (cvp_ideology == "Left" and cvp_formed): and <span style="color: #000000;">**CVP**</span>?] have a plan to cut benefits for the unemployed, lower taxes on the rich, and raise taxes on the working class, as part of a plan to balance the budget and discipline labor. They do not see a possibility for compromise. If we do not accept, they could blow up the coalition.
+In the midst of all this, our right-wing coalition partners in the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>[? if ddp_ideology == "Right" and not dstp_formed:, <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?] [? if z_party_name != "CVP" and z_ideology != "Left": and <span style="color: #000000;">Center</span>?][? if (z_party_name == "CVP" and z_ideology != "Left") or (cvp_ideology == "Left" and cvp_formed): and <span style="color: #000000;">**CVP**</span>?] have a plan to cut benefits for the unemployed, lower taxes on the rich, and raise taxes on the working class, as part of a plan to balance the budget and discipline labor. They do not see a possibility for compromise. If we do not accept, they could blow up the coalition.
 
 [? if unemployment_insurance_crisis = 2 : This is the second such ultimatum thrown by the Right. Obviously, the bourgeoisie are trying to remove us from the government. ?]
 
@@ -63,7 +63,7 @@ on-arrival: workers_spd -= 0.15*workers_spd; unemployed_spd -= 0.3*unemployed_sp
 
 Unfortunately, we must accept this ultimatum if we are to maintain this coalition. The <span style="color: #7A3C00;">Nazis</span> and <span style="color: #700000;">**Communists**</span> are waiting in the wings for us to fail, ready to pounce upon the instability that would result from a breakup of the governing coalition.
 
-The workers are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span style="color: #700000;">**KPD**</span>'s gain, and even the <span style="color: #7A3C00;">**NSDAP**</span>, those lapdogs of the bourgeoisie, have joined in criticizing us for our austerity.
+The workers are furious at our betrayal, as are a good portion of our membership throughout the factions. Our loss is the <span class="Party PartyKPD" style="color: #700000;">**KPD**</span>'s gain, and even the <span class="Party PartyNSDAP" style="color: #7A3C00;">**NSDAP**</span>, those lapdogs of the bourgeoisie, have joined in criticizing us for our austerity.
 
 @prolong
 unavailable-subtitle: [? if reformist_strength + center_strength < left_strength + labor_strength: The party wants action now. ?][? if unemployment_insurance_crisis > 1: We can't prolong this any longer. ?]
@@ -76,9 +76,9 @@ A compromise put forward by Heinrich Brüning is put into place and the issue is
 unavailable-subtitle: [? if dvp_relation < 30 or ddp_relation < 30 or (z_relation < 30 or (z_relation < 25 and z_leader == "Joos") or (z_relation < 20 and z_leader == "Kaiser")): We do not have good enough relations with the right-wing parties. ?]
 choose-if: dvp_relation >= 30 and ddp_relation >= 30 and (z_relation >= 30 or (z_relation >= 25 and z_leader == "Joos") or (z_relation >= 20 and z_leader == "Kaiser"))
 
-The <span style="color: #C0A054;">**DVP**</span> ministers in the cabinet have offered a compromise that raises some taxes on the wealthy, along with lesser welfare cuts. Our members have mixed opinions on accepting this compromise. Reformists and Centrists support maintaining our government to keep the <span style="color: #7A3C00;">fascists</span> and <span style="color: #700000;">communists</span> out, while Labor generally opposes any cuts, and the Left is opposed to compromises with the bourgeoisie.
+The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> ministers in the cabinet have offered a compromise that raises some taxes on the wealthy, along with lesser welfare cuts. Our members have mixed opinions on accepting this compromise. Reformists and Centrists support maintaining our government to keep the <span style="color: #7A3C00;">fascists</span> and <span style="color: #700000;">communists</span> out, while Labor generally opposes any cuts, and the Left is opposed to compromises with the bourgeoisie.
 
-The <span style="color: #C0A054;">**DVP**</span> themselves are split about this, the Reichstag delegation may go against the compromise fashioned by their own ministers. [? if dvp_ideology == "Left": However, the <span style="color: #C0A054;">**DVP**</span> has resisted the national shift towards the right for the most part. ?]If we do go ahead with this, the coalition hinges on the decision of the <span style="color: #C0A054;">**DVP**</span>.
+The <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> themselves are split about this, the Reichstag delegation may go against the compromise fashioned by their own ministers. [? if dvp_ideology == "Left": However, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> has resisted the national shift towards the right for the most part. ?]If we do go ahead with this, the coalition hinges on the decision of the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>.
 
 - @accept_compromise: Accept the compromise.
 - @destroy: Reject the compromise and let this government fall.
@@ -90,7 +90,7 @@ go-to: compromised_failed if (dvp_ideology == "Moderate" and dvp_relation < 55) 
 
 @compromised_failed
 
-We have accepted the compromise offered by the bourgeoisie. However, German industry has lobbied especially hard to foment the <span style="color: #C0A054;">**DVP**</span>'s split from the Grand coalition, and the compromise is voted down within the <span style="color: #C0A054;">**DVP**</span> itself.
+We have accepted the compromise offered by the bourgeoisie. However, German industry has lobbied especially hard to foment the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>'s split from the Grand coalition, and the compromise is voted down within the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> itself.
 
 - @destroy: At least we tried, let this government fall.
 - @prolong: Decide this at a later date.
@@ -102,4 +102,4 @@ on-arrival: workers_spd -= 5; unemployed_spd -= 6; workers_kpd += 3; unemployed_
 
 We have accepted the compromise offered by the bourgeoisie. Many of the workers and unemployed see this as a betrayal, although we present it as the successful aversion of a much worse alternative.
 
-Despite the intense lobbying by German industry, the <span style="color: #C0A054;">**DVP**</span> have voted for the compromise through the narrowest of votes.
+Despite the intense lobbying by German industry, the <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span> have voted for the compromise through the narrowest of votes.

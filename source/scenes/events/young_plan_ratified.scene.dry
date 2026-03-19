@@ -8,10 +8,10 @@ max-visits: 1
 
 = Young Plan Ratified
 
-The Young Plan is finally ratified, and with that, the main reason President Hindenburg and the [? if not lvp_formed and in_grand_coalition: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed or not in_grand_coalition: bourgeois right?] has been keeping us around is gone. Hindenburg has notified Chancellor [+ chancellor +] that he expects a sweeping reform of German finances soon, a challenging task in a government like this.
+The Young Plan is finally ratified, and with that, the main reason President Hindenburg and the [? if not lvp_formed and in_grand_coalition: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if lvp_formed or not in_grand_coalition: bourgeois right?] has been keeping us around is gone. Hindenburg has notified Chancellor [+ chancellor +] that he expects a sweeping reform of German finances soon, a challenging task in a government like this.
 
 - @joever: If this year couldn't get any worse...
 
 @joever
 
-[? if in_grand_coalition or (in_weimar_coalition and lvp_formed): The [? if not lvp_formed: <span style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] may bring up the unemployment insurance issue again.?][? if in_popular_front or in_left_front or (in_weimar_coalition and not lvp_formed): Hindenburg's inner circle is determined to have him expel us from government[? if in_popular_front or in_left_front:, especially with our cooperation with the <span style="color: #700000;">**Communists**</span>?]. ?]
+[? if in_grand_coalition or (in_weimar_coalition and lvp_formed): The [? if not lvp_formed: <span class="Party PartyDVP" style="color: #C0A054;">**DVP**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] may bring up the unemployment insurance issue again.?][? if in_popular_front or in_left_front or (in_weimar_coalition and not lvp_formed): Hindenburg's inner circle is determined to have him expel us from government[? if in_popular_front or in_left_front:, especially with our cooperation with the <span style="color: #700000;">**Communists**</span>?]. ?]
